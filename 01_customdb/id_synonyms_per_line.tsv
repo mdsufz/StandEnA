@@ -1,0 +1,23 @@
+S001-E01-1.14.12.3	E01	1.1	Benzene 1,2-dioxygenase	1.14.12.3	benzene 1,2-dioxygenase
+S002-E01-1.14.12.3	E01	1.1	Benzene 1,2-dioxygenase	1.14.12.3	benzene hydroxylase
+S003-E01-1.14.12.3	E01	1.1	Benzene 1,2-dioxygenase	1.14.12.3	benzene dioxygenase
+S004-E02-1.3.1.19	E02	1.1	cis-1,2-dihydrobenzene-1,2-diol dehydrogenase	1.3.1.19	cis-1,2-dihydrobenzene-1,2-diol dehydrogenase
+S005-E02-1.3.1.19	E02	1.1	cis-1,2-dihydrobenzene-1,2-diol dehydrogenase	1.3.1.19	cis-benzene glycol dehydrogenase
+S006-E02-1.3.1.19	E02	1.1	cis-1,2-dihydrobenzene-1,2-diol dehydrogenase	1.3.1.19	cis-1,2-dihydrocyclohexa-3,5-diene (nicotinamide adenine dinucleotide) oxidoreductase
+S007-E03-1.14.13.244	E03	1.2	Phenol 2-monooxygenase	1.14.13.244	phenol 2-monooxygenase (NADH)
+S008-E04-3.7.1.9	E04	1.3	2-hydroxymuconic semialdehyde hydrolase	3.7.1.9	2-hydroxymuconate-6-semialdehyde hydrolase
+S009-E04-3.7.1.9	E04	1.3	2-hydroxymuconic semialdehyde hydrolase	3.7.1.9	2-hydroxy-6-oxohepta-2,4-dienoate hydrolase
+S010-E04-3.7.1.9	E04	1.3	2-hydroxymuconic semialdehyde hydrolase	3.7.1.9	2-hydroxymuconic semialdehyde hydrolase
+S012-E04-3.7.1.9	E04	1.3	2-hydroxymuconic semialdehyde hydrolase	3.7.1.9	HOD hydrolase
+S013-E04-3.7.1.9	E04	1.3	2-hydroxymuconic semialdehyde hydrolase	3.7.1.9	2-hydroxymuconate-semialdehyde formylhydrolase
+S014-E04-3.7.1.9	E04	1.3	2-hydroxymuconic semialdehyde hydrolase	3.7.1.9	2-hydroxymuconate-semialdehyde hydrolase
+S015-E05-4.2.1.80	E05	1.3	2-oxopent-4-enoate hydratase	4.2.1.80	2-oxopent-4-enoate hydratase
+S016-E05-4.2.1.80	E05	1.3	2-oxopent-4-enoate hydratase	4.2.1.80	2-keto-4-pentenoate hydratase
+S018-E05-4.2.1.80	E05	1.3	2-oxopent-4-enoate hydratase	4.2.1.80	2-keto-4-pentenoate (vinylpyruvate)hydratase
+S019-E05-4.2.1.80	E05	1.3	2-oxopent-4-enoate hydratase	4.2.1.80	4-hydroxy-2-oxopentanoate hydro-lyase
+S020-E05-4.2.1.80	E05	1.3	2-oxopent-4-enoate hydratase	4.2.1.80	4-hydroxy-2-oxopentanoate hydro-lyase (2-oxopent-4-enoate-forming)
+S021-E06-4.1.3.39	E06	1.3	4-hydroxy-2-oxovalerate aldolase	4.1.3.39	4-hydroxy-2-oxovalerate aldolase
+S022-E06-4.1.3.39	E06	1.3	4-hydroxy-2-oxovalerate aldolase	4.1.3.39	4-hydroxy-2-ketovalerate aldolase
+S025-E06-4.1.3.39	E06	1.3	4-hydroxy-2-oxovalerate aldolase	4.1.3.39	4-hydroxy-2-oxovalerate pyruvate-lyase
+S026-E06-4.1.3.39	E06	1.3	4-hydroxy-2-oxovalerate aldolase	4.1.3.39	4-hydroxy-2-oxopentanoate pyruvate-lyase
+S028-E06-4.1.3.39	E06	1.3	4-hydroxy-2-oxovalerate aldolase	4.1.3.39	4-hydroxy-2-oxopentanoate pyruvate-lyase (acetaldehyde-forming)
