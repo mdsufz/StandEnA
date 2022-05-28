@@ -1,0 +1,391 @@
+BEN01_bacbin.2.fa	PBHPKIAH_04141	CDS	837				K10216 2-hydroxymuconate-semialdehyde hydrolase [EC:3.7.1.9] | (GenBank) 2-hydroxymuconic semialdehyde hydrolase(A)
+BEN02_bacbin.18.fa	EFPBDNFK_00349	CDS	846				K10216 2-hydroxymuconate-semialdehyde hydrolase [EC:3.7.1.9] | (GenBank) alpha/beta fold hydrolase (A)
+BEN02_bacbin.18.fa	EFPBDNFK_01252	CDS	807				K10216 2-hydroxymuconate-semialdehyde hydrolase [EC:3.7.1.9] | (GenBank) 2-hydroxymuconate semialdehyde hydrolase (A)
+BEN02_bacbin.18.fa	EFPBDNFK_03093	CDS	273				2-hydroxy-6-oxohepta-2,4-dienoate hydrolase [Helicobacter fennelliae MRY12-0050]
+BEN02_bacbin.26.fa	BGNLEGFE_03474	CDS	894				K10216 2-hydroxymuconate-semialdehyde hydrolase [EC:3.7.1.9] | (GenBank) hypothetical protein (A)
+BEN02_bacbin.43.fa	DDJMJDIO_00915	CDS	276				2-HYDROXY-6-OXOHEPTA-2,4-DIENOATE HYDROLASE [Wolinella succinogenes]
+BEN02_bacbin.51.fa	ACPNMHPK_00677	CDS	630				2-hydroxy-6-oxohepta-2,4-dienoate hydrolase [Nostoc sp. 'Peltigera malacea cyanobiont']
+BEN02_bacbin.51.fa	ACPNMHPK_02222	CDS	663				2-hydroxy-6-oxohepta-2,4-dienoate hydrolase (plasmid) [Rhodococcus jostii RHA1]
+BEN03_bacbin.12.fa	CMAPDADM_02196	CDS	822				K10216 2-hydroxymuconate-semialdehyde hydrolase [EC:3.7.1.9] | (GenBank) 2-hydroxymuconic semialdehyde hydrolase(A)
+BEN03_bacbin.14.fa	KHELHNFC_01426	CDS	771				K10216 2-hydroxymuconate-semialdehyde hydrolase [EC:3.7.1.9] | (GenBank) acetoin dehydrogenase (A)
+BEN03_bacbin.17.fa	CGMLAECB_00512	CDS	771				2-hydroxy-6-oxohepta-2,4-dienoate hydrolase [Capnocytophaga ochracea]
+BEN03_bacbin.33.fa	CPEBALGE_02608	CDS	828				K10216 2-hydroxymuconate-semialdehyde hydrolase [EC:3.7.1.9] | (GenBank) alpha/beta fold hydrolase (A)
+BEN03_bacbin.37.fa	DAJLBBEE_01744	CDS	846				K10216 2-hydroxymuconate-semialdehyde hydrolase [EC:3.7.1.9] | (GenBank) hypothetical protein (A)
+BEN04_bacbin.21.fa	NCBFJBJO_02424	CDS	783				2-hydroxy-6-oxohepta-2,4-dienoate hydrolase [Marinococcus halophilus]
+BEN04_bacbin.21.fa	NCBFJBJO_03723	CDS	813				K10216 2-hydroxymuconate-semialdehyde hydrolase [EC:3.7.1.9] | (GenBank) alpha/beta fold hydrolase (A)
+BEN04_bacbin.42.fa	BLGNNFGH_00234	CDS	897				K10216 2-hydroxymuconate-semialdehyde hydrolase [EC:3.7.1.9] | (GenBank) 2-hydroxymuconate semialdehyde hydrolase (A)
+BEN04_bacbin.42.fa	BLGNNFGH_01605	CDS	276				2-hydroxy-6-oxohepta-2,4-dienoate hydrolase [Helicobacter fennelliae]
+BEN04_bacbin.42.fa	BLGNNFGH_02221	CDS	870				K10216 2-hydroxymuconate-semialdehyde hydrolase [EC:3.7.1.9] | (GenBank) hypothetical protein (A)
+BEN04_bacbin.42.fa	BLGNNFGH_03041	CDS	936				K10216 2-hydroxymuconate-semialdehyde hydrolase [EC:3.7.1.9] | (GenBank) nahN; hydroxymuconic semialdehyde hydrolase(A)
+BEN04_bacbin.46.fa	FFEFDGDB_01411	CDS	903				K10216 2-hydroxymuconate-semialdehyde hydrolase [EC:3.7.1.9] | (GenBank) alpha/beta hydrolase fold protein(A)
+BEN04_bacbin.46.fa	FFEFDGDB_01746	CDS	276				2-hydroxy-6-oxohepta-2,4-dienoate hydrolase [Helicobacter fennelliae]
+BEN04_bacbin.46.fa	FFEFDGDB_02067	CDS	867				K10216 2-hydroxymuconate-semialdehyde hydrolase [EC:3.7.1.9] | (GenBank) alpha/beta hydrolase fold familiy(A)
+BEN04_bacbin.46.fa	FFEFDGDB_02839	CDS	954				K10216 2-hydroxymuconate-semialdehyde hydrolase [EC:3.7.1.9] | (GenBank) 2,6-dioxo-6-phenylhexa-3-enoate hydrolase (A)
+BEN04_bacbin.6.fa	GCBEDIFO_02967	CDS	873				K10216 2-hydroxymuconate-semialdehyde hydrolase [EC:3.7.1.9] | (GenBank) alpha/beta fold hydrolase (A)
+BEN04_bacbin.6.fa	GCBEDIFO_03375	CDS	903				2-hydroxy-6-oxohepta-2,4-dienoate hydrolase [Aphanothece hegewaldii CCALA 016]
+BEN04_bacbin.7.fa	KBIHEENP_00311	CDS	852				K10216 2-hydroxymuconate-semialdehyde hydrolase [EC:3.7.1.9] | (GenBank) xylF1; 2-hydroxymuconate semialdehyde hydrolase (A)
+BEN04_bacbin.7.fa	KBIHEENP_01565	CDS	846				K10216 2-hydroxymuconate-semialdehyde hydrolase [EC:3.7.1.9] | (GenBank) alpha/beta fold hydrolase (A)
+BEN05_bacbin.32.fa	LEHFOEOK_02810	CDS	1008				K10216 2-hydroxymuconate-semialdehyde hydrolase [EC:3.7.1.9] | (GenBank) 2-hydroxy-6-oxo-2,4-heptadienoate hydrolase (A)
+BEN05_bacbin.34.fa	MDBGJIEG_01420	CDS	918				K10216 2-hydroxymuconate-semialdehyde hydrolase [EC:3.7.1.9] | (GenBank) predicted Hydrolase or acyltransferase(alpha/beta hydrolase superfamily) (A)
+BEN05_bacbin.48.fa	OGANAMKJ_01122	CDS	882				K10216 2-hydroxymuconate-semialdehyde hydrolase [EC:3.7.1.9] | (GenBank) predicted Hydrolase or acyltransferase(alpha/beta hydrolase superfamily) (A)
+BEN06_bacbin.17.fa	JMOGIBON_01905	CDS	963				2-hydroxy-6-oxohepta-2,4-dienoate hydrolase [filamentous cyanobacterium CCP5]
+BEN06_bacbin.2.fa	KKPKAEDF_02073	CDS	810				2-hydroxy-6-oxohepta-2,4-dienoate hydrolase (plasmid) [Cupriavidus metallidurans CH34]
+BEN06_bacbin.2.fa	KKPKAEDF_02469	CDS	891				K10216 2-hydroxymuconate-semialdehyde hydrolase [EC:3.7.1.9] | (GenBank) soluble epoxide hydrolase / lipid-phosphate phosphatase (A)
+BEN06_bacbin.2.fa	KKPKAEDF_03415	CDS	990				K10216 2-hydroxymuconate-semialdehyde hydrolase [EC:3.7.1.9] | (GenBank) 2-hydroxymuconate semialdehyde hydrolase (A)
+BEN06_bacbin.41.fa	PKODJCEJ_02399	CDS	1074				K10216 2-hydroxymuconate-semialdehyde hydrolase [EC:3.7.1.9] | (GenBank) 2-hydroxy-6-oxo-2,4-heptadienoate hydrolase (A)
+BEN07_bacbin.12.fa	LKALFJON_01068	CDS	969				K10216 2-hydroxymuconate-semialdehyde hydrolase [EC:3.7.1.9] | (GenBank) hypothetical protein (A)
+BEN07_bacbin.12.fa	LKALFJON_01573	CDS	855				K10216 2-hydroxymuconate-semialdehyde hydrolase [EC:3.7.1.9] | (GenBank) dmpD; 2-hydroxymuconate semialdehyde hydrolase (A)
+BEN07_bacbin.12.fa	LKALFJON_02012	CDS	876				2-hydroxy-6-oxohepta-2,4-dienoate hydrolase [Anabaena sp. WA113]
+BEN07_bacbin.12.fa	LKALFJON_03252	CDS	957				K10216 2-hydroxymuconate-semialdehyde hydrolase [EC:3.7.1.9] | (GenBank) 2-hydroxy-6-oxo-2,4-heptadienoate hydrolase (A)
+BEN07_bacbin.12.fa	LKALFJON_03319	CDS	825				K10216 2-hydroxymuconate-semialdehyde hydrolase [EC:3.7.1.9] | (GenBank) 2-hydroxy-6-oxo-2,4-heptadienoate hydrolase (A)
+BEN09_bacbin.31.fa	BJBKMIID_03771	CDS	288				2-HYDROXY-6-OXOHEPTA-2,4-DIENOATE HYDROLASE [Wolinella succinogenes]
+BEN09_bacbin.51.fa	FKJIHLKJ_02980	CDS	261				2-hydroxy-6-oxohepta-2,4-dienoate hydrolase [Helicobacter canis]
+BEN10_bacbin.27.fa	HBINPEIK_00512	CDS	273				2-HYDROXY-6-OXOHEPTA-2,4-DIENOATE HYDROLASE [Wolinella succinogenes]
+BEN10_bacbin.31.fa	EBMMKCOO_01802	CDS	855				K10216 2-hydroxymuconate-semialdehyde hydrolase [EC:3.7.1.9] | (GenBank) hypothetical protein (A)
+BEN10_bacbin.31.fa	EBMMKCOO_03761	CDS	1023				K10216 2-hydroxymuconate-semialdehyde hydrolase [EC:3.7.1.9] | (GenBank) 2-hydroxy-6-oxo-2,4-heptadienoate hydrolase (A)
+BEN10_bacbin.31.fa	EBMMKCOO_03803	CDS	939				2-hydroxy-6-oxohepta-2,4-dienoate hydrolase, partial [Sorangium cellulosum]
+BEN10_bacbin.31.fa	EBMMKCOO_07566	CDS	921				K10216 2-hydroxymuconate-semialdehyde hydrolase [EC:3.7.1.9] | (GenBank) 2-hydroxymuconate semialdehyde hydrolase (A)
+BEN10_bacbin.35.fa	NGLCBJFK_01225	CDS	963				K10216 2-hydroxymuconate-semialdehyde hydrolase [EC:3.7.1.9] | (GenBank) putative hydrolase or acyltransferase of alpha/beta superfamily (A)
+BEN10_bacbin.35.fa	NGLCBJFK_01447	CDS	276				2-HYDROXY-6-OXOHEPTA-2,4-DIENOATE HYDROLASE [Wolinella succinogenes]
+BEN12_bacbin.28.fa	EDKOMLGA_00881	CDS	903				K10216 2-hydroxymuconate-semialdehyde hydrolase [EC:3.7.1.9] | (GenBank) 2-hydroxymuconate semialdehyde hydrolase (A)
+BEN12_bacbin.45.fa	DAMDDPCI_01610	CDS	816				K10216 2-hydroxymuconate-semialdehyde hydrolase [EC:3.7.1.9] | (GenBank) 2-hydroxy-6-oxo-2,4-heptadienoate hydrolase (A)
+BEN14_bacbin.22.fa	JCFGIEDN_03203	CDS	258				2-hydroxy-6-oxohepta-2,4-dienoate hydrolase [Helicobacter fennelliae MRY12-0050]
+BEN14_bacbin.30.fa	LPPGGKBD_02271	CDS	891				2-hydroxy-6-oxohepta-2,4-dienoate hydrolase (plasmid) [Rhodococcus jostii RHA1]
+BEN14_bacbin.5.fa	BFJOMKOP_02010	CDS	894				K10216 2-hydroxymuconate-semialdehyde hydrolase [EC:3.7.1.9] | (GenBank) hypothetical protein (A)
+BEN14_bacbin.7.fa	OLJOHBCC_00033	CDS	915				2-hydroxy-6-oxohepta-2,4-dienoate hydrolase, partial [Sorangium cellulosum]
+BEN15_bacbin.26.fa	NFFEPIBL_00529	CDS	966				K10216 2-hydroxymuconate-semialdehyde hydrolase [EC:3.7.1.9] | (GenBank) alpha/beta hydrolase fold protein(A)
+BEN15_bacbin.26.fa	NFFEPIBL_03146	CDS	771				K10216 2-hydroxymuconate-semialdehyde hydrolase [EC:3.7.1.9] | (GenBank) acetoin dehydrogenase (A)
+BEN15_bacbin.38.fa	CFFBEMJC_01965	CDS	963				K10216 2-hydroxymuconate-semialdehyde hydrolase [EC:3.7.1.9] | (GenBank) alpha/beta hydrolase fold familiy(A)
+BEN15_bacbin.38.fa	CFFBEMJC_02875	CDS	837				2-hydroxy-6-oxohepta-2,4-dienoate hydrolase (plasmid) [Cupriavidus metallidurans CH34]
+BEN16_bacbin.12.fa	FIHEOBIM_02200	CDS	876				K10216 2-hydroxymuconate-semialdehyde hydrolase [EC:3.7.1.9] | (GenBank) alpha/beta hydrolase (A)
+BEN16_bacbin.24.fa	MEPFDIPN_00154	CDS	801				2-hydroxy-6-oxohepta-2,4-dienoate hydrolase [Fusibacter sp. 3D3]
+BEN16_bacbin.24.fa	MEPFDIPN_00692	CDS	759				2-hydroxy-6-oxohepta-2,4-dienoate hydrolase [Fusibacter sp. 3D3]
+BEN16_bacbin.24.fa	MEPFDIPN_00693	CDS	1260				2-hydroxy-6-oxohepta-2,4-dienoate hydrolase [uncultured bacterium pL]
+BEN16_bacbin.39.fa	FCAGGMGM_02641	CDS	912				K10216 2-hydroxymuconate-semialdehyde hydrolase [EC:3.7.1.9] | (GenBank) hypothetical protein (A)
+BEN17_bacbin.26.fa	NCELHGEK_01806	CDS	276				2-hydroxy-6-oxohepta-2,4-dienoate hydrolase [Helicobacter fennelliae]
+BEN17_bacbin.42.fa	LIFBHGDN_00786	CDS	777				2-hydroxy-6-oxohepta-2,4-dienoate hydrolase (TodF) [Dethiobacter alkaliphilus AHT 1]
+BEN17_bacbin.9.fa	JPCMPJAK_00357	CDS	771				K10216 2-hydroxymuconate-semialdehyde hydrolase [EC:3.7.1.9] | (GenBank) acetoin dehydrogenase (A)
+BEN18_bacbin.42.fa	LCJKIMNE_00160	CDS	279				2-HYDROXY-6-OXOHEPTA-2,4-DIENOATE HYDROLASE [Wolinella succinogenes]
+BEN20_bacbin.14.fa	KFJBCAPH_03010	CDS	888				K10216 2-hydroxymuconate-semialdehyde hydrolase [EC:3.7.1.9] | (GenBank) alpha/beta fold hydrolase (A)
+BEN20_bacbin.18.fa	CLAMPJGD_01156	CDS	894				K10216 2-hydroxymuconate-semialdehyde hydrolase [EC:3.7.1.9] | (GenBank) hypothetical protein (A)
+BEN21_bacbin.18.fa	IFEBKFMN_01930	CDS	837				2-hydroxy-6-oxohepta-2,4-dienoate hydrolase [Planktothrix tepida PCC 9214]
+BEN21_bacbin.18.fa	IFEBKFMN_04021	CDS	894				2-hydroxy-6-oxohepta-2,4-dienoate hydrolase (plasmid) [Rhodococcus jostii RHA1]
+BEN21_bacbin.8.fa	ELDDCGEN_00430	CDS	909				K10216 2-hydroxymuconate-semialdehyde hydrolase [EC:3.7.1.9] | (GenBank) alpha/beta hydrolase (A)
+BEN21_bacbin.8.fa	ELDDCGEN_01151	CDS	858				2-hydroxy-6-oxohepta-2,4-dienoate hydrolase (plasmid) [Rhodococcus jostii RHA1]
+BEN22_bacbin.10.fa	MBEDICKJ_00302	CDS	912				K10216 2-hydroxymuconate-semialdehyde hydrolase [EC:3.7.1.9] | (GenBank) xylF; 2-hydroxymuconate semialdehyde hydrolase (A)
+BEN22_bacbin.10.fa	MBEDICKJ_02709	CDS	867				2-hydroxy-6-oxohepta-2,4-dienoate hydrolase (plasmid) [Rhodococcus jostii RHA1]
+BEN22_bacbin.21.fa	FDDJKGHA_00275	CDS	969				K10216 2-hydroxymuconate-semialdehyde hydrolase [EC:3.7.1.9] | (GenBank) proline iminopeptidase (A)
+BEN22_bacbin.21.fa	FDDJKGHA_00897	CDS	816				K10216 2-hydroxymuconate-semialdehyde hydrolase [EC:3.7.1.9] | (GenBank) hypothetical protein (A)
+BEN22_bacbin.21.fa	FDDJKGHA_02390	CDS	879				K10216 2-hydroxymuconate-semialdehyde hydrolase [EC:3.7.1.9] | (GenBank) 2-hydroxymuconate semialdehyde hydrolase (A)
+BEN22_bacbin.6.fa	LJGNKAJO_00627	CDS	957				2-hydroxy-6-oxohepta-2,4-dienoate hydrolase (TodF) [Dethiobacter alkaliphilus AHT 1]
+BEN22_bacbin.6.fa	LJGNKAJO_01610	CDS	888				K10216 2-hydroxymuconate-semialdehyde hydrolase [EC:3.7.1.9] | (GenBank) 2-hydroxy-6-oxo-2,4-heptadienoate hydrolase (A)
+BEN23_bacbin.27.fa	OFKHEKKN_00541	CDS	849				K10216 2-hydroxymuconate-semialdehyde hydrolase [EC:3.7.1.9] | (GenBank) alpha/beta hydrolase (A)
+BEN23_bacbin.27.fa	OFKHEKKN_02136	CDS	762				2-hydroxy-6-oxohepta-2,4-dienoate hydrolase [Capnocytophaga ochracea]
+BEN24_bacbin.11.fa	OFKKOCAK_00149	CDS	900				2-hydroxy-6-oxohepta-2,4-dienoate hydrolase [Sulfurovum sp. NBC37-1]
+BEN24_bacbin.11.fa	OFKKOCAK_01215	CDS	783				2-hydroxy-6-oxohepta-2,4-dienoate hydrolase [Calothrix sp. 336/3]
+BEN24_bacbin.4.fa	OJLHLFJG_00096	CDS	834				2-hydroxy-6-oxohepta-2,4-dienoate hydrolase (plasmid) [Cupriavidus metallidurans CH34]
+BEN24_bacbin.4.fa	OJLHLFJG_02197	CDS	963				K10216 2-hydroxymuconate-semialdehyde hydrolase [EC:3.7.1.9] | (GenBank) alpha/beta hydrolase fold familiy(A)
+BEN24_bacbin.4.fa	OJLHLFJG_04810	CDS	837				2-hydroxy-6-oxohepta-2,4-dienoate hydrolase (plasmid) [Cupriavidus metallidurans CH34]
+BEN24_bacbin.4.fa	OJLHLFJG_05184	CDS	894				K10216 2-hydroxymuconate-semialdehyde hydrolase [EC:3.7.1.9] | (GenBank) hypothetical protein (A)
+BEN-LIQUID-ALL_bacbin.102.fa	JEFHCKIJ_00551	CDS	903				K10216 2-hydroxymuconate-semialdehyde hydrolase [EC:3.7.1.9] | (GenBank) putative hydrolase or acyltransferase of alpha/beta superfamily (A)
+BEN-LIQUID-ALL_bacbin.102.fa	JEFHCKIJ_01733	CDS	963				K10216 2-hydroxymuconate-semialdehyde hydrolase [EC:3.7.1.9] | (GenBank) alpha/beta fold hydrolase (A)
+BEN-LIQUID-ALL_bacbin.117.fa	FIHOOLNL_00327	CDS	888				K10216 2-hydroxymuconate-semialdehyde hydrolase [EC:3.7.1.9] | (GenBank) alpha/beta hydrolase fold protein(A)
+BEN-LIQUID-ALL_bacbin.124.fa	IBJABJDN_00464	CDS	759				2-hydroxy-6-oxohepta-2,4-dienoate hydrolase [Fusibacter sp. 3D3]
+BEN-LIQUID-ALL_bacbin.13.fa	EDBIFBNP_01762	CDS	282				2-HYDROXY-6-OXOHEPTA-2,4-DIENOATE HYDROLASE [Wolinella succinogenes]
+BEN-LIQUID-ALL_bacbin.13.fa	EDBIFBNP_02102	CDS	882				K10216 2-hydroxymuconate-semialdehyde hydrolase [EC:3.7.1.9] | (GenBank) alpha/beta hydrolase fold protein(A)
+BEN-LIQUID-ALL_bacbin.20.fa	FBPPJCLE_00129	CDS	762				2-hydroxy-6-oxohepta-2,4-dienoate hydrolase [Capnocytophaga ochracea]
+BEN-LIQUID-ALL_bacbin.22.fa	NPEPPJFO_00563	CDS	861				K10216 2-hydroxymuconate-semialdehyde hydrolase [EC:3.7.1.9] | (GenBank) alpha/beta hydrolase fold familiy(A)
+BEN-LIQUID-ALL_bacbin.25.fa	GKDJMNPG_02021	CDS	927				K10216 2-hydroxymuconate-semialdehyde hydrolase [EC:3.7.1.9] | (GenBank) 2-hydroxy-6-oxo-2,4-heptadienoate hydrolase (A)
+BEN-LIQUID-ALL_bacbin.25.fa	GKDJMNPG_02062	CDS	780				K10216 2-hydroxymuconate-semialdehyde hydrolase [EC:3.7.1.9] | (GenBank) alpha/beta hydrolase fold protein(A)
+BEN-LIQUID-ALL_bacbin.26.fa	GCCLHNCO_01817	CDS	972				K10216 2-hydroxymuconate-semialdehyde hydrolase [EC:3.7.1.9] | (GenBank) 2-hydroxy-6-oxo-2,4-heptadienoate hydrolase (A)
+BEN-LIQUID-ALL_bacbin.26.fa	GCCLHNCO_02013	CDS	888				K10216 2-hydroxymuconate-semialdehyde hydrolase [EC:3.7.1.9] | (GenBank) alpha/beta fold hydrolase (A)
+BEN-LIQUID-ALL_bacbin.26.fa	GCCLHNCO_03015	CDS	816				K10216 2-hydroxymuconate-semialdehyde hydrolase [EC:3.7.1.9] | (GenBank) 2-hydroxymuconate-semialdehyde hydrolase(A)
+BEN-LIQUID-ALL_bacbin.26.fa	GCCLHNCO_03047	CDS	999				K10216 2-hydroxymuconate-semialdehyde hydrolase [EC:3.7.1.9] | (GenBank) alpha/beta hydrolase fold familiy(A)
+BEN-LIQUID-ALL_bacbin.30.fa	LJPLNAJF_01561	CDS	900				K10216 2-hydroxymuconate-semialdehyde hydrolase [EC:3.7.1.9] | (GenBank) 2-hydroxymuconic semialdehyde hydrolase(A)
+BEN-LIQUID-ALL_bacbin.30.fa	LJPLNAJF_01662	CDS	903				K10216 2-hydroxymuconate-semialdehyde hydrolase [EC:3.7.1.9] | (GenBank) hypothetical protein (A)
+BEN-LIQUID-ALL_bacbin.37.fa	DDFBNKBA_00454	CDS	744				2-hydroxy-6-oxohepta-2,4-dienoate hydrolase (TodF) [Dethiobacter alkaliphilus AHT 1]
+BEN-LIQUID-ALL_bacbin.38.fa	NMFMLAJE_01114	CDS	879				K10216 2-hydroxymuconate-semialdehyde hydrolase [EC:3.7.1.9] | (GenBank) hypothetical protein (A)
+BEN-LIQUID-ALL_bacbin.39.fa	JAEIHFBK_01707	CDS	807				K10216 2-hydroxymuconate-semialdehyde hydrolase [EC:3.7.1.9] | (GenBank) 2-hydroxy-6-oxo-2,4-heptadienoate hydrolase (A)
+BEN-LIQUID-ALL_bacbin.39.fa	JAEIHFBK_01919	CDS	279				2-HYDROXY-6-OXOHEPTA-2,4-DIENOATE HYDROLASE [Wolinella succinogenes]
+BEN-LIQUID-ALL_bacbin.45.fa	FEPCEAGL_00963	CDS	759				2-hydroxy-6-oxohepta-2,4-dienoate hydrolase [Capnocytophaga ochracea]
+BEN-LIQUID-ALL_bacbin.45.fa	FEPCEAGL_02165	CDS	273				2-HYDROXY-6-OXOHEPTA-2,4-DIENOATE HYDROLASE [Wolinella succinogenes]
+BEN-LIQUID-ALL_bacbin.52.fa	KAFMNHJG_00797	CDS	801				2-hydroxy-6-oxohepta-2,4-dienoate hydrolase [Fusibacter sp. 3D3]
+BEN-LIQUID-ALL_bacbin.6.fa	OCGNENGO_03198	CDS	777				2-hydroxy-6-oxohepta-2,4-dienoate hydrolase (TodF) [Dethiobacter alkaliphilus AHT 1]
+BEN-LIQUID-ALL_bacbin.6.fa	OCGNENGO_03240	CDS	816				K10216 2-hydroxymuconate-semialdehyde hydrolase [EC:3.7.1.9] | (GenBank) hypothetical protein (A)
+BEN-LIQUID-ALL_bacbin.6.fa	OCGNENGO_03371	CDS	873				K10216 2-hydroxymuconate-semialdehyde hydrolase [EC:3.7.1.9] | (GenBank) 2-hydroxy-6-oxo-2,4-heptadienoate hydrolase (A)
+BEN-LIQUID-ALL_bacbin.77.fa	AGFOJMGI_01478	CDS	297				2-hydroxy-6-oxohepta-2,4-dienoate hydrolase [Helicobacter fennelliae MRY12-0050]
+BEN-LIQUID-ALL_bacbin.85.fa	MKKHFJJK_00287	CDS	1404				2-hydroxy-6-oxohepta-2,4-dienoate hydrolase [uncultured bacterium pL]
+BEN-LIQUID-ALL_bacbin.85.fa	MKKHFJJK_00288	CDS	759				2-hydroxy-6-oxohepta-2,4-dienoate hydrolase [Fusibacter sp. 3D3]
+BEN-LIQUID-ALL_bacbin.85.fa	MKKHFJJK_01043	CDS	1254				2-hydroxy-6-oxohepta-2,4-dienoate hydrolase [uncultured bacterium pL]
+BEN-LIQUID-ALL_bacbin.86.fa	NAFCBHKD_00187	CDS	750				2-hydroxy-6-oxohepta-2,4-dienoate hydrolase [Fusibacter sp. 3D3]
+BEN-LIQUID-ALL_bacbin.86.fa	NAFCBHKD_00188	CDS	1434				2-hydroxy-6-oxohepta-2,4-dienoate hydrolase [uncultured bacterium pL]
+BEN-LIQUID-ALL_bacbin.90.fa	BHIBLEBP_00595	CDS	273				2-hydroxy-6-oxohepta-2,4-dienoate hydrolase [Helicobacter fennelliae]
+BEN-LIQUID-ALL_bacbin.90.fa	BHIBLEBP_01351	CDS	759				2-hydroxy-6-oxohepta-2,4-dienoate hydrolase [Capnocytophaga ochracea]
+BEN-LIQUID-T2_bacbin.102.fa	KDJFCFCJ_00329	CDS	915				K10216 2-hydroxymuconate-semialdehyde hydrolase [EC:3.7.1.9] | (GenBank) alpha/beta hydrolase fold familiy(A)
+BEN-LIQUID-T2_bacbin.102.fa	KDJFCFCJ_03264	CDS	909				K10216 2-hydroxymuconate-semialdehyde hydrolase [EC:3.7.1.9] | (GenBank) 2-hydroxymuconate semialdehyde hydrolase (A)
+BEN-LIQUID-T2_bacbin.102.fa	KDJFCFCJ_03278	CDS	900				K10216 2-hydroxymuconate-semialdehyde hydrolase [EC:3.7.1.9] | (GenBank) alpha/beta hydrolase fold familiy(A)
+BEN-LIQUID-T2_bacbin.17.fa	IPFOBIFB_03039	CDS	873				K10216 2-hydroxymuconate-semialdehyde hydrolase [EC:3.7.1.9] | (GenBank) 2,6-dioxo-6-phenylhexa-3-enoate hydrolase (A)
+BEN-LIQUID-T2_bacbin.36.fa	FIDCJBJO_01490	CDS	849				2-hydroxy-6-oxohepta-2,4-dienoate hydrolase (TodF) [Dethiobacter alkaliphilus AHT 1]
+BEN-LIQUID-T2_bacbin.41.fa	GKDBHCAC_00874	CDS	966				K10216 2-hydroxymuconate-semialdehyde hydrolase [EC:3.7.1.9] | (GenBank) alpha/beta hydrolase fold (A)
+BEN-LIQUID-T2_bacbin.41.fa	GKDBHCAC_00976	CDS	969				K10216 2-hydroxymuconate-semialdehyde hydrolase [EC:3.7.1.9] | (GenBank) 2-hydroxymuconate semialdehyde hydrolase (A)
+BEN-LIQUID-T2_bacbin.50.fa	MHANOPDC_00825	CDS	681				2-hydroxy-6-oxohepta-2,4-dienoate hydrolase [Arcobacter sp.]
+BEN-LIQUID-T2_bacbin.53.fa	DBLHPPCG_03559	CDS	858				2-hydroxy-6-oxohepta-2,4-dienoate hydrolase (plasmid) [Rhodococcus jostii RHA1]
+BEN-LIQUID-T2_bacbin.53.fa	DBLHPPCG_04407	CDS	909				K10216 2-hydroxymuconate-semialdehyde hydrolase [EC:3.7.1.9] | (GenBank) alpha/beta hydrolase (A)
+BEN-LIQUID-T2_bacbin.76.fa	FEGPMMJO_04105	CDS	903				2-hydroxy-6-oxohepta-2,4-dienoate hydrolase [Aphanothece hegewaldii CCALA 016]
+BEN-LIQUID-T2_bacbin.76.fa	FEGPMMJO_04658	CDS	873				K10216 2-hydroxymuconate-semialdehyde hydrolase [EC:3.7.1.9] | (GenBank) alpha/beta fold hydrolase (A)
+BEN-LIQUID-T3_bacbin.22.fa	KNBABFOB_00119	CDS	888				K10216 2-hydroxymuconate-semialdehyde hydrolase [EC:3.7.1.9] | (GenBank) 2-hydroxy-6-oxo-2,4-heptadienoate hydrolase (A)
+BEN-LIQUID-T3_bacbin.22.fa	KNBABFOB_01674	CDS	894				2-hydroxy-6-oxohepta-2,4-dienoate hydrolase (TodF) [Dethiobacter alkaliphilus AHT 1]
+BEN-LIQUID-T3_bacbin.7.fa	KJJLAJJO_00403	CDS	972				K10216 2-hydroxymuconate-semialdehyde hydrolase [EC:3.7.1.9] | (GenBank) hypothetical protein (A)
+BEN-LIQUID-T3_bacbin.7.fa	KJJLAJJO_02285	CDS	975				K10216 2-hydroxymuconate-semialdehyde hydrolase [EC:3.7.1.9] | (GenBank) dmpD; 2-hydroxymuconate semialdehyde hydrolase (A)
+BEN-LIQUID-T3_bacbin.7.fa	KJJLAJJO_03143	CDS	297				2-HYDROXY-6-OXOHEPTA-2,4-DIENOATE HYDROLASE [Wolinella succinogenes]
+BEN-LIQUID-T4_bacbin.10.fa	ENLINDDJ_00363	CDS	876				K10216 2-hydroxymuconate-semialdehyde hydrolase [EC:3.7.1.9] | (GenBank) alpha/beta hydrolase fold protein(A)
+BEN-LIQUID-T4_bacbin.10.fa	ENLINDDJ_00365	CDS	840				K10216 2-hydroxymuconate-semialdehyde hydrolase [EC:3.7.1.9] | (GenBank) alpha/beta fold hydrolase (A)
+BEN-LIQUID-T4_bacbin.10.fa	ENLINDDJ_00956	CDS	879				2-hydroxy-6-oxohepta-2,4-dienoate hydrolase (plasmid) [Rhodococcus jostii RHA1]
+BEN-LIQUID-T4_bacbin.10.fa	ENLINDDJ_03718	CDS	861				K10216 2-hydroxymuconate-semialdehyde hydrolase [EC:3.7.1.9] | (GenBank) 2-hydroxymuconic semialdehyde hydrolase(A)
+BEN-LIQUID-T4_bacbin.10.fa	ENLINDDJ_03742	CDS	858				2-hydroxy-6-oxohepta-2,4-dienoate hydrolase (plasmid) [Rhodococcus jostii RHA1]
+BEN-LIQUID-T4_bacbin.31.fa	MEOBHNBJ_01764	CDS	273				2-hydroxy-6-oxohepta-2,4-dienoate hydrolase [Helicobacter fennelliae]
+BEN-LIQUID-T4_bacbin.52.fa	PGMPOFOB_00672	CDS	510				2-hydroxy-6-oxohepta-2,4-dienoate hydrolase [Fusibacter sp. 3D3]
+BEN-LIQUID-T4_bacbin.52.fa	PGMPOFOB_00673	CDS	1434				2-hydroxy-6-oxohepta-2,4-dienoate hydrolase [uncultured bacterium pL]
+BEN-SOLID-ALL_bacbin.104.fa	JMFKPEFO_01366	CDS	273				2-HYDROXY-6-OXOHEPTA-2,4-DIENOATE HYDROLASE [Wolinella succinogenes]
+BEN-SOLID-ALL_bacbin.110.fa	NGKIAGLJ_02508	CDS	288				2-HYDROXY-6-OXOHEPTA-2,4-DIENOATE HYDROLASE [Wolinella succinogenes]
+BEN-SOLID-ALL_bacbin.111.fa	NKLEGFHN_02582	CDS	870				K10216 2-hydroxymuconate-semialdehyde hydrolase [EC:3.7.1.9] | (GenBank) alpha/beta fold hydrolase (A)
+BEN-SOLID-ALL_bacbin.111.fa	NKLEGFHN_04379	CDS	1611				2-hydroxy-6-oxohepta-2,4-dienoate hydrolase [uncultured bacterium pL]
+BEN-SOLID-ALL_bacbin.111.fa	NKLEGFHN_04380	CDS	807				2-hydroxy-6-oxohepta-2,4-dienoate hydrolase [Marinococcus halophilus]
+BEN-SOLID-ALL_bacbin.111.fa	NKLEGFHN_05010	CDS	846				K10216 2-hydroxymuconate-semialdehyde hydrolase [EC:3.7.1.9] | (GenBank) 2-hydroxymuconic semialdehyde hydrolase(A)
+BEN-SOLID-ALL_bacbin.112.fa	IAPIOHFD_00028	CDS	747				2-hydroxy-6-oxohepta-2,4-dienoate hydrolase (TodF) [Dethiobacter alkaliphilus AHT 1]
+BEN-SOLID-ALL_bacbin.112.fa	IAPIOHFD_01357	CDS	861				K10216 2-hydroxymuconate-semialdehyde hydrolase [EC:3.7.1.9] | (GenBank) hypothetical protein (A)
+BEN-SOLID-ALL_bacbin.112.fa	IAPIOHFD_01910	CDS	783				2-hydroxy-6-oxohepta-2,4-dienoate hydrolase [Marinococcus halophilus]
+BEN-SOLID-ALL_bacbin.112.fa	IAPIOHFD_01911	CDS	1635				2-hydroxy-6-oxohepta-2,4-dienoate hydrolase [uncultured bacterium pL]
+BEN-SOLID-ALL_bacbin.112.fa	IAPIOHFD_04391	CDS	855				K10216 2-hydroxymuconate-semialdehyde hydrolase [EC:3.7.1.9] | (GenBank) dmpD; 2-hydroxymuconate semialdehyde hydrolase (A)
+BEN-SOLID-ALL_bacbin.112.fa	IAPIOHFD_04517	CDS	873				K10216 2-hydroxymuconate-semialdehyde hydrolase [EC:3.7.1.9] | (GenBank) alpha/beta fold hydrolase (A)
+BEN-SOLID-ALL_bacbin.115.fa	PPNDCAJL_01571	CDS	780				2-hydroxy-6-oxohepta-2,4-dienoate hydrolase [Capnocytophaga ochracea]
+BEN-SOLID-ALL_bacbin.120.fa	KEMBLPBI_01367	CDS	903				K10216 2-hydroxymuconate-semialdehyde hydrolase [EC:3.7.1.9] | (GenBank) hypothetical protein (A)
+BEN-SOLID-ALL_bacbin.120.fa	KEMBLPBI_01537	CDS	1122				K10216 2-hydroxymuconate-semialdehyde hydrolase [EC:3.7.1.9] | (GenBank) alpha/beta hydrolase fold familiy(A)
+BEN-SOLID-ALL_bacbin.120.fa	KEMBLPBI_03951	CDS	900				K10216 2-hydroxymuconate-semialdehyde hydrolase [EC:3.7.1.9] | (GenBank) 2-hydroxymuconic semialdehyde hydrolase(A)
+BEN-SOLID-ALL_bacbin.122.fa	IIOBKMAO_01921	CDS	888				K10216 2-hydroxymuconate-semialdehyde hydrolase [EC:3.7.1.9] | (GenBank) 2-hydroxy-6-oxo-2,4-heptadienoate hydrolase (A)
+BEN-SOLID-ALL_bacbin.123.fa	NMJJCFDJ_01871	CDS	846				K10216 2-hydroxymuconate-semialdehyde hydrolase [EC:3.7.1.9] | (GenBank) alpha/beta fold hydrolase (A)
+BEN-SOLID-ALL_bacbin.123.fa	NMJJCFDJ_03917	CDS	819				K10216 2-hydroxymuconate-semialdehyde hydrolase [EC:3.7.1.9] | (GenBank) hypothetical protein (A)
+BEN-SOLID-ALL_bacbin.123.fa	NMJJCFDJ_04202	CDS	273				2-hydroxy-6-oxohepta-2,4-dienoate hydrolase [Helicobacter fennelliae MRY12-0050]
+BEN-SOLID-ALL_bacbin.124.fa	GBDGNDDD_00120	CDS	783				K10216 2-hydroxymuconate-semialdehyde hydrolase [EC:3.7.1.9] | (GenBank) 2-hydroxy-6-oxo-2,4-heptadienoate hydrolase (A)
+BEN-SOLID-ALL_bacbin.125.fa	PCJMDOEC_00061	CDS	729				2-hydroxy-6-oxohepta-2,4-dienoate hydrolase (TodF) [Dethiobacter alkaliphilus AHT 1]
+BEN-SOLID-ALL_bacbin.125.fa	PCJMDOEC_00308	CDS	822				K10216 2-hydroxymuconate-semialdehyde hydrolase [EC:3.7.1.9] | (GenBank) hypothetical protein (A)
+BEN-SOLID-ALL_bacbin.125.fa	PCJMDOEC_01666	CDS	663				K10216 2-hydroxymuconate-semialdehyde hydrolase [EC:3.7.1.9] | (GenBank) alpha/beta fold hydrolase (A)
+BEN-SOLID-ALL_bacbin.125.fa	PCJMDOEC_01717	CDS	825				K10216 2-hydroxymuconate-semialdehyde hydrolase [EC:3.7.1.9] | (GenBank) hypothetical protein (A)
+BEN-SOLID-ALL_bacbin.125.fa	PCJMDOEC_02733	CDS	888				2-hydroxy-6-oxohepta-2,4-dienoate hydrolase [Fischerella thermalis WC119]
+BEN-SOLID-ALL_bacbin.125.fa	PCJMDOEC_02773	CDS	852				K10216 2-hydroxymuconate-semialdehyde hydrolase [EC:3.7.1.9] | (GenBank) putative 2-hydroxy-6-oxo-7-methylocta-2,4-dienoate hydrolase (A)
+BEN-SOLID-ALL_bacbin.125.fa	PCJMDOEC_02934	CDS	798				K10216 2-hydroxymuconate-semialdehyde hydrolase [EC:3.7.1.9] | (GenBank) 2-hydroxymuconate semialdehyde hydrolase (A)
+BEN-SOLID-ALL_bacbin.125.fa	PCJMDOEC_03696	CDS	951				K10216 2-hydroxymuconate-semialdehyde hydrolase [EC:3.7.1.9] | (GenBank) alpha/beta fold hydrolase (A)
+BEN-SOLID-ALL_bacbin.12.fa	JOLPMCMF_01132	CDS	972				K10216 2-hydroxymuconate-semialdehyde hydrolase [EC:3.7.1.9] | (GenBank) 2-hydroxy-6-oxo-2,4-heptadienoate hydrolase (A)
+BEN-SOLID-ALL_bacbin.14.fa	APDJDEHB_02182	CDS	573				2-hydroxy-6-oxohepta-2,4-dienoate hydrolase (TodF) [Dethiobacter alkaliphilus AHT 1]
+BEN-SOLID-ALL_bacbin.154.fa	DIHAGACM_00277	CDS	963				K10216 2-hydroxymuconate-semialdehyde hydrolase [EC:3.7.1.9] | (GenBank) putative hydrolase or acyltransferase of alpha/beta superfamily (A)
+BEN-SOLID-ALL_bacbin.154.fa	DIHAGACM_00465	CDS	915				2-hydroxy-6-oxohepta-2,4-dienoate hydrolase, partial [Sorangium cellulosum]
+BEN-SOLID-ALL_bacbin.154.fa	DIHAGACM_03248	CDS	276				2-HYDROXY-6-OXOHEPTA-2,4-DIENOATE HYDROLASE [Wolinella succinogenes]
+BEN-SOLID-ALL_bacbin.157.fa	IFIFDNBG_00214	CDS	288				2-HYDROXY-6-OXOHEPTA-2,4-DIENOATE HYDROLASE [Wolinella succinogenes]
+BEN-SOLID-ALL_bacbin.157.fa	IFIFDNBG_03948	CDS	990				K10216 2-hydroxymuconate-semialdehyde hydrolase [EC:3.7.1.9] | (GenBank) alpha/beta fold hydrolase (A)
+BEN-SOLID-ALL_bacbin.163.fa	IKDJGBHM_01254	CDS	942				K10216 2-hydroxymuconate-semialdehyde hydrolase [EC:3.7.1.9] | (GenBank) predicted Hydrolase or acyltransferase(alpha/beta hydrolase superfamily) (A)
+BEN-SOLID-ALL_bacbin.163.fa	IKDJGBHM_02887	CDS	1065				K10216 2-hydroxymuconate-semialdehyde hydrolase [EC:3.7.1.9] | (GenBank) 2-hydroxy-6-oxo-2,4-heptadienoate hydrolase (A)
+BEN-SOLID-ALL_bacbin.166.fa	DKGNAPBE_01313	CDS	750				2-hydroxy-6-oxohepta-2,4-dienoate hydrolase [Fusibacter sp. 3D3]
+BEN-SOLID-ALL_bacbin.167.fa	CGOEOKGI_00118	CDS	741				2-hydroxy-6-oxohepta-2,4-dienoate hydrolase [Fusibacter sp. 3D3]
+BEN-SOLID-ALL_bacbin.170.fa	FPOGGHAN_00907	CDS	1002				K10216 2-hydroxymuconate-semialdehyde hydrolase [EC:3.7.1.9] | (GenBank) 2,6-dioxo-6-phenylhexa-3-enoate hydrolase (A)
+BEN-SOLID-ALL_bacbin.170.fa	FPOGGHAN_02411	CDS	879				K10216 2-hydroxymuconate-semialdehyde hydrolase [EC:3.7.1.9] | (GenBank) alpha/beta hydrolase fold familiy(A)
+BEN-SOLID-ALL_bacbin.174.fa	AHKNFFAH_00647	CDS	921				K10216 2-hydroxymuconate-semialdehyde hydrolase [EC:3.7.1.9] | (GenBank) xylF; 2-hydroxymuconate semialdehyde hydrolase (A)
+BEN-SOLID-ALL_bacbin.174.fa	AHKNFFAH_01539	CDS	858				2-hydroxy-6-oxohepta-2,4-dienoate hydrolase (plasmid) [Rhodococcus jostii RHA1]
+BEN-SOLID-ALL_bacbin.177.fa	NPGGJCKB_00981	CDS	294				2-HYDROXY-6-OXOHEPTA-2,4-DIENOATE HYDROLASE [Caminibacter mediatlanticus TB-2]
+BEN-SOLID-ALL_bacbin.17.fa	FFFPONFB_02347	CDS	903				K10216 2-hydroxymuconate-semialdehyde hydrolase [EC:3.7.1.9] | (GenBank) alpha/beta hydrolase (A)
+BEN-SOLID-ALL_bacbin.181.fa	OFEMJFCJ_00314	CDS	882				K10216 2-hydroxymuconate-semialdehyde hydrolase [EC:3.7.1.9] | (GenBank) 2,6-dioxo-6-phenylhexa-3-enoate hydrolase (A)
+BEN-SOLID-ALL_bacbin.181.fa	OFEMJFCJ_04095	CDS	777				K10216 2-hydroxymuconate-semialdehyde hydrolase [EC:3.7.1.9] | (GenBank) alpha/beta hydrolase fold protein(A)
+BEN-SOLID-ALL_bacbin.186.fa	DIIBFHMB_01005	CDS	894				K10216 2-hydroxymuconate-semialdehyde hydrolase [EC:3.7.1.9] | (GenBank) 2-hydroxy-6-oxo-2,4-heptadienoate hydrolase (A)
+BEN-SOLID-ALL_bacbin.186.fa	DIIBFHMB_02106	CDS	282				2-HYDROXY-6-OXOHEPTA-2,4-DIENOATE HYDROLASE [Wolinella succinogenes]
+BEN-SOLID-ALL_bacbin.187.fa	OIKJMICL_00054	CDS	972				2-hydroxy-6-oxohepta-2,4-dienoate hydrolase [Stenomitos frigidus ULC18]
+BEN-SOLID-ALL_bacbin.187.fa	OIKJMICL_01479	CDS	921				K10216 2-hydroxymuconate-semialdehyde hydrolase [EC:3.7.1.9] | (GenBank) 2-hydroxy-6-oxo-2,4-heptadienoate hydrolase (A)
+BEN-SOLID-ALL_bacbin.192.fa	DNLGKDJK_01227	CDS	921				K10216 2-hydroxymuconate-semialdehyde hydrolase [EC:3.7.1.9] | (GenBank) 2-hydroxy-6-oxo-6-phenylhexa-2,4-dienoate hydrolase (A)
+BEN-SOLID-ALL_bacbin.193.fa	ABNKJHEF_05002	CDS	867				K10216 2-hydroxymuconate-semialdehyde hydrolase [EC:3.7.1.9] | (GenBank) alpha/beta hydrolase (A)
+BEN-SOLID-ALL_bacbin.194.fa	PDPGGHNL_00508	CDS	957				2-hydroxy-6-oxohepta-2,4-dienoate hydrolase [Calothrix desertica PCC 7102]
+BEN-SOLID-ALL_bacbin.194.fa	PDPGGHNL_01721	CDS	852				K10216 2-hydroxymuconate-semialdehyde hydrolase [EC:3.7.1.9] | (GenBank) 2,6-dioxo-6-phenylhexa-3-enoate hydrolase(A)
+BEN-SOLID-ALL_bacbin.195.fa	BMDFHDOF_00490	CDS	759				2-hydroxy-6-oxohepta-2,4-dienoate hydrolase [Planktothrix sp. PCC]
+BEN-SOLID-ALL_bacbin.195.fa	BMDFHDOF_01877	CDS	273				2-hydroxy-6-oxohepta-2,4-dienoate hydrolase [Helicobacter fennelliae]
+BEN-SOLID-ALL_bacbin.196.fa	ENOCIOMP_00777	CDS	882				2-hydroxy-6-oxohepta-2,4-dienoate hydrolase (plasmid) [Cupriavidus metallidurans CH34]
+BEN-SOLID-ALL_bacbin.1.fa	KPLFDDEL_00306	CDS	972				K10216 2-hydroxymuconate-semialdehyde hydrolase [EC:3.7.1.9] | (GenBank) hypothetical protein (A)
+BEN-SOLID-ALL_bacbin.1.fa	KPLFDDEL_01423	CDS	975				K10216 2-hydroxymuconate-semialdehyde hydrolase [EC:3.7.1.9] | (GenBank) dmpD; 2-hydroxymuconate semialdehyde hydrolase (A)
+BEN-SOLID-ALL_bacbin.1.fa	KPLFDDEL_03471	CDS	297				2-HYDROXY-6-OXOHEPTA-2,4-DIENOATE HYDROLASE [Wolinella succinogenes]
+BEN-SOLID-ALL_bacbin.200.fa	NAMBIIAK_01106	CDS	900				K10216 2-hydroxymuconate-semialdehyde hydrolase [EC:3.7.1.9] | (GenBank) 2-hydroxy-6-oxo-2,4-heptadienoate hydrolase (A)
+BEN-SOLID-ALL_bacbin.200.fa	NAMBIIAK_05384	CDS	912				K10216 2-hydroxymuconate-semialdehyde hydrolase [EC:3.7.1.9] | (GenBank) predicted Hydrolase or acyltransferase(alpha/beta hydrolase superfamily) (A)
+BEN-SOLID-ALL_bacbin.203.fa	IIIBKOEJ_01593	CDS	861				K10216 2-hydroxymuconate-semialdehyde hydrolase [EC:3.7.1.9] | (GenBank) predicted Hydrolase or acyltransferase(alpha/beta hydrolase superfamily) (A)
+BEN-SOLID-ALL_bacbin.203.fa	IIIBKOEJ_01724	CDS	870				2-hydroxy-6-oxohepta-2,4-dienoate hydrolase [Nostoc linckia z1]
+BEN-SOLID-ALL_bacbin.203.fa	IIIBKOEJ_03158	CDS	957				K10216 2-hydroxymuconate-semialdehyde hydrolase [EC:3.7.1.9] | (GenBank) 2-hydroxymuconate semialdehyde hydrolase(A)
+BEN-SOLID-ALL_bacbin.205.fa	HLOKKFJM_00814	CDS	762				2-hydroxy-6-oxohepta-2,4-dienoate hydrolase [Fusibacter sp. 3D3]
+BEN-SOLID-ALL_bacbin.205.fa	HLOKKFJM_00818	CDS	690				2-hydroxy-6-oxohepta-2,4-dienoate hydrolase [Marinococcus halophilus]
+BEN-SOLID-ALL_bacbin.209.fa	ODAPLOLL_02678	CDS	279				2-hydroxy-6-oxohepta-2,4-dienoate hydrolase [Helicobacter fennelliae]
+BEN-SOLID-ALL_bacbin.209.fa	ODAPLOLL_06564	CDS	969				2-hydroxy-6-oxohepta-2,4-dienoate hydrolase [Synechococcus sp. UTEX 2973]
+BEN-SOLID-ALL_bacbin.218.fa	BGJOGADM_00774	CDS	972				2-hydroxy-6-oxohepta-2,4-dienoate hydrolase [filamentous cyanobacterium Phorm 46]
+BEN-SOLID-ALL_bacbin.218.fa	BGJOGADM_03603	CDS	867				K10216 2-hydroxymuconate-semialdehyde hydrolase [EC:3.7.1.9] | (GenBank) alpha/beta hydrolase fold familiy(A)
+BEN-SOLID-ALL_bacbin.222.fa	IOEENHPM_02488	CDS	855				2-hydroxy-6-oxohepta-2,4-dienoate hydrolase (plasmid) [Cupriavidus metallidurans CH34]
+BEN-SOLID-ALL_bacbin.227.fa	OFDBGODF_00194	CDS	852				2-hydroxy-6-oxohepta-2,4-dienoate hydrolase (TodF) [Dethiobacter alkaliphilus AHT 1]
+BEN-SOLID-ALL_bacbin.227.fa	OFDBGODF_00256	CDS	300				2-hydroxy-6-oxohepta-2,4-dienoate hydrolase [Helicobacter fennelliae MRY12-0050]
+BEN-SOLID-ALL_bacbin.232.fa	FBOPHGCB_01479	CDS	894				2-hydroxy-6-oxohepta-2,4-dienoate hydrolase (plasmid) [Rhodococcus jostii RHA1]
+BEN-SOLID-ALL_bacbin.232.fa	FBOPHGCB_01554	CDS	975				2-hydroxy-6-oxohepta-2,4-dienoate hydrolase [Aphanizomenon flos-aquae 2012/KM1/D3]
+BEN-SOLID-ALL_bacbin.23.fa	OFDHGNMK_01337	CDS	801				K10216 2-hydroxymuconate-semialdehyde hydrolase [EC:3.7.1.9] | (GenBank) hypothetical protein (A)
+BEN-SOLID-ALL_bacbin.23.fa	OFDHGNMK_02712	CDS	828				K10216 2-hydroxymuconate-semialdehyde hydrolase [EC:3.7.1.9] | (GenBank) soluble epoxide hydrolase / lipid-phosphate phosphatase (A)
+BEN-SOLID-ALL_bacbin.25.fa	NOFDJGIC_00787	CDS	744				2-hydroxy-6-oxohepta-2,4-dienoate hydrolase (TodF) [Dethiobacter alkaliphilus AHT 1]
+BEN-SOLID-ALL_bacbin.26.fa	FNLHNPHB_00495	CDS	900				K10216 2-hydroxymuconate-semialdehyde hydrolase [EC:3.7.1.9] | (GenBank) hypothetical protein (A)
+BEN-SOLID-ALL_bacbin.27.fa	LOFDJIKG_00620	CDS	888				K10216 2-hydroxymuconate-semialdehyde hydrolase [EC:3.7.1.9] | (GenBank) 2-hydroxy-6-oxo-2,4-heptadienoate hydrolase (A)
+BEN-SOLID-ALL_bacbin.27.fa	LOFDJIKG_01390	CDS	891				K10216 2-hydroxymuconate-semialdehyde hydrolase [EC:3.7.1.9] | (GenBank) hypothetical protein (A)
+BEN-SOLID-ALL_bacbin.27.fa	LOFDJIKG_01711	CDS	939				2-hydroxy-6-oxohepta-2,4-dienoate hydrolase [Anabaena sp. CRKS33]
+BEN-SOLID-ALL_bacbin.27.fa	LOFDJIKG_02667	CDS	783				putative 2-hydroxy-6-oxohepta-2,4-dienoate hydrolase [Synechococcus sp.]
+BEN-SOLID-ALL_bacbin.28.fa	JOGLOPHO_01299	CDS	864				2-hydroxy-6-oxohepta-2,4-dienoate hydrolase (plasmid) [Cupriavidus metallidurans CH34]
+BEN-SOLID-ALL_bacbin.28.fa	JOGLOPHO_02797	CDS	888				K10216 2-hydroxymuconate-semialdehyde hydrolase [EC:3.7.1.9] | (GenBank) hypothetical protein (A)
+BEN-SOLID-ALL_bacbin.34.fa	CDDAGCGE_00350	CDS	750				2-hydroxy-6-oxohepta-2,4-dienoate hydrolase (TodF) [uncultured Desulfobacterium sp.]
+BEN-SOLID-ALL_bacbin.34.fa	CDDAGCGE_00570	CDS	273				2-hydroxy-6-oxohepta-2,4-dienoate hydrolase [Helicobacter canis]
+BEN-SOLID-ALL_bacbin.41.fa	IABDNEJD_01641	CDS	870				2-hydroxy-6-oxohepta-2,4-dienoate hydrolase [Scytonema sp. HK-05]
+BEN-SOLID-ALL_bacbin.43.fa	DCDGFCGL_02763	CDS	960				K10216 2-hydroxymuconate-semialdehyde hydrolase [EC:3.7.1.9] | (GenBank) soluble epoxide hydrolase / lipid-phosphate phosphatase (A)
+BEN-SOLID-ALL_bacbin.44.fa	NCOJDICM_01413	CDS	744				2-hydroxy-6-oxohepta-2,4-dienoate hydrolase (TodF) [Dethiobacter alkaliphilus AHT 1]
+BEN-SOLID-ALL_bacbin.44.fa	NCOJDICM_02008	CDS	987				K10216 2-hydroxymuconate-semialdehyde hydrolase [EC:3.7.1.9] | (GenBank) 2-hydroxy-6-oxo-2,4-heptadienoate hydrolase (A)
+BEN-SOLID-ALL_bacbin.47.fa	EDKAOBCH_00487	CDS	849				2-hydroxy-6-oxohepta-2,4-dienoate hydrolase (TodF) [Dethiobacter alkaliphilus AHT 1]
+BEN-SOLID-ALL_bacbin.47.fa	EDKAOBCH_01021	CDS	891				K10216 2-hydroxymuconate-semialdehyde hydrolase [EC:3.7.1.9] | (GenBank) alpha/beta hydrolase fold protein(A)
+BEN-SOLID-ALL_bacbin.47.fa	EDKAOBCH_02305	CDS	279				2-HYDROXY-6-OXOHEPTA-2,4-DIENOATE HYDROLASE [Wolinella succinogenes]
+BEN-SOLID-ALL_bacbin.47.fa	EDKAOBCH_02648	CDS	810				K10216 2-hydroxymuconate-semialdehyde hydrolase [EC:3.7.1.9] | (GenBank) 2-hydroxy-6-oxo-2,4-heptadienoate hydrolase (A)
+BEN-SOLID-ALL_bacbin.52.fa	GJCCPNDA_02517	CDS	288				2-HYDROXY-6-OXOHEPTA-2,4-DIENOATE HYDROLASE [Wolinella succinogenes]
+BEN-SOLID-ALL_bacbin.54.fa	OGBJPJPC_00128	CDS	897				K10216 2-hydroxymuconate-semialdehyde hydrolase [EC:3.7.1.9] | (GenBank) hypothetical protein (A)
+BEN-SOLID-ALL_bacbin.56.fa	HKMJCAAH_00265	CDS	735				2-hydroxy-6-oxohepta-2,4-dienoate hydrolase [Anabaena sp. CRKS33]
+BEN-SOLID-ALL_bacbin.58.fa	CDJMFKOK_02334	CDS	771				K10216 2-hydroxymuconate-semialdehyde hydrolase [EC:3.7.1.9] | (GenBank) hypothetical protein (A)
+BEN-SOLID-ALL_bacbin.5.fa	IBNFIKAE_00377	CDS	753				2-hydroxy-6-oxohepta-2,4-dienoate hydrolase [Capnocytophaga ochracea]
+BEN-SOLID-ALL_bacbin.5.fa	IBNFIKAE_01702	CDS	852				2-hydroxy-6-oxohepta-2,4-dienoate hydrolase (TodF) [Dethiobacter alkaliphilus AHT 1]
+BEN-SOLID-ALL_bacbin.5.fa	IBNFIKAE_02595	CDS	972				K10216 2-hydroxymuconate-semialdehyde hydrolase [EC:3.7.1.9] | (GenBank) 2-hydroxy-6-oxo-2,4-heptadienoate hydrolase (A)
+BEN-SOLID-ALL_bacbin.62.fa	HAMFIJDD_03596	CDS	885				K10216 2-hydroxymuconate-semialdehyde hydrolase [EC:3.7.1.9] | (GenBank) hypothetical protein (A)
+BEN-SOLID-ALL_bacbin.65.fa	DFMNKDMM_01806	CDS	276				2-HYDROXY-6-OXOHEPTA-2,4-DIENOATE HYDROLASE [Wolinella succinogenes]
+BEN-SOLID-ALL_bacbin.72.fa	PGBECOJC_00933	CDS	840				K10216 2-hydroxymuconate-semialdehyde hydrolase [EC:3.7.1.9] | (GenBank) alpha/beta hydrolase fold protein(A)
+BEN-SOLID-ALL_bacbin.75.fa	BPKNHKMC_01448	CDS	273				2-hydroxy-6-oxohepta-2,4-dienoate hydrolase [Helicobacter canis]
+BEN-SOLID-ALL_bacbin.75.fa	BPKNHKMC_02823	CDS	840				2-hydroxy-6-oxohepta-2,4-dienoate hydrolase (TodF) [Dethiobacter alkaliphilus AHT 1]
+BEN-SOLID-ALL_bacbin.76.fa	PMPICPGJ_00339	CDS	669				2-hydroxy-6-oxohepta-2,4-dienoate hydrolase [Campylobacter aviculae]
+BEN-SOLID-ALL_bacbin.79.fa	MIENMKLI_03023	CDS	780				2-hydroxy-6-oxohepta-2,4-dienoate hydrolase [Capnocytophaga ochracea]
+BEN-SOLID-ALL_bacbin.79.fa	MIENMKLI_05215	CDS	888				K10216 2-hydroxymuconate-semialdehyde hydrolase [EC:3.7.1.9] | (GenBank) hypothetical protein (A)
+BEN-SOLID-ALL_bacbin.82.fa	NHHOMLCH_02183	CDS	273				2-hydroxy-6-oxohepta-2,4-dienoate hydrolase [Helicobacter fennelliae]
+BEN-SOLID-ALL_bacbin.83.fa	FDOALDEA_00056	CDS	282				2-hydroxy-6-oxohepta-2,4-dienoate hydrolase [Helicobacter canis]
+BEN-SOLID-ALL_bacbin.85.fa	DHNCALHD_01892	CDS	273				2-hydroxy-6-oxohepta-2,4-dienoate hydrolase [Helicobacter canis]
+BEN-SOLID-ALL_bacbin.87.fa	MOAJPIDA_05853	CDS	927				2-hydroxy-6-oxohepta-2,4-dienoate hydrolase [Fusibacter sp. 3D3]
+BEN-SOLID-ALL_bacbin.90.fa	IHFENEHE_00656	CDS	270				2-HYDROXY-6-OXOHEPTA-2,4-DIENOATE HYDROLASE [Wolinella succinogenes]
+BEN-SOLID-ALL_bacbin.90.fa	IHFENEHE_00849	CDS	813				2-hydroxy-6-oxohepta-2,4-dienoate hydrolase [Marinococcus halophilus]
+BEN-SOLID-ALL_bacbin.93.fa	AAFEBFHF_00060	CDS	888				K10216 2-hydroxymuconate-semialdehyde hydrolase [EC:3.7.1.9] | (GenBank) hypothetical protein (A)
+BEN-SOLID-ALL_bacbin.93.fa	AAFEBFHF_00470	CDS	726				K10216 2-hydroxymuconate-semialdehyde hydrolase [EC:3.7.1.9] | (GenBank) 2,6-dioxo-6-phenylhexa-3-enoate hydrolase (A)
+BEN-SOLID-ALL_bacbin.93.fa	AAFEBFHF_01696	CDS	807				putative 2-hydroxy-6-oxohepta-2,4-dienoate hydrolase [Sorangium cellulosum So ce56]
+BEN-SOLID-ALL_bacbin.93.fa	AAFEBFHF_02595	CDS	810				2-hydroxy-6-oxohepta-2,4-dienoate hydrolase [Pseudanabaena frigida]
+BEN-SOLID-ALL_bacbin.93.fa	AAFEBFHF_02938	CDS	912				K10216 2-hydroxymuconate-semialdehyde hydrolase [EC:3.7.1.9] | (GenBank) alpha/beta hydrolase fold familiy(A)
+BEN-SOLID-T0_bacbin.107.fa	NCJKLJNH_00923	CDS	888				K10216 2-hydroxymuconate-semialdehyde hydrolase [EC:3.7.1.9] | (GenBank) 2-hydroxy-6-oxo-2,4-heptadienoate hydrolase (A)
+BEN-SOLID-T0_bacbin.107.fa	NCJKLJNH_01580	CDS	864				K10216 2-hydroxymuconate-semialdehyde hydrolase [EC:3.7.1.9] | (GenBank) 2-hydroxy-6-oxo-2,4-heptadienoate hydrolase (A)
+BEN-SOLID-T0_bacbin.123.fa	BIOJAFGA_00870	CDS	735				2-hydroxy-6-oxohepta-2,4-dienoate hydrolase [Anabaena sp. CRKS33]
+BEN-SOLID-T0_bacbin.19.fa	NOEKPHAF_03135	CDS	939				K10216 2-hydroxymuconate-semialdehyde hydrolase [EC:3.7.1.9] | (GenBank) xylF; 2-hydroxymuconate semialdehyde hydrolase (A)
+BEN-SOLID-T0_bacbin.21.fa	DJOOGJIK_01322	CDS	960				K10216 2-hydroxymuconate-semialdehyde hydrolase [EC:3.7.1.9] | (GenBank) soluble epoxide hydrolase / lipid-phosphate phosphatase (A)
+BEN-SOLID-T0_bacbin.21.fa	DJOOGJIK_04815	CDS	288				2-hydroxy-6-oxohepta-2,4-dienoate hydrolase [Helicobacter canis]
+BEN-SOLID-T0_bacbin.23.fa	FIBEPAOD_00099	CDS	894				K10216 2-hydroxymuconate-semialdehyde hydrolase [EC:3.7.1.9] | (GenBank) hypothetical protein (A)
+BEN-SOLID-T0_bacbin.23.fa	FIBEPAOD_01597	CDS	882				K10216 2-hydroxymuconate-semialdehyde hydrolase [EC:3.7.1.9] | (GenBank) predicted Hydrolase or acyltransferase(alpha/beta hydrolase superfamily) (A)
+BEN-SOLID-T0_bacbin.52.fa	KCLEBINK_01497	CDS	273				2-hydroxy-6-oxohepta-2,4-dienoate hydrolase [Helicobacter fennelliae]
+BEN-SOLID-T0_bacbin.52.fa	KCLEBINK_01899	CDS	576				2-hydroxy-6-oxohepta-2,4-dienoate hydrolase [Nostoc sp. 'Peltigera membranacea cyanobiont' N6]
+BEN-SOLID-T0_bacbin.65.fa	KNFFPJDG_00747	CDS	972				2-hydroxy-6-oxohepta-2,4-dienoate hydrolase [Stenomitos frigidus ULC18]
+BEN-SOLID-T0_bacbin.65.fa	KNFFPJDG_01578	CDS	855				2-hydroxy-6-oxohepta-2,4-dienoate hydrolase (plasmid) [Rhodococcus jostii RHA1]
+BEN-SOLID-T0_bacbin.65.fa	KNFFPJDG_02585	CDS	903				K10216 2-hydroxymuconate-semialdehyde hydrolase [EC:3.7.1.9] | (GenBank) alpha/beta hydrolase (A)
+BEN-SOLID-T0_bacbin.91.fa	NPOKDPHN_00631	CDS	888				K10216 2-hydroxymuconate-semialdehyde hydrolase [EC:3.7.1.9] | (GenBank) 2-hydroxy-6-oxo-2,4-heptadienoate hydrolase (A)
+BEN-SOLID-T1_bacbin.106.fa	KEPIGEFP_01243	CDS	888				2-hydroxy-6-oxohepta-2,4-dienoate hydrolase [Fischerella thermalis WC119]
+BEN-SOLID-T1_bacbin.106.fa	KEPIGEFP_03061	CDS	693				K10216 2-hydroxymuconate-semialdehyde hydrolase [EC:3.7.1.9] | (GenBank) hypothetical protein (A)
+BEN-SOLID-T1_bacbin.10.fa	IAEJDEKD_00024	CDS	900				K10216 2-hydroxymuconate-semialdehyde hydrolase [EC:3.7.1.9] | (GenBank) 2-hydroxy-6-oxo-2,4-heptadienoate hydrolase (A)
+BEN-SOLID-T1_bacbin.10.fa	IAEJDEKD_04156	CDS	912				K10216 2-hydroxymuconate-semialdehyde hydrolase [EC:3.7.1.9] | (GenBank) predicted Hydrolase or acyltransferase(alpha/beta hydrolase superfamily) (A)
+BEN-SOLID-T1_bacbin.125.fa	KBHPKKIB_02980	CDS	927				K10216 2-hydroxymuconate-semialdehyde hydrolase [EC:3.7.1.9] | (GenBank) hypothetical protein (A)
+BEN-SOLID-T1_bacbin.125.fa	KBHPKKIB_04071	CDS	846				2-hydroxy-6-oxohepta-2,4-dienoate hydrolase [Capnocytophaga ochracea]
+BEN-SOLID-T1_bacbin.125.fa	KBHPKKIB_06124	CDS	957				K10216 2-hydroxymuconate-semialdehyde hydrolase [EC:3.7.1.9] | (GenBank) 2-hydroxy-6-oxo-2,4-heptadienoate hydrolase (A)
+BEN-SOLID-T1_bacbin.125.fa	KBHPKKIB_06273	CDS	963				K10216 2-hydroxymuconate-semialdehyde hydrolase [EC:3.7.1.9] | (GenBank) alpha/beta hydrolase fold familiy(A)
+BEN-SOLID-T1_bacbin.17.fa	CHAIIADH_02701	CDS	876				K10216 2-hydroxymuconate-semialdehyde hydrolase [EC:3.7.1.9] | (GenBank) alpha/beta hydrolase (A)
+BEN-SOLID-T1_bacbin.28.fa	EKGFHLDA_00430	CDS	273				2-HYDROXY-6-OXOHEPTA-2,4-DIENOATE HYDROLASE [Wolinella succinogenes]
+BEN-SOLID-T1_bacbin.28.fa	EKGFHLDA_02684	CDS	693				K10216 2-hydroxymuconate-semialdehyde hydrolase [EC:3.7.1.9] | (GenBank) alpha/beta hydrolase fold protein(A)
+BEN-SOLID-T1_bacbin.44.fa	FBNOJKBA_00002	CDS	870				K10216 2-hydroxymuconate-semialdehyde hydrolase [EC:3.7.1.9] | (GenBank) alpha/beta hydrolase fold familiy(A)
+BEN-SOLID-T1_bacbin.44.fa	FBNOJKBA_00490	CDS	858				K10216 2-hydroxymuconate-semialdehyde hydrolase [EC:3.7.1.9] | (GenBank) hypothetical protein (A)
+BEN-SOLID-T1_bacbin.44.fa	FBNOJKBA_00890	CDS	783				2-hydroxy-6-oxohepta-2,4-dienoate hydrolase [Marinococcus halophilus]
+BEN-SOLID-T1_bacbin.44.fa	FBNOJKBA_01933	CDS	840				2-hydroxy-6-oxohepta-2,4-dienoate hydrolase (TodF) [Dethiobacter alkaliphilus AHT 1]
+BEN-SOLID-T1_bacbin.44.fa	FBNOJKBA_02574	CDS	807				2-hydroxy-6-oxohepta-2,4-dienoate hydrolase [Fusibacter sp. 3D3]
+BEN-SOLID-T1_bacbin.44.fa	FBNOJKBA_04133	CDS	801				K10216 2-hydroxymuconate-semialdehyde hydrolase [EC:3.7.1.9] | (GenBank) hydrolase (A)
+BEN-SOLID-T1_bacbin.44.fa	FBNOJKBA_04544	CDS	891				K10216 2-hydroxymuconate-semialdehyde hydrolase [EC:3.7.1.9] | (GenBank) alpha/beta fold hydrolase (A)
+BEN-SOLID-T1_bacbin.70.fa	NIHNDKMA_02226	CDS	270				2-HYDROXY-6-OXOHEPTA-2,4-DIENOATE HYDROLASE [Caminibacter mediatlanticus TB-2]
+BEN-SOLID-T1_bacbin.78.fa	ABJHJADP_00045	CDS	789				K10216 2-hydroxymuconate-semialdehyde hydrolase [EC:3.7.1.9] | (GenBank) 2-hydroxy-6-oxo-2,4-heptadienoate hydrolase (A)
+BEN-SOLID-T1_bacbin.78.fa	ABJHJADP_01172	CDS	888				K10216 2-hydroxymuconate-semialdehyde hydrolase [EC:3.7.1.9] | (GenBank) 2-hydroxy-6-oxo-2,4-heptadienoate hydrolase (A)
+BEN-SOLID-T2_bacbin.110.fa	NLFPJIBO_01676	CDS	288				2-hydroxy-6-oxohepta-2,4-dienoate hydrolase [Helicobacter canis]
+BEN-SOLID-T2_bacbin.116.fa	FOOJBHLN_00067	CDS	735				2-hydroxy-6-oxohepta-2,4-dienoate hydrolase [Anabaena sp. CRKS33]
+BEN-SOLID-T2_bacbin.12.fa	BGPDEANF_04688	CDS	855				K10216 2-hydroxymuconate-semialdehyde hydrolase [EC:3.7.1.9] | (GenBank) dmpD; 2-hydroxymuconate semialdehyde hydrolase (A)
+BEN-SOLID-T2_bacbin.12.fa	BGPDEANF_05503	CDS	531				2-hydroxy-6-oxohepta-2,4-dienoate hydrolase (plasmid) [Rhodococcus jostii RHA1]
+BEN-SOLID-T2_bacbin.24.fa	JMENHNIJ_00661	CDS	879				K10216 2-hydroxymuconate-semialdehyde hydrolase [EC:3.7.1.9] | (GenBank) predicted Hydrolase or acyltransferase(alpha/beta hydrolase superfamily) (A)
+BEN-SOLID-T2_bacbin.3.fa	PMLFMOMP_02094	CDS	282				2-HYDROXY-6-OXOHEPTA-2,4-DIENOATE HYDROLASE [Wolinella succinogenes]
+BEN-SOLID-T2_bacbin.85.fa	NGJHJCMI_00061	CDS	876				K10216 2-hydroxymuconate-semialdehyde hydrolase [EC:3.7.1.9] | (GenBank) alpha/beta hydrolase fold protein(A)
+BEN-SOLID-T2_bacbin.9.fa	OEONMGJE_02857	CDS	693				2-hydroxy-6-oxohepta-2,4-dienoate hydrolase [Capnocytophaga ochracea]
+BEN-SOLID-T3_bacbin.56.fa	BHLCOFHJ_00276	CDS	858				2-hydroxy-6-oxohepta-2,4-dienoate hydrolase (plasmid) [Rhodococcus jostii RHA1]
+BEN-SOLID-T3_bacbin.56.fa	BHLCOFHJ_00374	CDS	861				K10216 2-hydroxymuconate-semialdehyde hydrolase [EC:3.7.1.9] | (GenBank) 2-hydroxymuconic semialdehyde hydrolase(A)
+BEN-SOLID-T3_bacbin.56.fa	BHLCOFHJ_00515	CDS	879				2-hydroxy-6-oxohepta-2,4-dienoate hydrolase (plasmid) [Rhodococcus jostii RHA1]
+BEN-SOLID-T3_bacbin.56.fa	BHLCOFHJ_01507	CDS	876				K10216 2-hydroxymuconate-semialdehyde hydrolase [EC:3.7.1.9] | (GenBank) alpha/beta hydrolase fold protein(A)
+BEN-SOLID-T3_bacbin.56.fa	BHLCOFHJ_01509	CDS	840				K10216 2-hydroxymuconate-semialdehyde hydrolase [EC:3.7.1.9] | (GenBank) alpha/beta fold hydrolase (A)
+BEN-SOLID-T3_bacbin.73.fa	LLFGOGCA_01498	CDS	846				2-hydroxy-6-oxohepta-2,4-dienoate hydrolase [Capnocytophaga ochracea]
+BEN-SOLID-T3_bacbin.82.fa	KGOFIMHD_00191	CDS	879				K10216 2-hydroxymuconate-semialdehyde hydrolase [EC:3.7.1.9] | (GenBank) hypothetical protein (A)
+BEN-SOLID-T3_bacbin.82.fa	KGOFIMHD_02156	CDS	888				K10216 2-hydroxymuconate-semialdehyde hydrolase [EC:3.7.1.9] | (GenBank) alpha/beta hydrolase fold protein(A)
+BEN-SOLID-T3_bacbin.84.fa	BBCFHFHP_01568	CDS	297				2-hydroxy-6-oxohepta-2,4-dienoate hydrolase [Helicobacter fennelliae MRY12-0050]
+BEN-SOLID-T4_bacbin.22.fa	CJAEINAJ_01474	CDS	873				K10216 2-hydroxymuconate-semialdehyde hydrolase [EC:3.7.1.9] | (GenBank) alpha/beta fold hydrolase (A)
+BEN-SOLID-T4_bacbin.28.fa	PLEFHFEE_03489	CDS	903				2-hydroxy-6-oxohepta-2,4-dienoate hydrolase [Aphanothece hegewaldii CCALA 016]
+BEN-SOLID-T4_bacbin.7.fa	GCDDGPGF_01845	CDS	945				K10216 2-hydroxymuconate-semialdehyde hydrolase [EC:3.7.1.9] | (GenBank) 2-hydroxy-6-oxo-2,4-heptadienoate hydrolase (A)
+BEN-SOLID-T4_bacbin.82.fa	OCFPJMHM_00221	CDS	1053				K10216 2-hydroxymuconate-semialdehyde hydrolase [EC:3.7.1.9] | (GenBank) alpha/beta fold hydrolase (A)
+BEN-T2_bacbin.109.fa	DENBMDJG_00582	CDS	903				K10216 2-hydroxymuconate-semialdehyde hydrolase [EC:3.7.1.9] | (GenBank) hypothetical protein (A)
+BEN-T2_bacbin.109.fa	DENBMDJG_01675	CDS	900				K10216 2-hydroxymuconate-semialdehyde hydrolase [EC:3.7.1.9] | (GenBank) 2-hydroxymuconic semialdehyde hydrolase(A)
+BEN-T2_bacbin.126.fa	GGEBNHGF_01784	CDS	282				2-HYDROXY-6-OXOHEPTA-2,4-DIENOATE HYDROLASE [Wolinella succinogenes]
+BEN-T2_bacbin.138.fa	DCFGDJHE_01682	CDS	942				K10216 2-hydroxymuconate-semialdehyde hydrolase [EC:3.7.1.9] | (GenBank) alpha/beta fold hydrolase (A)
+BEN-T2_bacbin.13.fa	OICEMIOB_01152	CDS	690				2-hydroxy-6-oxohepta-2,4-dienoate hydrolase [Marinococcus halophilus]
+BEN-T2_bacbin.13.fa	OICEMIOB_01156	CDS	762				2-hydroxy-6-oxohepta-2,4-dienoate hydrolase [Fusibacter sp. 3D3]
+BEN-T2_bacbin.145.fa	EHLMPEOA_00434	CDS	621				K10216 2-hydroxymuconate-semialdehyde hydrolase [EC:3.7.1.9] | (GenBank) alpha/beta hydrolase fold protein(A)
+BEN-T2_bacbin.145.fa	EHLMPEOA_00787	CDS	909				K10216 2-hydroxymuconate-semialdehyde hydrolase [EC:3.7.1.9] | (GenBank) alpha/beta hydrolase fold familiy(A)
+BEN-T2_bacbin.145.fa	EHLMPEOA_00985	CDS	981				K10216 2-hydroxymuconate-semialdehyde hydrolase [EC:3.7.1.9] | (GenBank) soluble epoxide hydrolase / lipid-phosphate phosphatase (A)
+BEN-T2_bacbin.21.fa	LLNIINAG_00881	CDS	930				K10216 2-hydroxymuconate-semialdehyde hydrolase [EC:3.7.1.9] | (GenBank) hypothetical protein (A)
+BEN-T2_bacbin.21.fa	LLNIINAG_02672	CDS	831				K10216 2-hydroxymuconate-semialdehyde hydrolase [EC:3.7.1.9] | (GenBank) 2-hydroxy-6-oxo-2,4-heptadienoate hydrolase (A)
+BEN-T2_bacbin.21.fa	LLNIINAG_02696	CDS	870				K10216 2-hydroxymuconate-semialdehyde hydrolase [EC:3.7.1.9] | (GenBank) dmpD; 2-hydroxymuconate semialdehyde hydrolase (A)
+BEN-T2_bacbin.21.fa	LLNIINAG_02762	CDS	864				K10216 2-hydroxymuconate-semialdehyde hydrolase [EC:3.7.1.9] | (GenBank) 2-hydroxy-6-oxo-2,4-heptadienoate hydrolase (A)
+BEN-T2_bacbin.21.fa	LLNIINAG_03225	CDS	864				K10216 2-hydroxymuconate-semialdehyde hydrolase [EC:3.7.1.9] | (GenBank) dmpD; 2-hydroxymuconate semialdehyde hydrolase (A)
+BEN-T2_bacbin.21.fa	LLNIINAG_03363	CDS	858				K10216 2-hydroxymuconate-semialdehyde hydrolase [EC:3.7.1.9] | (GenBank) alpha/beta hydrolase fold protein(A)
+BEN-T2_bacbin.21.fa	LLNIINAG_03371	CDS	864				K10216 2-hydroxymuconate-semialdehyde hydrolase [EC:3.7.1.9] | (GenBank) hydrolase (A)
+BEN-T2_bacbin.47.fa	KHCCDEGE_00080	CDS	963				K10216 2-hydroxymuconate-semialdehyde hydrolase [EC:3.7.1.9] | (GenBank) alpha/beta fold hydrolase (A)
+BEN-T2_bacbin.47.fa	KHCCDEGE_00126	CDS	942				K10216 2-hydroxymuconate-semialdehyde hydrolase [EC:3.7.1.9] | (GenBank) hypothetical protein (A)
+BEN-T2_bacbin.47.fa	KHCCDEGE_01195	CDS	903				K10216 2-hydroxymuconate-semialdehyde hydrolase [EC:3.7.1.9] | (GenBank) putative hydrolase or acyltransferase of alpha/beta superfamily (A)
+BEN-T2_bacbin.64.fa	AIIHLNOP_03338	CDS	573				2-hydroxy-6-oxohepta-2,4-dienoate hydrolase (TodF) [uncultured Desulfobacterium sp.]
+BEN-T2_bacbin.71.fa	EHIIFMKB_02064	CDS	660				2-hydroxy-6-oxohepta-2,4-dienoate hydrolase [Synechococcus sp. PCC]
+BEN-T2_bacbin.96.fa	FEBPMLEL_01103	CDS	786				2-hydroxy-6-oxohepta-2,4-dienoate hydrolase [Marinococcus halophilus]
+BEN-T2_bacbin.96.fa	FEBPMLEL_02004	CDS	297				2-HYDROXY-6-OXOHEPTA-2,4-DIENOATE HYDROLASE [Wolinella succinogenes]
+BEN-T2_bacbin.96.fa	FEBPMLEL_02953	CDS	909				K10216 2-hydroxymuconate-semialdehyde hydrolase [EC:3.7.1.9] | (GenBank) alpha/beta fold hydrolase (A)
+BEN-T2_bacbin.96.fa	FEBPMLEL_03101	CDS	819				K10216 2-hydroxymuconate-semialdehyde hydrolase [EC:3.7.1.9] | (GenBank) hypothetical protein (A)
+BEN-T2_bacbin.9.fa	IDPLOBDD_01573	CDS	876				K10216 2-hydroxymuconate-semialdehyde hydrolase [EC:3.7.1.9] | (GenBank) alpha/beta hydrolase (A)
+BEN-T2_bacbin.9.fa	IDPLOBDD_01929	CDS	951				2-hydroxy-6-oxohepta-2,4-dienoate hydrolase [Synechococcus sp. PCC]
+BEN-T2_bacbin.9.fa	IDPLOBDD_02965	CDS	972				2-hydroxy-6-oxohepta-2,4-dienoate hydrolase [Synechococcus sp. PCC 8807]
+BEN-T2_bacbin.9.fa	IDPLOBDD_03768	CDS	783				2-hydroxy-6-oxohepta-2,4-dienoate hydrolase (plasmid) [Rhodococcus jostii RHA1]
+BEN-T3_bacbin.100.fa	IEELBEBC_00212	CDS	876				K10216 2-hydroxymuconate-semialdehyde hydrolase [EC:3.7.1.9] | (GenBank) dmpD; 2-hydroxymuconate semialdehyde hydrolase (A)
+BEN-T3_bacbin.110.fa	OHMOCOMD_01024	CDS	852				K10216 2-hydroxymuconate-semialdehyde hydrolase [EC:3.7.1.9] | (GenBank) xylF1; 2-hydroxymuconate semialdehyde hydrolase (A)
+BEN-T3_bacbin.13.fa	ANJJHKDM_00528	CDS	972				2-hydroxy-6-oxohepta-2,4-dienoate hydrolase [Synechococcus sp. PCC 8807]
+BEN-T3_bacbin.13.fa	ANJJHKDM_00968	CDS	861				K10216 2-hydroxymuconate-semialdehyde hydrolase [EC:3.7.1.9] | (GenBank) dmpD; 2-hydroxymuconate semialdehyde hydrolase (A)
+BEN-T3_bacbin.13.fa	ANJJHKDM_03492	CDS	891				2-hydroxy-6-oxohepta-2,4-dienoate hydrolase (plasmid) [Rhodococcus jostii RHA1]
+BEN-T3_bacbin.47.fa	GEHIHGPO_01518	CDS	834				K10216 2-hydroxymuconate-semialdehyde hydrolase [EC:3.7.1.9] | (GenBank) hydrolase (A)
+BEN-T3_bacbin.47.fa	GEHIHGPO_02311	CDS	876				K10216 2-hydroxymuconate-semialdehyde hydrolase [EC:3.7.1.9] | (GenBank) 2-hydroxymuconate semialdehyde hydrolase (A)
+BEN-T3_bacbin.47.fa	GEHIHGPO_02980	CDS	903				K10216 2-hydroxymuconate-semialdehyde hydrolase [EC:3.7.1.9] | (GenBank) hypothetical protein (A)
+BEN-T3_bacbin.47.fa	GEHIHGPO_03018	CDS	975				K10216 2-hydroxymuconate-semialdehyde hydrolase [EC:3.7.1.9] | (GenBank) alpha/beta fold hydrolase (A)
+BEN-T3_bacbin.54.fa	HMMIKINA_01282	CDS	966				K10216 2-hydroxymuconate-semialdehyde hydrolase [EC:3.7.1.9] | (GenBank) hypothetical protein (A)
+BEN-T3_bacbin.54.fa	HMMIKINA_02471	CDS	912				K10216 2-hydroxymuconate-semialdehyde hydrolase [EC:3.7.1.9] | (GenBank) hypothetical protein (A)
+BEN-T3_bacbin.65.fa	IGJLEKEF_00431	CDS	819				K10216 2-hydroxymuconate-semialdehyde hydrolase [EC:3.7.1.9] | (GenBank) hypothetical protein (A)
+BEN-T3_bacbin.65.fa	IGJLEKEF_02783	CDS	753				K10216 2-hydroxymuconate-semialdehyde hydrolase [EC:3.7.1.9] | (GenBank) predicted Hydrolase or acyltransferase(alpha/beta hydrolase superfamily) (A)
+BEN-T3_bacbin.65.fa	IGJLEKEF_02993	CDS	558				2-hydroxy-6-oxohepta-2,4-dienoate hydrolase [uncultured bacterium pL]
+BEN-T3_bacbin.6.fa	EIPKDNEO_02080	CDS	726				K10216 2-hydroxymuconate-semialdehyde hydrolase [EC:3.7.1.9] | (GenBank) 2-hydroxy-6-oxo-2,4-heptadienoate hydrolase (A)
+BEN-T3_bacbin.71.fa	NNKGKKJF_00432	CDS	876				K10216 2-hydroxymuconate-semialdehyde hydrolase [EC:3.7.1.9] | (GenBank) alpha/beta hydrolase (A)
+BEN-T3_bacbin.71.fa	NNKGKKJF_00495	CDS	951				2-hydroxy-6-oxohepta-2,4-dienoate hydrolase [Synechococcus sp. PCC]
+BEN-T3_bacbin.71.fa	NNKGKKJF_01199	CDS	783				2-hydroxy-6-oxohepta-2,4-dienoate hydrolase (plasmid) [Rhodococcus jostii RHA1]
+BEN-T3_bacbin.71.fa	NNKGKKJF_01648	CDS	936				K10216 2-hydroxymuconate-semialdehyde hydrolase [EC:3.7.1.9] | (GenBank) alpha/beta fold hydrolase (A)
+BEN-T3_bacbin.89.fa	NIHHOFMO_01494	CDS	273				2-hydroxy-6-oxohepta-2,4-dienoate hydrolase [Helicobacter fennelliae]
+BEN-T3_bacbin.89.fa	NIHHOFMO_02023	CDS	759				2-hydroxy-6-oxohepta-2,4-dienoate hydrolase [Capnocytophaga ochracea]
+BEN-T3_bacbin.95.fa	BEPIGBOJ_04314	CDS	855				2-hydroxy-6-oxohepta-2,4-dienoate hydrolase [Marinococcus halophilus]
+BEN-T4_bacbin.100.fa	KDEIPMPF_00260	CDS	879				K10216 2-hydroxymuconate-semialdehyde hydrolase [EC:3.7.1.9] | (GenBank) predicted Hydrolase or acyltransferase(alpha/beta hydrolase superfamily) (A)
+BEN-T4_bacbin.37.fa	FFEMFBOK_00420	CDS	825				K10216 2-hydroxymuconate-semialdehyde hydrolase [EC:3.7.1.9] | (GenBank) 2-hydroxymuconic semialdehyde hydrolase(A)
+BEN-T4_bacbin.37.fa	FFEMFBOK_01066	CDS	618				2-hydroxy-6-oxohepta-2,4-dienoate hydrolase [Marinococcus halophilus]
+BEN-T4_bacbin.37.fa	FFEMFBOK_01816	CDS	840				2-hydroxy-6-oxohepta-2,4-dienoate hydrolase (TodF) [Dethiobacter alkaliphilus AHT 1]
+BEN-T4_bacbin.37.fa	FFEMFBOK_03570	CDS	801				K10216 2-hydroxymuconate-semialdehyde hydrolase [EC:3.7.1.9] | (GenBank) hydrolase (A)
+BEN-T4_bacbin.48.fa	BNDNANJI_00922	CDS	879				K10216 2-hydroxymuconate-semialdehyde hydrolase [EC:3.7.1.9] | (GenBank) 2-hydroxymuconate semialdehyde hydrolase (A)
+BEN-T4_bacbin.48.fa	BNDNANJI_01744	CDS	894				2-hydroxy-6-oxohepta-2,4-dienoate hydrolase (plasmid) [Rhodococcus jostii RHA1]
+BEN-T4_bacbin.48.fa	BNDNANJI_01746	CDS	816				K10216 2-hydroxymuconate-semialdehyde hydrolase [EC:3.7.1.9] | (GenBank) hypothetical protein (A)
+BEN-T4_bacbin.4.fa	JDLPIBFD_00555	CDS	852				putative 2-hydroxy-6-oxohepta-2,4-dienoate hydrolase [Sorangium cellulosum So ce56]
+BEN-T4_bacbin.68.fa	PGMFHKEC_00203	CDS	753				2-hydroxy-6-oxohepta-2,4-dienoate hydrolase [Fusibacter sp. 3D3]
+BEN-T4_bacbin.6.fa	ILOJLCJI_01303	CDS	972				2-hydroxy-6-oxohepta-2,4-dienoate hydrolase [Stenomitos frigidus ULC18]
+BEN-T4_bacbin.6.fa	ILOJLCJI_01913	CDS	846				K10216 2-hydroxymuconate-semialdehyde hydrolase [EC:3.7.1.9] | (GenBank) hypothetical protein (A)

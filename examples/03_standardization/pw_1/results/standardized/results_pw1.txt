@@ -1,0 +1,90 @@
+BEN01_bacbin.30.fa,PHPDBEBK_00878,CDS,1215,,,,Benzene 1,2-dioxygenase subunit alpha [Gemmata obscuriglobus],benzene dioxygenase, alpha subunit
+BEN01_bacbin.30.fa,PHPDBEBK_01837,CDS,360,,,,Benzene 1,2-dioxygenase system ferredoxin subunit [bacterium HR23],benzene dioxygenase, ferredoxin component
+BEN01_bacbin.37.fa,CMPGPPDN_01334,CDS,1257,,,,benzene 1,2-dioxygenase [Pararhodobacter aggregans],benzene dioxygenase (ambiguous),
+BEN01_bacbin.51.fa,GOGOOBON_00552,CDS,309,,,,Benzene 1,2-dioxygenase system ferredoxin subunit [bacterium HR37],benzene dioxygenase, ferredoxin component
+BEN01_bacbin.51.fa,GOGOOBON_02464,CDS,306,,,,Benzene 1,2-dioxygenase system ferredoxin subunit [Candidatus Nitrospira nitrificans],benzene dioxygenase, ferredoxin component
+BEN02_bacbin.26.fa,BGNLEGFE_01299,CDS,330,,,,Benzene 1,2-dioxygenase system ferredoxin subunit [bacterium HR23],benzene dioxygenase, ferredoxin component
+BEN02_bacbin.36.fa,CKBIKDIM_00751,CDS,1122,,,,Benzene 1,2-dioxygenase subunit alpha [Alphaproteobacteria bacterium ADurb.Bin100],benzene dioxygenase, alpha subunit
+BEN02_bacbin.43.fa,DDJMJDIO_00742,CDS,1170,,,,benzene 1,2-dioxygenase [Pararhodobacter aggregans],benzene dioxygenase (ambiguous),
+BEN02_bacbin.51.fa,ACPNMHPK_00759,CDS,885,,,,Benzene 1,2-dioxygenase system ferredoxin subunit [Mycobacterium kansasii],benzene dioxygenase, ferredoxin component
+BEN03_bacbin.12.fa,CMAPDADM_01361,CDS,342,,,,benzene 1,2-dioxygenase [Anaerolineae bacterium],benzene dioxygenase (ambiguous),
+BEN03_bacbin.12.fa,CMAPDADM_02197,CDS,1197,,,,Benzene 1,2-dioxygenase system ferredoxin--NAD(+) reductase subunit [Variovorax sp. B4],benzene dioxygenase, ferredoxin reductase component
+BEN03_bacbin.14.fa,KHELHNFC_01056,CDS,597,,,,benzene 1,2-dioxygenase [Herbaspirillum sp. VT-16-41],benzene dioxygenase (ambiguous),
+BEN03_bacbin.14.fa,KHELHNFC_01509,CDS,1176,,,,Benzene 1,2-dioxygenase subunit alpha [Bacillus megaterium Q3],benzene dioxygenase, alpha subunit
+BEN03_bacbin.14.fa,KHELHNFC_02797,CDS,741,,,,Benzene 1,2-dioxygenase system ferredoxin--NAD(+) reductase subunit [Burkholderia puraquae],benzene dioxygenase, ferredoxin reductase component
+BEN03_bacbin.61.fa,PGPLGEHA_00682,CDS,933,,,,Benzene 1,2-dioxygenase system ferredoxin--NAD(+) reductase subunit [Candidatus Atribacteria bacterium ADurb.Bin276],benzene dioxygenase, ferredoxin reductase component
+BEN03_bacbin.9.fa,GJGNDMOE_00030,CDS,1545,,,,Benzene 1,2-dioxygenase system ferredoxin--NAD(+) reductase subunit [Pseudomonas frederiksbergensis],benzene dioxygenase, ferredoxin reductase component
+BEN03_bacbin.9.fa,GJGNDMOE_01784,CDS,1119,,,,Benzene 1,2-dioxygenase subunit alpha [Alphaproteobacteria bacterium ADurb.Bin100],benzene dioxygenase, alpha subunit
+BEN04_bacbin.21.fa,NCBFJBJO_03259,CDS,312,,,,Benzene 1,2-dioxygenase system ferredoxin subunit [bacterium HR23],benzene dioxygenase, ferredoxin component
+BEN04_bacbin.21.fa,NCBFJBJO_03292,CDS,324,,,,Benzene 1,2-dioxygenase system ferredoxin subunit [bacterium HR23],benzene dioxygenase, ferredoxin component
+BEN04_bacbin.42.fa,BLGNNFGH_00673,CDS,312,,,,Benzene 1,2-dioxygenase system ferredoxin subunit [bacterium HR23],benzene dioxygenase, ferredoxin component
+BEN04_bacbin.46.fa,FFEFDGDB_01155,CDS,309,,,,Benzene 1,2-dioxygenase system ferredoxin subunit [bacterium HR23],benzene dioxygenase, ferredoxin component
+BEN04_bacbin.46.fa,FFEFDGDB_01545,CDS,360,,,,Benzene 1,2-dioxygenase system ferredoxin subunit [Nitrosopumilus piranensis],benzene dioxygenase, ferredoxin component
+BEN04_bacbin.46.fa,FFEFDGDB_03469,CDS,1125,,,,Benzene 1,2-dioxygenase subunit alpha [Streptomyces sp. YIM],benzene dioxygenase, alpha subunit
+BEN04_bacbin.7.fa,KBIHEENP_00282,CDS,1131,,,,Benzene 1,2-dioxygenase subunit alpha [Comamonas terrigena],benzene dioxygenase, alpha subunit
+BEN04_bacbin.7.fa,KBIHEENP_02148,CDS,330,,,,RecName: Full=Benzene 1,2-dioxygenase system ferredoxin subunit,benzene dioxygenase, ferredoxin component
+BEN05_bacbin.28.fa,JEHFFMAJ_02542,CDS,1266,,,,Benzene 1,2-dioxygenase system ferredoxin--NAD(+) reductase subunit [Variovorax sp. B4],benzene dioxygenase, ferredoxin reductase component
+BEN05_bacbin.32.fa,LEHFOEOK_05029,CDS,246,,,,Benzene 1,2-dioxygenase system ferredoxin subunit [bacterium HR23],benzene dioxygenase, ferredoxin component
+BEN05_bacbin.34.fa,MDBGJIEG_00504,CDS,354,,,,benzene 1,2-dioxygenase [Anaerolineae bacterium],benzene dioxygenase (ambiguous),
+BEN06_bacbin.17.fa,JMOGIBON_00315,CDS,339,,,,benzene 1,2-dioxygenase [Anaerolineae bacterium],benzene dioxygenase (ambiguous),
+BEN06_bacbin.17.fa,JMOGIBON_01246,CDS,1185,,,,benzene 1,2-dioxygenase system ferredoxin--NAD(+) reductase subunit [Herbaspirillum frisingense GSF30],benzene dioxygenase, ferredoxin reductase component
+BEN06_bacbin.2.fa,KKPKAEDF_02415,CDS,1131,,,,Benzene 1,2-dioxygenase system ferredoxin--NAD(+) reductase subunit [Variovorax sp. B4],benzene dioxygenase, ferredoxin reductase component
+BEN06_bacbin.41.fa,PKODJCEJ_01909,CDS,321,,,,Benzene 1,2-dioxygenase system ferredoxin subunit [bacterium HR23],benzene dioxygenase, ferredoxin component
+BEN07_bacbin.12.fa,LKALFJON_00523,CDS,348,,,,benzene 1,2-dioxygenase [Anaerolineae bacterium],benzene dioxygenase (ambiguous),
+BEN07_bacbin.12.fa,LKALFJON_03308,CDS,1380,,,,benzene 1,2-dioxygenase [Gammaproteobacteria bacterium HGW-Gammaproteobacteria-9],benzene dioxygenase (ambiguous),
+BEN07_bacbin.12.fa,LKALFJON_03309,CDS,561,,,,benzene 1,2-dioxygenase [Gammaproteobacteria bacterium HGW-Gammaproteobacteria-9],benzene dioxygenase (ambiguous),
+BEN07_bacbin.12.fa,LKALFJON_03311,CDS,330,,,,RecName: Full=Benzene 1,2-dioxygenase system ferredoxin subunit,benzene dioxygenase, ferredoxin component
+BEN07_bacbin.12.fa,LKALFJON_03312,CDS,1236,,,,benzene 1,2-dioxygenase system ferredoxin--NAD(+) reductase subunit [Paraburkholderia xenovorans LB400],benzene dioxygenase, ferredoxin reductase component
+BEN09_bacbin.2.fa,ALDFJFDP_03966,CDS,1257,,,,benzene 1,2-dioxygenase [Burkholderia sp. DHOD12],benzene dioxygenase (ambiguous),
+BEN09_bacbin.31.fa,BJBKMIID_00854,CDS,1530,,,,putative benzene 1,2-dioxygenase system ferredoxin--NAD(+) reductase subunit [Gluconacetobacter diazotrophicus PA1 5],benzene dioxygenase, ferredoxin reductase component
+BEN09_bacbin.31.fa,BJBKMIID_01310,CDS,1242,,,,Benzene 1,2-dioxygenase system ferredoxin--NAD(+) reductase subunit [Pseudomonas sp. 25 R 14],benzene dioxygenase, ferredoxin reductase component
+BEN09_bacbin.31.fa,BJBKMIID_01973,CDS,1167,,,,Benzene 1,2-dioxygenase system ferredoxin--NAD(+) reductase subunit [Variovorax sp. B4],benzene dioxygenase, ferredoxin reductase component
+BEN09_bacbin.31.fa,BJBKMIID_02027,CDS,1191,,,,Benzene 1,2-dioxygenase system ferredoxin--NAD(+) reductase subunit [Variovorax sp. B4],benzene dioxygenase, ferredoxin reductase component
+BEN09_bacbin.31.fa,BJBKMIID_03894,CDS,1119,,,,Benzene 1,2-dioxygenase system ferredoxin--NAD(+) reductase subunit [Variovorax sp. B4],benzene dioxygenase, ferredoxin reductase component
+BEN09_bacbin.31.fa,BJBKMIID_03896,CDS,363,,,,Benzene 1,2-dioxygenase subunit alpha [Ruegeria litorea R37],benzene dioxygenase, alpha subunit
+BEN09_bacbin.31.fa,BJBKMIID_04068,CDS,1080,,,,Benzene 1,2-dioxygenase subunit alpha [Roseovarius aestuarii],benzene dioxygenase, alpha subunit
+BEN09_bacbin.51.fa,FKJIHLKJ_04052,CDS,327,,,,Benzene 1,2-dioxygenase system ferredoxin subunit [Candidatus Nitrospira nitrificans],benzene dioxygenase, ferredoxin component
+BEN10_bacbin.16.fa,HNBFAPPI_01813,CDS,1512,,,,Benzene 1,2-dioxygenase system ferredoxin--NAD(+) reductase subunit [Pseudomonas putida],benzene dioxygenase, ferredoxin reductase component
+BEN10_bacbin.16.fa,HNBFAPPI_01980,CDS,1155,,,,Benzene 1,2-dioxygenase system ferredoxin--NAD(+) reductase subunit [Variovorax sp. B4],benzene dioxygenase, ferredoxin reductase component
+BEN10_bacbin.31.fa,EBMMKCOO_03023,CDS,1083,,,,Benzene 1,2-dioxygenase subunit alpha [Calidithermus terrae],benzene dioxygenase, alpha subunit
+BEN10_bacbin.31.fa,EBMMKCOO_04032,CDS,1233,,,,Benzene 1,2-dioxygenase subunit alpha [Mycobacterium intracellulare subsp. intracellulare MTCC 9506],benzene dioxygenase, alpha subunit
+BEN10_bacbin.31.fa,EBMMKCOO_05911,CDS,600,,,,Benzene 1,2-dioxygenase system ferredoxin subunit [Mycobacterium kansasii],benzene dioxygenase, ferredoxin component
+BEN10_bacbin.35.fa,NGLCBJFK_02580,CDS,1128,,,,Benzene 1,2-dioxygenase system ferredoxin--NAD(+) reductase subunit [Pseudomonas fluorescens],benzene dioxygenase, ferredoxin reductase component
+BEN10_bacbin.35.fa,NGLCBJFK_03354,CDS,1122,,,,benzene 1,2-dioxygenase (plasmid) [Azospirillum ramasamyi],benzene dioxygenase (ambiguous),
+BEN12_bacbin.28.fa,EDKOMLGA_00149,CDS,330,,,,benzene 1,2-dioxygenase [Xanthomonadaceae bacterium SCN 69-48],benzene dioxygenase (ambiguous),
+BEN12_bacbin.28.fa,EDKOMLGA_00385,CDS,1080,,,,Benzene 1,2-dioxygenase subunit alpha [Gemmata obscuriglobus],benzene dioxygenase, alpha subunit
+BEN12_bacbin.28.fa,EDKOMLGA_01060,CDS,1512,,,,Benzene 1,2-dioxygenase system ferredoxin--NAD(+) reductase subunit [Pseudomonas putida],benzene dioxygenase, ferredoxin reductase component
+BEN12_bacbin.45.fa,DAMDDPCI_00965,CDS,312,,,,benzene 1,2-dioxygenase system ferredoxin subunit [Deinococcus grandis],benzene dioxygenase, ferredoxin component
+BEN13_bacbin.20.fa,FLHDFHAN_00266,CDS,1179,,,,Benzene 1,2-dioxygenase system ferredoxin--NAD(+) reductase subunit [Variovorax sp. B4],benzene dioxygenase, ferredoxin reductase component
+BEN13_bacbin.20.fa,FLHDFHAN_01266,CDS,348,,,,benzene 1,2-dioxygenase [Anaerolineae bacterium],benzene dioxygenase (ambiguous),
+BEN13_bacbin.26.fa,AEDLJBAG_03656,CDS,156,,,,benzene dioxygenase ferredoxin subunit (plasmid) [Rhodococcus opacus B4],benzene dioxygenase, ferredoxin component,
+BEN13_bacbin.26.fa,AEDLJBAG_04186,CDS,1422,,,,benzene 1,2-dioxygenase [Oceanobacillus sojae],benzene dioxygenase (ambiguous),
+BEN14_bacbin.23.fa,NDGNEIPO_02681,CDS,396,,,,Benzene 1,2-dioxygenase system ferredoxin--NAD(+) reductase subunit [Variovorax sp. B4],benzene dioxygenase, ferredoxin reductase component
+BEN14_bacbin.23.fa,NDGNEIPO_02682,CDS,858,,,,Benzene 1,2-dioxygenase system ferredoxin--NAD(+) reductase subunit [Variovorax sp. B4],benzene dioxygenase, ferredoxin reductase component
+BEN14_bacbin.39.fa,JPAHNJJH_00007,CDS,1122,,,,Benzene 1,2-dioxygenase subunit alpha [Alphaproteobacteria bacterium ADurb.Bin100],benzene dioxygenase, alpha subunit
+BEN14_bacbin.39.fa,JPAHNJJH_03210,CDS,825,,,,Benzene 1,2-dioxygenase system ferredoxin--NAD(+) reductase subunit [Pseudomonas putida],benzene dioxygenase, ferredoxin reductase component
+BEN14_bacbin.7.fa,OLJOHBCC_02596,CDS,1179,,,,Benzene 1,2-dioxygenase system ferredoxin--NAD(+) reductase subunit [Pseudomonas fluorescens],benzene dioxygenase, ferredoxin reductase component
+BEN15_bacbin.26.fa,NFFEPIBL_00340,CDS,1176,,,,Benzene 1,2-dioxygenase subunit alpha [Bacillus megaterium Q3],benzene dioxygenase, alpha subunit
+BEN15_bacbin.26.fa,NFFEPIBL_00971,CDS,1224,,,,benzene 1,2-dioxygenase [Herbaspirillum sp. VT-16-41],benzene dioxygenase (ambiguous),
+BEN15_bacbin.26.fa,NFFEPIBL_01543,CDS,1221,,,,Benzene 1,2-dioxygenase system ferredoxin--NAD(+) reductase subunit [Pseudonocardia autotrophica],benzene dioxygenase, ferredoxin reductase component
+BEN16_bacbin.12.fa,FIHEOBIM_01904,CDS,369,,,,Benzene 1,2-dioxygenase system ferredoxin subunit [Candidatus Nitrosotenuis uzonensis],benzene dioxygenase, ferredoxin component
+BEN16_bacbin.39.fa,FCAGGMGM_00863,CDS,1560,,,,benzene 1,2-dioxygenase [Komagataeibacter cocois],benzene dioxygenase (ambiguous),
+BEN16_bacbin.39.fa,FCAGGMGM_01320,CDS,1140,,,,Benzene 1,2-dioxygenase subunit alpha [Comamonas testosteroni],benzene dioxygenase, alpha subunit
+BEN17_bacbin.26.fa,NCELHGEK_01692,CDS,315,,,,benzene 1,2-dioxygenase [Burkholderia contaminans],benzene dioxygenase (ambiguous),
+BEN17_bacbin.26.fa,NCELHGEK_01693,CDS,495,,,,benzene 1,2-dioxygenase [Archangium violaceum Cb vi76],benzene dioxygenase (ambiguous),
+BEN17_bacbin.27.fa,IKDGJLIL_02592,CDS,1179,,,,Benzene 1,2-dioxygenase system ferredoxin--NAD(+) reductase subunit [Variovorax sp. B4],benzene dioxygenase, ferredoxin reductase component
+BEN17_bacbin.57.fa,KNCEDMNC_00549,CDS,1245,,,,Benzene 1,2-dioxygenase system ferredoxin--NAD(+) reductase subunit [Streptomyces sp. M56],benzene dioxygenase, ferredoxin reductase component
+BEN17_bacbin.57.fa,KNCEDMNC_03544,CDS,414,,,,Benzene 1,2-dioxygenase system ferredoxin--NAD(+) reductase subunit [Variovorax sp. B4],benzene dioxygenase, ferredoxin reductase component
+BEN17_bacbin.9.fa,JPCMPJAK_00518,CDS,1242,,,,benzene 1,2-dioxygenase [Burkholderia sp. DHOD12],benzene dioxygenase (ambiguous),
+BEN17_bacbin.9.fa,JPCMPJAK_01179,CDS,1221,,,,Benzene 1,2-dioxygenase system ferredoxin--NAD(+) reductase subunit [Pseudonocardia autotrophica],benzene dioxygenase, ferredoxin reductase component
+BEN19_bacbin.30.fa,HCIMILML_00191,CDS,1101,,,,Benzene 1,2-dioxygenase subunit alpha [Burkholderia oklahomensis],benzene dioxygenase, alpha subunit
+BEN19_bacbin.30.fa,HCIMILML_01332,CDS,1137,,,,Benzene 1,2-dioxygenase system ferredoxin--NAD(+) reductase subunit [Variovorax sp. B4],benzene dioxygenase, ferredoxin reductase component
+BEN19_bacbin.32.fa,OKGPCKOB_01423,CDS,1101,,,,Benzene 1,2-dioxygenase subunit alpha [Lautropia mirabilis],benzene dioxygenase, alpha subunit
+BEN19_bacbin.34.fa,JJDMKDDD_03289,CDS,1191,,,,benzene 1,2-dioxygenase [Komagataeibacter cocois],benzene dioxygenase (ambiguous),
+BEN20_bacbin.14.fa,KFJBCAPH_02722,CDS,522,,,,Benzene 1,2-dioxygenase subunit alpha [Comamonas testosteroni],benzene dioxygenase, alpha subunit
+BEN20_bacbin.18.fa,CLAMPJGD_03739,CDS,330,,,,Benzene 1,2-dioxygenase system ferredoxin subunit [bacterium HR23],benzene dioxygenase, ferredoxin component
+BEN20_bacbin.34.fa,COBDDAMJ_03830,CDS,450,,,,Benzene 1,2-dioxygenase subunit alpha [Mycobacterium intracellulare subsp. intracellulare MTCC 9506],benzene dioxygenase, alpha subunit
+BEN20_bacbin.35.fa,GBFNOICN_00334,CDS,360,,,,Benzene 1,2-dioxygenase system ferredoxin subunit [bacterium HR23],benzene dioxygenase, ferredoxin component
+BEN21_bacbin.18.fa,IFEBKFMN_02960,CDS,348,,,,benzene 1,2-dioxygenase [Anaerolineae bacterium],benzene dioxygenase (ambiguous),
+BEN21_bacbin.18.fa,IFEBKFMN_03317,CDS,1176,,,,Benzene 1,2-dioxygenase system ferredoxin--NAD(+) reductase subunit [Rhodococcus opacus PD630],benzene dioxygenase, ferredoxin reductase component
+BEN21_bacbin.8.fa,ELDDCGEN_02772,CDS,348,,,,benzene 1,2-dioxygenase [Anaerolineae bacterium],benzene dioxygenase (ambiguous),

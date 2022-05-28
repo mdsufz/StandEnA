@@ -1,0 +1,148 @@
+BEN01_bacbin.33.fa	MCNAPHNN_02061	CDS	1023	limB	1.14.13.107		Limonene 1,2-monooxygenase
+BEN01_bacbin.37.fa	CMPGPPDN_00243	CDS	1107	limB	1.14.13.107		Limonene 1,2-monooxygenase
+BEN01_bacbin.37.fa	CMPGPPDN_02868	CDS	1020				K16246 phenol/toluene 2-monooxygenase (NADH) P5/A5 [EC:1.14.13.244 1.14.13.243] | (GenBank) phenol hydroxylase(A)
+BEN02_bacbin.36.fa	CKBIKDIM_00084	CDS	1224				K16246 phenol/toluene 2-monooxygenase (NADH) P5/A5 [EC:1.14.13.244 1.14.13.243] | (GenBank) phenol hydroxylase(A)
+BEN03_bacbin.17.fa	CGMLAECB_02142	CDS	1296				K16246 phenol/toluene 2-monooxygenase (NADH) P5/A5 [EC:1.14.13.244 1.14.13.243] | (GenBank) phenol hydroxylase(A)
+BEN03_bacbin.1.fa	IGIBALBP_01906	CDS	1227				K16246 phenol/toluene 2-monooxygenase (NADH) P5/A5 [EC:1.14.13.244 1.14.13.243] | (GenBank) dsoF; dimethylsulfide oxygenase component DsoF (A)
+BEN03_bacbin.9.fa	GJGNDMOE_01814	CDS	1050				K16246 phenol/toluene 2-monooxygenase (NADH) P5/A5 [EC:1.14.13.244 1.14.13.243] | (GenBank) phenol hydroxylase(A)
+BEN04_bacbin.41.fa	FEOLAHDP_02041	CDS	975				K16246 phenol/toluene 2-monooxygenase (NADH) P5/A5 [EC:1.14.13.244 1.14.13.243] | (GenBank) phenol hydroxylase(A)
+BEN04_bacbin.42.fa	BLGNNFGH_00276	CDS	1209	limB	1.14.13.107		Limonene 1,2-monooxygenase
+BEN04_bacbin.46.fa	FFEFDGDB_03623	CDS	1272	limB	1.14.13.107		Limonene 1,2-monooxygenase
+BEN04_bacbin.7.fa	KBIHEENP_02195	CDS	180				K16245 phenol/toluene 2-monooxygenase (NADH) P4/A4 [EC:1.14.13.244 1.14.13.243] | (GenBank) phenol hydroxylase(A)
+BEN04_bacbin.7.fa	KBIHEENP_02196	CDS	1065				K16246 phenol/toluene 2-monooxygenase (NADH) P5/A5 [EC:1.14.13.244 1.14.13.243] | (GenBank) phenol hydroxylase(A)
+BEN05_bacbin.28.fa	JEHFFMAJ_01689	CDS	522	npcB	1.14.13.166		4-nitrophenol 4-monooxygenase/4-nitrocatechol 2-monooxygenase, reductase component
+BEN06_bacbin.2.fa	KKPKAEDF_00167	CDS	1095	limB	1.14.13.107		Limonene 1,2-monooxygenase
+BEN08_bacbin.57.fa	AJIGKPBL_00626	CDS	1023	limB	1.14.13.107		Limonene 1,2-monooxygenase
+BEN09_bacbin.2.fa	ALDFJFDP_00477	CDS	1113	limB_1	1.14.13.107		Limonene 1,2-monooxygenase
+BEN09_bacbin.2.fa	ALDFJFDP_01348	CDS	1089	limB_2	1.14.13.107		Limonene 1,2-monooxygenase
+BEN09_bacbin.31.fa	BJBKMIID_04410	CDS	747				K16246 phenol/toluene 2-monooxygenase (NADH) P5/A5 [EC:1.14.13.244 1.14.13.243] | (GenBank) phenol hydroxylase(A)
+BEN10_bacbin.16.fa	HNBFAPPI_02304	CDS	765				K16246 phenol/toluene 2-monooxygenase (NADH) P5/A5 [EC:1.14.13.244 1.14.13.243] | (GenBank) 2Fe-2S iron-sulfur cluster binding domain-containing protein (A)
+BEN10_bacbin.19.fa	NMNDLEBJ_00636	CDS	1029				K16246 phenol/toluene 2-monooxygenase (NADH) P5/A5 [EC:1.14.13.244 1.14.13.243] | (GenBank) phenol hydroxylase(A)
+BEN10_bacbin.27.fa	HBINPEIK_00568	CDS	1260				K16246 phenol/toluene 2-monooxygenase (NADH) P5/A5 [EC:1.14.13.244 1.14.13.243] | (GenBank) phenol hydroxylase(A)
+BEN10_bacbin.35.fa	NGLCBJFK_04192	CDS	489	npcB	1.14.13.166		4-nitrophenol 4-monooxygenase/4-nitrocatechol 2-monooxygenase, reductase component
+BEN12_bacbin.28.fa	EDKOMLGA_01099	CDS	765				K16246 phenol/toluene 2-monooxygenase (NADH) P5/A5 [EC:1.14.13.244 1.14.13.243] | (GenBank) 2Fe-2S iron-sulfur cluster binding domain-containing protein (A)
+BEN13_bacbin.20.fa	FLHDFHAN_01015	CDS	480	npcB	1.14.13.166		4-nitrophenol 4-monooxygenase/4-nitrocatechol 2-monooxygenase, reductase component
+BEN14_bacbin.23.fa	NDGNEIPO_01081	CDS	720				K16246 phenol/toluene 2-monooxygenase (NADH) P5/A5 [EC:1.14.13.244 1.14.13.243] | (GenBank) phenol hydroxylase(A)
+BEN14_bacbin.39.fa	JPAHNJJH_01764	CDS	1224				K16246 phenol/toluene 2-monooxygenase (NADH) P5/A5 [EC:1.14.13.244 1.14.13.243] | (GenBank) phenol hydroxylase(A)
+BEN14_bacbin.7.fa	OLJOHBCC_02835	CDS	489	npcB	1.14.13.166		4-nitrophenol 4-monooxygenase/4-nitrocatechol 2-monooxygenase, reductase component
+BEN15_bacbin.26.fa	NFFEPIBL_04794	CDS	1269		1.13.12.4	COG1304	Lactate 2-monooxygenase
+BEN15_bacbin.31.fa	OCMDDFOB_00293	CDS	1113	limB_1	1.14.13.107		Limonene 1,2-monooxygenase
+BEN15_bacbin.31.fa	OCMDDFOB_00722	CDS	1089	limB_2	1.14.13.107		Limonene 1,2-monooxygenase
+BEN15_bacbin.38.fa	CFFBEMJC_02142	CDS	999	limB	1.14.13.107		Limonene 1,2-monooxygenase
+BEN15_bacbin.38.fa	CFFBEMJC_03948	CDS	1071				K16246 phenol/toluene 2-monooxygenase (NADH) P5/A5 [EC:1.14.13.244 1.14.13.243] | (GenBank) lapP; Multi-component phenol hydoxylase, reductase subunit; LapP (A)
+BEN16_bacbin.39.fa	FCAGGMGM_01495	CDS	1062				K16246 phenol/toluene 2-monooxygenase (NADH) P5/A5 [EC:1.14.13.244 1.14.13.243] | (GenBank) phenol hydroxylase(A)
+BEN17_bacbin.26.fa	NCELHGEK_00624	CDS	1209	limB	1.14.13.107		Limonene 1,2-monooxygenase
+BEN17_bacbin.27.fa	IKDGJLIL_00871	CDS	720				K16246 phenol/toluene 2-monooxygenase (NADH) P5/A5 [EC:1.14.13.244 1.14.13.243] | (GenBank) phenol hydroxylase(A)
+BEN17_bacbin.37.fa	AGBGFICK_00328	CDS	1095	limB	1.14.13.107		Limonene 1,2-monooxygenase
+BEN19_bacbin.34.fa	JJDMKDDD_04418	CDS	960				K16246 phenol/toluene 2-monooxygenase (NADH) P5/A5 [EC:1.14.13.244 1.14.13.243] | (GenBank) lapP; Multi-component phenol hydoxylase, reductase subunit; LapP (A)
+BEN20_bacbin.14.fa	KFJBCAPH_02283	CDS	1062				K16246 phenol/toluene 2-monooxygenase (NADH) P5/A5 [EC:1.14.13.244 1.14.13.243] | (GenBank) phenol hydroxylase(A)
+BEN21_bacbin.18.fa	IFEBKFMN_00865	CDS	480	npcB	1.14.13.166		4-nitrophenol 4-monooxygenase/4-nitrocatechol 2-monooxygenase, reductase component
+BEN22_bacbin.16.fa	NJHNJMID_03535	CDS	1041				K16246 phenol/toluene 2-monooxygenase (NADH) P5/A5 [EC:1.14.13.244 1.14.13.243] | (GenBank) lapP; Multi-component phenol hydoxylase, reductase subunit; LapP (A)
+BEN24_bacbin.11.fa	OFKKOCAK_00094	CDS	1290		1.13.12.4	COG1304	Lactate 2-monooxygenase
+BEN24_bacbin.24.fa	GKHHHBHO_00784	CDS	711				K16246 phenol/toluene 2-monooxygenase (NADH) P5/A5 [EC:1.14.13.244 1.14.13.243] | (GenBank) 2Fe-2S iron-sulfur cluster binding domain-containing protein (A)
+BEN24_bacbin.4.fa	OJLHLFJG_01192	CDS	1017				K16246 phenol/toluene 2-monooxygenase (NADH) P5/A5 [EC:1.14.13.244 1.14.13.243] | (GenBank) phenol hydroxylase(A)
+BEN24_bacbin.4.fa	OJLHLFJG_01434	CDS	1053				K16246 phenol/toluene 2-monooxygenase (NADH) P5/A5 [EC:1.14.13.244 1.14.13.243] | (GenBank) lapP; Multi-component phenol hydoxylase, reductase subunit; LapP (A)
+BEN24_bacbin.4.fa	OJLHLFJG_03759	CDS	999	limB	1.14.13.107		Limonene 1,2-monooxygenase
+BEN-LIQUID-ALL_bacbin.13.fa	EDBIFBNP_03706	CDS	1026				K16246 phenol/toluene 2-monooxygenase (NADH) P5/A5 [EC:1.14.13.244 1.14.13.243] | (GenBank) 2Fe-2S iron-sulfur cluster binding domain-containing protein (A)
+BEN-LIQUID-ALL_bacbin.22.fa	NPEPPJFO_00074	CDS	1395	nphA1_1	1.14.13.29		4-nitrophenol 2-monooxygenase, oxygenase component
+BEN-LIQUID-ALL_bacbin.22.fa	NPEPPJFO_01186	CDS	1032				K16246 phenol/toluene 2-monooxygenase (NADH) P5/A5 [EC:1.14.13.244 1.14.13.243] | (GenBank) phenol hydroxylase(A)
+BEN-LIQUID-ALL_bacbin.22.fa	NPEPPJFO_02160	CDS	1548	nphA1_2	1.14.13.29		4-nitrophenol 2-monooxygenase, oxygenase component
+BEN-LIQUID-ALL_bacbin.25.fa	GKDJMNPG_00778	CDS	1194	limB_1	1.14.13.107		Limonene 1,2-monooxygenase
+BEN-LIQUID-ALL_bacbin.25.fa	GKDJMNPG_02063	CDS	1245	limB_2	1.14.13.107		Limonene 1,2-monooxygenase
+BEN-LIQUID-ALL_bacbin.26.fa	GCCLHNCO_00018	CDS	1002	limB	1.14.13.107		Limonene 1,2-monooxygenase
+BEN-LIQUID-ALL_bacbin.26.fa	GCCLHNCO_02640	CDS	945				K16246 phenol/toluene 2-monooxygenase (NADH) P5/A5 [EC:1.14.13.244 1.14.13.243] | (GenBank) phenol hydroxylase(A)
+BEN-LIQUID-ALL_bacbin.26.fa	GCCLHNCO_04011	CDS	1704	iaaM	1.13.12.3		Tryptophan 2-monooxygenase
+BEN-LIQUID-ALL_bacbin.45.fa	FEPCEAGL_02323	CDS	1272				K16246 phenol/toluene 2-monooxygenase (NADH) P5/A5 [EC:1.14.13.244 1.14.13.243] | (GenBank) Phenol hydroxylase,Ferredoxin subunit (A)
+BEN-LIQUID-ALL_bacbin.71.fa	NEAGMOAJ_00817	CDS	1275				K16246 phenol/toluene 2-monooxygenase (NADH) P5/A5 [EC:1.14.13.244 1.14.13.243] | (GenBank) phenol hydroxylase(A)
+BEN-LIQUID-ALL_bacbin.90.fa	BHIBLEBP_00646	CDS	1278				K16246 phenol/toluene 2-monooxygenase (NADH) P5/A5 [EC:1.14.13.244 1.14.13.243] | (GenBank) dsoF; dimethylsulfide oxygenase component DsoF (A)
+BEN-LIQUID-T2_bacbin.102.fa	KDJFCFCJ_03706	CDS	1044				K16246 phenol/toluene 2-monooxygenase (NADH) P5/A5 [EC:1.14.13.244 1.14.13.243] | (GenBank) 2Fe-2S iron-sulfur cluster binding domain-containing protein (A)
+BEN-LIQUID-T2_bacbin.23.fa	FBMAHPNE_00382	CDS	522	npcB	1.14.13.166		4-nitrophenol 4-monooxygenase/4-nitrocatechol 2-monooxygenase, reductase component
+BEN-LIQUID-T4_bacbin.31.fa	MEOBHNBJ_00801	CDS	1272				K16246 phenol/toluene 2-monooxygenase (NADH) P5/A5 [EC:1.14.13.244 1.14.13.243] | (GenBank) Phenol hydroxylase,Ferredoxin subunit (A)
+BEN-SOLID-ALL_bacbin.104.fa	JMFKPEFO_01879	CDS	717				K16246 phenol/toluene 2-monooxygenase (NADH) P5/A5 [EC:1.14.13.244 1.14.13.243] | (GenBank) phenol hydroxylase(A)
+BEN-SOLID-ALL_bacbin.108.fa	ODMKIOHK_00301	CDS	981				K16246 phenol/toluene 2-monooxygenase (NADH) P5/A5 [EC:1.14.13.244 1.14.13.243] | (GenBank) phenol hydroxylase(A)
+BEN-SOLID-ALL_bacbin.110.fa	NGKIAGLJ_02429	CDS	1014				K16246 phenol/toluene 2-monooxygenase (NADH) P5/A5 [EC:1.14.13.244 1.14.13.243] | (GenBank) phenol hydroxylase(A)
+BEN-SOLID-ALL_bacbin.120.fa	KEMBLPBI_01461	CDS	471	npcB	1.14.13.166		4-nitrophenol 4-monooxygenase/4-nitrocatechol 2-monooxygenase, reductase component
+BEN-SOLID-ALL_bacbin.124.fa	GBDGNDDD_01656	CDS	819				K16246 phenol/toluene 2-monooxygenase (NADH) P5/A5 [EC:1.14.13.244 1.14.13.243] | (GenBank) phenol hydroxylase(A)
+BEN-SOLID-ALL_bacbin.131.fa	ENBFPANH_00006	CDS	567	npcB	1.14.13.166		4-nitrophenol 4-monooxygenase/4-nitrocatechol 2-monooxygenase, reductase component
+BEN-SOLID-ALL_bacbin.141.fa	OCNPBEDF_03077	CDS	1248				K16246 phenol/toluene 2-monooxygenase (NADH) P5/A5 [EC:1.14.13.244 1.14.13.243] | (GenBank) phenol hydroxylase(A)
+BEN-SOLID-ALL_bacbin.142.fa	CFKKEFGD_02590	CDS	810				K16246 phenol/toluene 2-monooxygenase (NADH) P5/A5 [EC:1.14.13.244 1.14.13.243] | (GenBank) dmpP; Phenol hydroxylase P5 protein (A)
+BEN-SOLID-ALL_bacbin.154.fa	DIHAGACM_01227	CDS	489	npcB	1.14.13.166		4-nitrophenol 4-monooxygenase/4-nitrocatechol 2-monooxygenase, reductase component
+BEN-SOLID-ALL_bacbin.163.fa	IKDJGBHM_02313	CDS	993				K16246 phenol/toluene 2-monooxygenase (NADH) P5/A5 [EC:1.14.13.244 1.14.13.243] | (GenBank) phenol hydroxylase(A)
+BEN-SOLID-ALL_bacbin.177.fa	NPGGJCKB_01576	CDS	1569				K16242 phenol/toluene 2-monooxygenase (NADH) P3/A3 [EC:1.14.13.244 1.14.13.243] | (GenBank) YHS domain-containing protein (A)
+BEN-SOLID-ALL_bacbin.177.fa	NPGGJCKB_01580	CDS	1104				K16243 phenol/toluene 2-monooxygenase (NADH) P1/A1 [EC:1.14.13.244 1.14.13.243] | (GenBank) mphL; Phenol hydroxylase P1 protein (A)
+BEN-SOLID-ALL_bacbin.181.fa	OFEMJFCJ_02545	CDS	474	npcB	1.14.13.166		4-nitrophenol 4-monooxygenase/4-nitrocatechol 2-monooxygenase, reductase component
+BEN-SOLID-ALL_bacbin.181.fa	OFEMJFCJ_04096	CDS	1182		1.14.14.-		2,5-diketocamphane 1,2-monooxygenase 2
+BEN-SOLID-ALL_bacbin.189.fa	CCDBGJAH_01253	CDS	753				K16246 phenol/toluene 2-monooxygenase (NADH) P5/A5 [EC:1.14.13.244 1.14.13.243] | (GenBank) 2Fe-2S iron-sulfur cluster binding domain-containing protein (A)
+BEN-SOLID-ALL_bacbin.189.fa	CCDBGJAH_02028	CDS	822				K16246 phenol/toluene 2-monooxygenase (NADH) P5/A5 [EC:1.14.13.244 1.14.13.243] | (GenBank) phenol hydroxylase(A)
+BEN-SOLID-ALL_bacbin.18.fa	DPCNODHF_01201	CDS	849				K16246 phenol/toluene 2-monooxygenase (NADH) P5/A5 [EC:1.14.13.244 1.14.13.243] | (GenBank) phenol hydroxylase(A)
+BEN-SOLID-ALL_bacbin.192.fa	DNLGKDJK_01988	CDS	1239				K16246 phenol/toluene 2-monooxygenase (NADH) P5/A5 [EC:1.14.13.244 1.14.13.243] | (GenBank) phenol hydroxylase(A)
+BEN-SOLID-ALL_bacbin.196.fa	ENOCIOMP_00946	CDS	1620	nphA1	1.14.13.29		4-nitrophenol 2-monooxygenase, oxygenase component
+BEN-SOLID-ALL_bacbin.196.fa	ENOCIOMP_02824	CDS	1008	limB	1.14.13.107		Limonene 1,2-monooxygenase
+BEN-SOLID-ALL_bacbin.199.fa	FDMLNCBM_03150	CDS	975				K16246 phenol/toluene 2-monooxygenase (NADH) P5/A5 [EC:1.14.13.244 1.14.13.243] | (GenBank) phenol hydroxylase(A)
+BEN-SOLID-ALL_bacbin.1.fa	KPLFDDEL_00131	CDS	1008				K16246 phenol/toluene 2-monooxygenase (NADH) P5/A5 [EC:1.14.13.244 1.14.13.243] | (GenBank) phenol hydroxylase(A)
+BEN-SOLID-ALL_bacbin.200.fa	NAMBIIAK_00057	CDS	1230				K16246 phenol/toluene 2-monooxygenase (NADH) P5/A5 [EC:1.14.13.244 1.14.13.243] | (GenBank) phenol hydroxylase(A)
+BEN-SOLID-ALL_bacbin.200.fa	NAMBIIAK_05387	CDS	957				K16246 phenol/toluene 2-monooxygenase (NADH) P5/A5 [EC:1.14.13.244 1.14.13.243] | (GenBank) phenol hydroxylase(A)
+BEN-SOLID-ALL_bacbin.205.fa	HLOKKFJM_00776	CDS	732				K16246 phenol/toluene 2-monooxygenase (NADH) P5/A5 [EC:1.14.13.244 1.14.13.243] | (GenBank) phenol hydroxylase(A)
+BEN-SOLID-ALL_bacbin.222.fa	IOEENHPM_00897	CDS	1158	limB	1.14.13.107		Limonene 1,2-monooxygenase
+BEN-SOLID-ALL_bacbin.232.fa	FBOPHGCB_01139	CDS	477	npcB	1.14.13.166		4-nitrophenol 4-monooxygenase/4-nitrocatechol 2-monooxygenase, reductase component
+BEN-SOLID-ALL_bacbin.28.fa	JOGLOPHO_01582	CDS	1050				K16246 phenol/toluene 2-monooxygenase (NADH) P5/A5 [EC:1.14.13.244 1.14.13.243] | (GenBank) phenol hydroxylase(A)
+BEN-SOLID-ALL_bacbin.43.fa	DCDGFCGL_01093	CDS	1692	iaaM	1.13.12.3		Tryptophan 2-monooxygenase
+BEN-SOLID-ALL_bacbin.51.fa	BJOINPJL_02635	CDS	1227				K16246 phenol/toluene 2-monooxygenase (NADH) P5/A5 [EC:1.14.13.244 1.14.13.243] | (GenBank) dsoF; dimethylsulfide oxygenase component DsoF (A)
+BEN-SOLID-ALL_bacbin.52.fa	GJCCPNDA_00095	CDS	1044				K16246 phenol/toluene 2-monooxygenase (NADH) P5/A5 [EC:1.14.13.244 1.14.13.243] | (GenBank) phenol hydroxylase(A)
+BEN-SOLID-ALL_bacbin.52.fa	GJCCPNDA_00489	CDS	978				K16246 phenol/toluene 2-monooxygenase (NADH) P5/A5 [EC:1.14.13.244 1.14.13.243] | (GenBank) phenol hydroxylase(A)
+BEN-SOLID-ALL_bacbin.54.fa	OGBJPJPC_01383	CDS	1011				K16246 phenol/toluene 2-monooxygenase (NADH) P5/A5 [EC:1.14.13.244 1.14.13.243] | (GenBank) phenol hydroxylase(A)
+BEN-SOLID-ALL_bacbin.62.fa	HAMFIJDD_00934	CDS	738				K16246 phenol/toluene 2-monooxygenase (NADH) P5/A5 [EC:1.14.13.244 1.14.13.243] | (GenBank) Na(+)-translocating NADH-quinonereductase subunit F (A)
+BEN-SOLID-ALL_bacbin.62.fa	HAMFIJDD_01989	CDS	822				K16246 phenol/toluene 2-monooxygenase (NADH) P5/A5 [EC:1.14.13.244 1.14.13.243] | (GenBank) phenol hydroxylase(A)
+BEN-SOLID-ALL_bacbin.65.fa	DFMNKDMM_00066	CDS	474	npcB	1.14.13.166		4-nitrophenol 4-monooxygenase/4-nitrocatechol 2-monooxygenase, reductase component
+BEN-SOLID-ALL_bacbin.68.fa	FCOKEGCG_02089	CDS	708				K16246 phenol/toluene 2-monooxygenase (NADH) P5/A5 [EC:1.14.13.244 1.14.13.243] | (GenBank) oxidoreductase FAD/NAD(P)-binding protein (A)
+BEN-SOLID-ALL_bacbin.79.fa	MIENMKLI_04195	CDS	1230				K16246 phenol/toluene 2-monooxygenase (NADH) P5/A5 [EC:1.14.13.244 1.14.13.243] | (GenBank) phenol hydroxylase(A)
+BEN-SOLID-ALL_bacbin.79.fa	MIENMKLI_04732	CDS	843				K16246 phenol/toluene 2-monooxygenase (NADH) P5/A5 [EC:1.14.13.244 1.14.13.243] | (GenBank) dsoF; dimethylsulfide oxygenase component DsoF (A)
+BEN-SOLID-ALL_bacbin.83.fa	FDOALDEA_00061	CDS	1263				K16246 phenol/toluene 2-monooxygenase (NADH) P5/A5 [EC:1.14.13.244 1.14.13.243] | (GenBank) phenol hydroxylase(A)
+BEN-SOLID-ALL_bacbin.84.fa	INKFPNGM_01434	CDS	1227				K16246 phenol/toluene 2-monooxygenase (NADH) P5/A5 [EC:1.14.13.244 1.14.13.243] | (GenBank) 2Fe-2S iron-sulfur cluster binding domain-containing protein (A)
+BEN-SOLID-ALL_bacbin.90.fa	IHFENEHE_02334	CDS	975				K16246 phenol/toluene 2-monooxygenase (NADH) P5/A5 [EC:1.14.13.244 1.14.13.243] | (GenBank) phenol hydroxylase(A)
+BEN-SOLID-ALL_bacbin.93.fa	AAFEBFHF_01408	CDS	1167	limB	1.14.13.107		Limonene 1,2-monooxygenase
+BEN-SOLID-ALL_bacbin.95.fa	CAKJDAAH_03305	CDS	810				K16246 phenol/toluene 2-monooxygenase (NADH) P5/A5 [EC:1.14.13.244 1.14.13.243] | (GenBank) phenol hydroxylase(A)
+BEN-SOLID-ALL_bacbin.95.fa	CAKJDAAH_03471	CDS	783				K16246 phenol/toluene 2-monooxygenase (NADH) P5/A5 [EC:1.14.13.244 1.14.13.243] | (GenBank) phenol hydroxylase(A)
+BEN-SOLID-T0_bacbin.120.fa	CJLMOMDC_01043	CDS	819				K16246 phenol/toluene 2-monooxygenase (NADH) P5/A5 [EC:1.14.13.244 1.14.13.243] | (GenBank) phenol hydroxylase(A)
+BEN-SOLID-T0_bacbin.56.fa	BKNHNLCA_00270	CDS	1134				K16246 phenol/toluene 2-monooxygenase (NADH) P5/A5 [EC:1.14.13.244 1.14.13.243] | (GenBank) Phenol hydroxylase,FAD-and [2Fe-2S]-containing reductase component DmpP(A)
+BEN-SOLID-T0_bacbin.56.fa	BKNHNLCA_00595	CDS	1692	iaaM	1.13.12.3		Tryptophan 2-monooxygenase
+BEN-SOLID-T0_bacbin.65.fa	KNFFPJDG_02823	CDS	483	npcB	1.14.13.166		4-nitrophenol 4-monooxygenase/4-nitrocatechol 2-monooxygenase, reductase component
+BEN-SOLID-T1_bacbin.10.fa	IAEJDEKD_04082	CDS	1230				K16246 phenol/toluene 2-monooxygenase (NADH) P5/A5 [EC:1.14.13.244 1.14.13.243] | (GenBank) phenol hydroxylase(A)
+BEN-SOLID-T1_bacbin.10.fa	IAEJDEKD_04159	CDS	987				K16246 phenol/toluene 2-monooxygenase (NADH) P5/A5 [EC:1.14.13.244 1.14.13.243] | (GenBank) phenol hydroxylase(A)
+BEN-SOLID-T1_bacbin.110.fa	JALNAGCM_01150	CDS	1692	iaaM	1.13.12.3		Tryptophan 2-monooxygenase
+BEN-SOLID-T1_bacbin.17.fa	CHAIIADH_03368	CDS	492	npcB	1.14.13.166		4-nitrophenol 4-monooxygenase/4-nitrocatechol 2-monooxygenase, reductase component
+BEN-SOLID-T1_bacbin.83.fa	DOEEBIHG_01046	CDS	648				K16246 phenol/toluene 2-monooxygenase (NADH) P5/A5 [EC:1.14.13.244 1.14.13.243] | (GenBank) lapP; Multi-component phenol hydoxylase, reductase subunit; LapP (A)
+BEN-SOLID-T1_bacbin.8.fa	JPBEPHBB_01339	CDS	819				K16246 phenol/toluene 2-monooxygenase (NADH) P5/A5 [EC:1.14.13.244 1.14.13.243] | (GenBank) phenol hydroxylase(A)
+BEN-SOLID-T1_bacbin.92.fa	KALMDGCD_00003	CDS	1053				K16246 phenol/toluene 2-monooxygenase (NADH) P5/A5 [EC:1.14.13.244 1.14.13.243] | (GenBank) lapP; Multi-component phenol hydoxylase, reductase subunit; LapP (A)
+BEN-SOLID-T2_bacbin.110.fa	NLFPJIBO_01226	CDS	1026				K16246 phenol/toluene 2-monooxygenase (NADH) P5/A5 [EC:1.14.13.244 1.14.13.243] | (GenBank) phenol 2-monooxygenase P5 subunit (A)
+BEN-SOLID-T2_bacbin.116.fa	FOOJBHLN_04746	CDS	1104				K16243 phenol/toluene 2-monooxygenase (NADH) P1/A1 [EC:1.14.13.244 1.14.13.243] | (GenBank) mphL; Phenol hydroxylase P1 protein (A)
+BEN-SOLID-T2_bacbin.3.fa	PMLFMOMP_01379	CDS	1026				K16246 phenol/toluene 2-monooxygenase (NADH) P5/A5 [EC:1.14.13.244 1.14.13.243] | (GenBank) 2Fe-2S iron-sulfur cluster binding domain-containing protein (A)
+BEN-SOLID-T2_bacbin.85.fa	NGJHJCMI_02384	CDS	1107	limB	1.14.13.107		Limonene 1,2-monooxygenase
+BEN-T2_bacbin.13.fa	OICEMIOB_00712	CDS	732				K16246 phenol/toluene 2-monooxygenase (NADH) P5/A5 [EC:1.14.13.244 1.14.13.243] | (GenBank) phenol hydroxylase(A)
+BEN-T2_bacbin.152.fa	BFCCHIGO_00494	CDS	753				K16246 phenol/toluene 2-monooxygenase (NADH) P5/A5 [EC:1.14.13.244 1.14.13.243] | (GenBank) 2Fe-2S iron-sulfur cluster binding domain-containing protein (A)
+BEN-T2_bacbin.152.fa	BFCCHIGO_00497	CDS	822				K16246 phenol/toluene 2-monooxygenase (NADH) P5/A5 [EC:1.14.13.244 1.14.13.243] | (GenBank) phenol hydroxylase(A)
+BEN-T2_bacbin.21.fa	LLNIINAG_00336	CDS	1023				K16246 phenol/toluene 2-monooxygenase (NADH) P5/A5 [EC:1.14.13.244 1.14.13.243] | (GenBank) phenol hydroxylase(A)
+BEN-T2_bacbin.21.fa	LLNIINAG_00337	CDS	987				K16243 phenol/toluene 2-monooxygenase (NADH) P1/A1 [EC:1.14.13.244 1.14.13.243] | (GenBank) mphL; Phenol hydroxylase P1 protein (A)
+BEN-T2_bacbin.21.fa	LLNIINAG_00338	CDS	261				K16244 phenol/toluene 2-monooxygenase (NADH) P2/A2 [EC:1.14.13.244 1.14.13.243] | (GenBank) monooxygenase component MmoB/DmpM (A)
+BEN-T2_bacbin.21.fa	LLNIINAG_00341	CDS	1503				K16242 phenol/toluene 2-monooxygenase (NADH) P3/A3 [EC:1.14.13.244 1.14.13.243] | (GenBank) toluene hydroxylase(A)
+BEN-T2_bacbin.21.fa	LLNIINAG_00623	CDS	1227				K16246 phenol/toluene 2-monooxygenase (NADH) P5/A5 [EC:1.14.13.244 1.14.13.243] | (GenBank) phenol hydroxylase(A)
+BEN-T2_bacbin.21.fa	LLNIINAG_03028	CDS	993				K16243 phenol/toluene 2-monooxygenase (NADH) P1/A1 [EC:1.14.13.244 1.14.13.243] | (GenBank) lapL; Multi-component phenol hydoxylase, beta subunit; LapL (A)
+BEN-T2_bacbin.21.fa	LLNIINAG_03029	CDS	270				K16244 phenol/toluene 2-monooxygenase (NADH) P2/A2 [EC:1.14.13.244 1.14.13.243] | (GenBank) monooxygenase(A)
+BEN-T2_bacbin.21.fa	LLNIINAG_03030	CDS	1524				K16242 phenol/toluene 2-monooxygenase (NADH) P3/A3 [EC:1.14.13.244 1.14.13.243] | (GenBank) phenol 2-monooxygenase(A)
+BEN-T2_bacbin.21.fa	LLNIINAG_03031	CDS	357				K16245 phenol/toluene 2-monooxygenase (NADH) P4/A4 [EC:1.14.13.244 1.14.13.243] | (GenBank) multi-component phenol hydoxylase subunit gamma LapO (A)
+BEN-T2_bacbin.21.fa	LLNIINAG_03032	CDS	1059				K16246 phenol/toluene 2-monooxygenase (NADH) P5/A5 [EC:1.14.13.244 1.14.13.243] | (GenBank) phenol hydroxylase(A)
+BEN-T2_bacbin.22.fa	DOBLOCBH_03118	CDS	765				K16246 phenol/toluene 2-monooxygenase (NADH) P5/A5 [EC:1.14.13.244 1.14.13.243] | (GenBank) phenol hydroxylase(A)
+BEN-T2_bacbin.47.fa	KHCCDEGE_01172	CDS	1254		1.13.12.4	COG1304	Lactate 2-monooxygenase
+BEN-T2_bacbin.71.fa	EHIIFMKB_00400	CDS	567	npcB	1.14.13.166		4-nitrophenol 4-monooxygenase/4-nitrocatechol 2-monooxygenase, reductase component
+BEN-T2_bacbin.96.fa	FEBPMLEL_01490	CDS	273				K16246 phenol/toluene 2-monooxygenase (NADH) P5/A5 [EC:1.14.13.244 1.14.13.243] | (GenBank) phenol hydroxylase subunit P5 (A)
+BEN-T2_bacbin.9.fa	IDPLOBDD_01125	CDS	492	npcB	1.14.13.166		4-nitrophenol 4-monooxygenase/4-nitrocatechol 2-monooxygenase, reductase component
+BEN-T3_bacbin.100.fa	IEELBEBC_01625	CDS	708				K16246 phenol/toluene 2-monooxygenase (NADH) P5/A5 [EC:1.14.13.244 1.14.13.243] | (GenBank) phenol 2-monooxygenase(A)
+BEN-T3_bacbin.110.fa	OHMOCOMD_01015	CDS	993				K16243 phenol/toluene 2-monooxygenase (NADH) P1/A1 [EC:1.14.13.244 1.14.13.243] | (GenBank) phenol hydroxylase(A)
+BEN-T3_bacbin.110.fa	OHMOCOMD_01016	CDS	285				K16244 phenol/toluene 2-monooxygenase (NADH) P2/A2 [EC:1.14.13.244 1.14.13.243] | (GenBank) monooxygenase(A)
+BEN-T3_bacbin.110.fa	OHMOCOMD_01017	CDS	1587				K16242 phenol/toluene 2-monooxygenase (NADH) P3/A3 [EC:1.14.13.244 1.14.13.243] | (GenBank) phenol 2-monooxygenase(A)
+BEN-T3_bacbin.110.fa	OHMOCOMD_01018	CDS	357				K16245 phenol/toluene 2-monooxygenase (NADH) P4/A4 [EC:1.14.13.244 1.14.13.243] | (GenBank) phenol hydroxylase(A)
+BEN-T3_bacbin.110.fa	OHMOCOMD_01019	CDS	1065				K16246 phenol/toluene 2-monooxygenase (NADH) P5/A5 [EC:1.14.13.244 1.14.13.243] | (GenBank) phenol hydroxylase(A)
+BEN-T3_bacbin.65.fa	IGJLEKEF_02747	CDS	273				K16246 phenol/toluene 2-monooxygenase (NADH) P5/A5 [EC:1.14.13.244 1.14.13.243] | (GenBank) phenol hydroxylase subunit P5 (A)
+BEN-T3_bacbin.66.fa	JIFJKOFC_01570	CDS	633				K16246 phenol/toluene 2-monooxygenase (NADH) P5/A5 [EC:1.14.13.244 1.14.13.243] | (GenBank) phenol hydroxylase(A)
+BEN-T3_bacbin.66.fa	JIFJKOFC_02132	CDS	1200				K16246 phenol/toluene 2-monooxygenase (NADH) P5/A5 [EC:1.14.13.244 1.14.13.243] | (GenBank) phenol hydroxylase(A)
+BEN-T3_bacbin.71.fa	NNKGKKJF_03314	CDS	510	npcB	1.14.13.166		4-nitrophenol 4-monooxygenase/4-nitrocatechol 2-monooxygenase, reductase component

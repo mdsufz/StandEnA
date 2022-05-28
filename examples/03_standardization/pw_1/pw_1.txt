@@ -1,0 +1,23 @@
+2-hydroxymuconic semialdehyde hydrolase	2-hydroxy-6-oxohepta-2,4-dienoate hydrolase
+2-hydroxymuconic semialdehyde hydrolase	2-hydroxymuconate-6-semialdehyde hydrolase
+2-hydroxymuconic semialdehyde hydrolase	2-hydroxymuconate-semialdehyde formylhydrolase
+2-hydroxymuconic semialdehyde hydrolase	2-hydroxymuconate-semialdehyde hydrolase
+2-hydroxymuconic semialdehyde hydrolase	2-hydroxymuconic semialdehyde hydrolase
+2-hydroxymuconic semialdehyde hydrolase	HOD hydrolase
+2-oxopent-4-enoate hydratase	2-keto-4-pentenoate hydratase
+2-oxopent-4-enoate hydratase	2-keto-4-pentenoate (vinylpyruvate)hydratase
+2-oxopent-4-enoate hydratase	2-oxopent-4-enoate hydratase
+2-oxopent-4-enoate hydratase	4-hydroxy-2-oxopentanoate hydro-lyase
+2-oxopent-4-enoate hydratase	4-hydroxy-2-oxopentanoate hydro-lyase (2-oxopent-4-enoate-forming)
+4-hydroxy-2-oxovalerate aldolase	4-hydroxy-2-ketovalerate aldolase
+4-hydroxy-2-oxovalerate aldolase	4-hydroxy-2-oxopentanoate pyruvate-lyase
+4-hydroxy-2-oxovalerate aldolase	4-hydroxy-2-oxopentanoate pyruvate-lyase (acetaldehyde-forming)
+4-hydroxy-2-oxovalerate aldolase	4-hydroxy-2-oxovalerate aldolase
+4-hydroxy-2-oxovalerate aldolase	4-hydroxy-2-oxovalerate pyruvate-lyase
+Benzene 1,2-dioxygenase	benzene 1,2-dioxygenase
+Benzene 1,2-dioxygenase	benzene dioxygenase
+Benzene 1,2-dioxygenase	benzene hydroxylase
+cis-1,2-dihydrobenzene-1,2-diol dehydrogenase	cis-1,2-dihydrobenzene-1,2-diol dehydrogenase
+cis-1,2-dihydrobenzene-1,2-diol dehydrogenase	cis-1,2-dihydrocyclohexa-3,5-diene (nicotinamide adenine dinucleotide) oxidoreductase
+cis-1,2-dihydrobenzene-1,2-diol dehydrogenase	cis-benzene glycol dehydrogenase
+Phenol 2-monooxygenase	phenol 2-monooxygenase (NADH)

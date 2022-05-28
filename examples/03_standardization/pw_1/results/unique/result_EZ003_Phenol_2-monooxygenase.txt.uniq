@@ -1,0 +1,28 @@
+REMOVE	2,5-diketocamphane 1,2-monooxygenase 2
+REMOVE	4-nitrophenol 2-monooxygenase, oxygenase component
+REMOVE	4-nitrophenol 4-monooxygenase/4-nitrocatechol 2-monooxygenase, reductase component
+phenol 2-monooxygenase (NADH) P3/A3	K16242 phenol/toluene 2-monooxygenase (NADH) P3/A3 [EC:1.14.13.244 1.14.13.243] | (GenBank) phenol 2-monooxygenase(A)
+phenol 2-monooxygenase (NADH) P3/A3	K16242 phenol/toluene 2-monooxygenase (NADH) P3/A3 [EC:1.14.13.244 1.14.13.243] | (GenBank) toluene hydroxylase(A)
+phenol 2-monooxygenase (NADH) P3/A3	K16242 phenol/toluene 2-monooxygenase (NADH) P3/A3 [EC:1.14.13.244 1.14.13.243] | (GenBank) YHS domain-containing protein (A)
+phenol 2-monooxygenase (NADH) P1/A1	K16243 phenol/toluene 2-monooxygenase (NADH) P1/A1 [EC:1.14.13.244 1.14.13.243] | (GenBank) lapL; Multi-component phenol hydoxylase, beta subunit; LapL (A)
+phenol 2-monooxygenase (NADH) P1/A1	K16243 phenol/toluene 2-monooxygenase (NADH) P1/A1 [EC:1.14.13.244 1.14.13.243] | (GenBank) mphL; Phenol hydroxylase P1 protein (A)
+phenol 2-monooxygenase (NADH) P1/A1	K16243 phenol/toluene 2-monooxygenase (NADH) P1/A1 [EC:1.14.13.244 1.14.13.243] | (GenBank) phenol hydroxylase(A)
+phenol 2-monooxygenase (NADH) P2/A2	K16244 phenol/toluene 2-monooxygenase (NADH) P2/A2 [EC:1.14.13.244 1.14.13.243] | (GenBank) monooxygenase(A)
+phenol 2-monooxygenase (NADH) P2/A2	K16244 phenol/toluene 2-monooxygenase (NADH) P2/A2 [EC:1.14.13.244 1.14.13.243] | (GenBank) monooxygenase component MmoB/DmpM (A)
+phenol 2-monooxygenase (NADH) P4/A4	K16245 phenol/toluene 2-monooxygenase (NADH) P4/A4 [EC:1.14.13.244 1.14.13.243] | (GenBank) multi-component phenol hydoxylase subunit gamma LapO (A)
+phenol 2-monooxygenase (NADH) P4/A4	K16245 phenol/toluene 2-monooxygenase (NADH) P4/A4 [EC:1.14.13.244 1.14.13.243] | (GenBank) phenol hydroxylase(A)
+phenol 2-monooxygenase (NADH) P5/A5	K16246 phenol/toluene 2-monooxygenase (NADH) P5/A5 [EC:1.14.13.244 1.14.13.243] | (GenBank) 2Fe-2S iron-sulfur cluster binding domain-containing protein (A)
+phenol 2-monooxygenase (NADH) P5/A5	K16246 phenol/toluene 2-monooxygenase (NADH) P5/A5 [EC:1.14.13.244 1.14.13.243] | (GenBank) dmpP; Phenol hydroxylase P5 protein (A)
+phenol 2-monooxygenase (NADH) P5/A5	K16246 phenol/toluene 2-monooxygenase (NADH) P5/A5 [EC:1.14.13.244 1.14.13.243] | (GenBank) dsoF; dimethylsulfide oxygenase component DsoF (A)
+phenol 2-monooxygenase (NADH) P5/A5	K16246 phenol/toluene 2-monooxygenase (NADH) P5/A5 [EC:1.14.13.244 1.14.13.243] | (GenBank) lapP; Multi-component phenol hydoxylase, reductase subunit; LapP (A)
+phenol 2-monooxygenase (NADH) P5/A5	K16246 phenol/toluene 2-monooxygenase (NADH) P5/A5 [EC:1.14.13.244 1.14.13.243] | (GenBank) Na(+)-translocating NADH-quinonereductase subunit F (A)
+phenol 2-monooxygenase (NADH) P5/A5	K16246 phenol/toluene 2-monooxygenase (NADH) P5/A5 [EC:1.14.13.244 1.14.13.243] | (GenBank) oxidoreductase FAD/NAD(P)-binding protein (A)
+phenol 2-monooxygenase (NADH) P5/A5	K16246 phenol/toluene 2-monooxygenase (NADH) P5/A5 [EC:1.14.13.244 1.14.13.243] | (GenBank) phenol 2-monooxygenase(A)
+phenol 2-monooxygenase (NADH) P5/A5	K16246 phenol/toluene 2-monooxygenase (NADH) P5/A5 [EC:1.14.13.244 1.14.13.243] | (GenBank) phenol 2-monooxygenase P5 subunit (A)
+phenol 2-monooxygenase (NADH) P5/A5	K16246 phenol/toluene 2-monooxygenase (NADH) P5/A5 [EC:1.14.13.244 1.14.13.243] | (GenBank) phenol hydroxylase(A)
+phenol 2-monooxygenase (NADH) P5/A5	K16246 phenol/toluene 2-monooxygenase (NADH) P5/A5 [EC:1.14.13.244 1.14.13.243] | (GenBank) Phenol hydroxylase,FAD-and [2Fe-2S]-containing reductase component DmpP(A)
+phenol 2-monooxygenase (NADH) P5/A5	K16246 phenol/toluene 2-monooxygenase (NADH) P5/A5 [EC:1.14.13.244 1.14.13.243] | (GenBank) Phenol hydroxylase,Ferredoxin subunit (A)
+phenol 2-monooxygenase (NADH) P5/A5	K16246 phenol/toluene 2-monooxygenase (NADH) P5/A5 [EC:1.14.13.244 1.14.13.243] | (GenBank) phenol hydroxylase subunit P5 (A)
+REMOVE	Lactate 2-monooxygenase
+REMOVE	Limonene 1,2-monooxygenase
+REMOVE	Tryptophan 2-monooxygenase
