@@ -1,8 +1,0 @@
-mkdir edirect_fasta
-(ortsuite_env) fatma@fatma-VirtualBox:~$ echo "START: $(date)"; cat id_synonyms_per_line.tsv | while read line; do id=$(echo "$line" | cut -f1); reac=$(echo "$line" | cut -f6 ); perl bulk_edirect_custom.pl "$reac" protein $id edirect_fasta/ >> log.txt 2>> err.txt; done; echo "  END  : $(date)";
-START: Cum 18 Şub 2022 22:36:58 +03
-  END  : Cum 18 Şub 2022 22:57:54 +03
-(ortsuite_env) fatma@fatma-VirtualBox:~$ mkdir manual_download_fasta/
-(ortsuite_env) fatma@fatma-VirtualBox:~$ download_kos -o manual_download_fasta/ -e ec_list.txt > log_kos.txt 2> err_kos.txt
-(ortsuite_env) fatma@fatma-VirtualBox:~$ download_kos -o manual_download_fasta/ -k kos.txt > log_ecs.txt 2> err_ecs.txt
-bu txt file lar hep boş neden?

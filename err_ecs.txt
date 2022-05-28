@@ -1,7 +1,0 @@
-Traceback (most recent call last):
-  File "/home/fatma/miniconda3/envs/ortsuite_env/bin/download_kos", line 33, in <module>
-    sys.exit(load_entry_point('OrtSuite==0.1', 'console_scripts', 'download_kos')())
-  File "/home/fatma/miniconda3/envs/ortsuite_env/lib/python3.6/site-packages/OrtSuite-0.1-py3.6.egg/src/download_kos.py", line 298, in run
-  File "/home/fatma/miniconda3/envs/ortsuite_env/lib/python3.6/site-packages/OrtSuite-0.1-py3.6.egg/src/download_kos.py", line 219, in main
-  File "/home/fatma/miniconda3/envs/ortsuite_env/lib/python3.6/site-packages/OrtSuite-0.1-py3.6.egg/EGG-INFO/scripts/aux.py", line 359, in get_ko_name
-UnboundLocalError: local variable 'definition' referenced before assignment
