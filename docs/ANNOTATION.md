@@ -49,7 +49,7 @@ the fasta files which will be used as input for annotation.
 mkdir short
 
 # Move to the folder where your genomes are
-cd genomes
+cd /path/to/genomes
 
 # This awk command does the trick of renaming the fasta headers
 # awk is taking each fasta as input and outputing to the directory short
@@ -71,6 +71,22 @@ The submission script (which has the commands used) is available [here](../scrip
 
 **Please note that the script contains personal data and paths in the server. That all must be replaced by your own. 
 
+#### Running Prokka on genomes (on local machine)
+
+Changing working directory to the directory containing the shortened genomes (from previous step):
+```bash
+cd /path/to/short
+```
+Creating and activating Prokka environment in conda (can only be done after prokka installation which is available [here](../README.md):
+```bash
+conda create -n prokka -c conda-forge -c bioconda prokka
+conda activate prokka
+```
+Running Prokka for genomes:
+```bash
+for k in short/*.fa; do prokka $k --outdir prokka_out/"$k".prokka.output --prefix PROKKA_${k##*/} --cpus 4 ; echo $k; done
+```
+Note that depending on your machine resources you can increase the cpu number to be used from --cpus option.
 
 #### Compiling all results into a single file
 
