@@ -92,8 +92,7 @@ This step is necessary if you want to download extra enzymes
 that were not collected in the previous step.
 For example, some that I did not have the IDs before. 
 Also, I manually downloaded a couple of proteins.
-For this step to be executed OrtSuite must be installed as described [here](https://github.com/mdsufz/OrtSuite)
-
+For this step to be executed OrtSuite must be installed as described [here]([https://github.com/mdsufz/OrtSuite](https://github.com/mdsufz/OrtSuite#readme))
 
 Create a folder to store manually downloaded fasta files
 ```bash
