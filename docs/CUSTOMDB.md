@@ -103,6 +103,8 @@ mkdir manual_download_fasta/
 1) Downloading proteins using OrtSuite
 
 I recommend checking OrtSuite github to learn how to use those commands.
+Note that you must be at the OrtSuite environment in conda if you followed the conda installation [here](https://github.com/mdsufz/OrtSuite)
+
 ```bash
 # Downloading protein sequences based on a list of EC numbers
 download_kos -o manual_download_fasta/ -e ec_list.txt > log_ecs.txt 2> err_ecs.txt
