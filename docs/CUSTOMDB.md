@@ -62,7 +62,7 @@ perl -ne 'chomp; @fields=split("\t",$_); $fields[5] =~ tr/ //d; unless(scalar(sp
 #### 4) Using a custom perl script to download proteins from Edirect API
 The custom script is based on the following example application: [Sample Applications of the E-utilities - Entrez Programming Utilities Help - NCBI Bookshelf](https://www.ncbi.nlm.nih.gov/books/NBK25498/#chapter3.Application_3_Retrieving_large)
 
-Running "bulk_edirect_custom.pl". This script is available [here](../scripts/bulk_edirect_custom.pl).
+This following code will run the "bulk_edirect_custom.pl" script. This script is available [here](../scripts/bulk_edirect_custom.pl).
 
 If you are on EVE, do not forget to load the modules.
 ```bash
@@ -70,10 +70,6 @@ If you are on EVE, do not forget to load the modules.
 module load foss/2019b Perl/5.30.0
 ```
 Run the script. 
-
-Since it can take hours or even days depending on the size of your list, I recommend running that with help of another tool (e.g. "screen").
-
-Do not try to run many instances in parallel. This may cause NCBI to black list your ip.
 
 ```bash
 # Create a folder to store download fasta files
@@ -84,13 +80,19 @@ mkdir edirect_fasta
 # Running script
 echo "START: $(date)"; cat id_synonyms_per_line.tsv | while read line; do id=$(echo "$line" | cut -f1); reac=$(echo "$line" | cut -f6 ); perl ../../../scripts/bulk_edirect_custom.pl "$reac" protein $id edirect_fasta/ >> log.txt 2>> err.txt; done; echo "  END  : $(date)";
 ```
+Since it can take hours or even days depending on the size of your list, I recommend running that with help of another tool (e.g. "screen").
+
+Do not try to run many instances in parallel. 
+This may cause NCBI to black list your IP in which case the log.txt file from this step may contain "RESULTS: ERROR" output for your queries.
+
 
 #### 5) Adding missing proteins to custom database
 
 This step is necessary if you want to download extra enzymes
-that were not collected in the previous step. 
+that were not collected in the previous step.
 For example, some that I did not have the IDs before. 
-Also, I downloaded manually a couple of proteins.
+Also, I manually downloaded a couple of proteins.
+For this step to be executed OrtSuite must be installed as described [here](https://github.com/mdsufz/OrtSuite)
 
 
 Create a folder to store manually downloaded fasta files
@@ -103,10 +105,10 @@ mkdir manual_download_fasta/
 I recommend checking OrtSuite github to learn how to use those commands.
 ```bash
 # Downloading protein sequences based on a list of EC numbers
-download_kos -o manual_download_fasta/ -e ec_list.txt > log_kos.txt 2> err_kos.txt
+download_kos -o manual_download_fasta/ -e ec_list.txt > log_ecs.txt 2> err_ecs.txt
 
 # Downloading protein sequences based on a list of KO numbers
-download_kos -o manual_download_fasta/ -k kos.txt > log_ecs.txt 2> err_ecs.txt
+download_kos -o manual_download_fasta/ -k kos.txt > log_kos.txt 2> err_kos.txt
 ```
 
 2) Manually downloading proteins from other sources
