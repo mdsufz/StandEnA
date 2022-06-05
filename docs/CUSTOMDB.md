@@ -92,7 +92,7 @@ This step is necessary if you want to download extra enzymes
 that were not collected in the previous step.
 For example, some that I did not have the IDs before. 
 Also, I manually downloaded a couple of proteins.
-For this step to be executed OrtSuite must be installed as described [here]([https://github.com/mdsufz/OrtSuite](https://github.com/mdsufz/OrtSuite#readme))
+For this step to be executed OrtSuite must be installed as described [here](https://github.com/mdsufz/OrtSuite)
 
 Create a folder to store manually downloaded fasta files
 ```bash
@@ -102,7 +102,7 @@ mkdir manual_download_fasta/
 1) Downloading proteins using OrtSuite
 
 I recommend checking OrtSuite github to learn how to use those commands.
-Note that you must be at the OrtSuite environment in conda if you followed the conda installation [here](https://github.com/mdsufz/OrtSuite)
+Note that you must be at the OrtSuite environment in conda if you followed the conda installation [here]((https://github.com/mdsufz/OrtSuite#readme)
 
 ```bash
 # Downloading protein sequences based on a list of EC numbers
