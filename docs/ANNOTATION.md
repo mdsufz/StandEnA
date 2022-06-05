@@ -77,11 +77,8 @@ Changing working directory to the directory containing the shortened genomes (fr
 ```bash
 cd /path/to/short
 ```
-Creating and activating Prokka environment in conda (can only be done after prokka installation which is available [here](../README.md):
-```bash
-conda create -n prokka -c conda-forge -c bioconda prokka
-conda activate prokka
-```
+Note that this step can only be done after prokka installation witin the std_enzymes conda environment as described [here](../README.md)). 
+
 Running Prokka for genomes:
 ```bash
 for k in short/*.fa; do prokka $k --outdir prokka_out/"$k".prokka.output --prefix PROKKA_${k##*/} --cpus 4 ; echo $k; done
@@ -96,7 +93,7 @@ The most important output for our further analysis is the ".tsv" file
 Concatenate all your ".tsv" outputs together.
 ```bash
 # Concatenate files while printing filenames to first column
-awk '{print FILENAME "\t" $0}' /path/to/prokka_annotation/*/*.tsv > prokka_all.tsv
+awk '{print FILENAME "\t" $0}' /path/to/prokka_out/*/*.tsv > prokka_all.tsv
 ```
 
 Optional. Formating genome names from results.
