@@ -35,13 +35,9 @@ Install required packages inside the environment
 ```bash
 conda install -c bioconda perl-lwp-simple prokka blast==2.9.0
 ```
-
-Install download_kos.py ([OrtSuite](https://github.com/mdsufz/OrtSuite/) auxiliary script)
-```bash
-wget https://raw.githubusercontent.com/mdsufz/OrtSuite/master/src/download_kos.py
-chmod +x download_kos.py
-mv download_kos.py $CONDA_PREFIX/bin
-```
+## Dependencies
+To manual download additional proteins, [OrtSuite](https://github.com/mdsufz/OrtSuite/) is required. 
+Follow the installation steps for OrtSuite.
 
 ## System requirements
 A typical desktop (Linux) computer is capable of performing this workflow.
