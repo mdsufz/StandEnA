@@ -2,10 +2,14 @@
 
 #### 1) Combining all standardized prokka results
 
-Creating directory for this part and changing working directory to this
+Creating directory for this part and changing working directory to this:
 ```bash
 mkdir 04_presabs
 cd 04_presabs
+```
+Note that the last step of [step 3](STANDARDIZATION.md) is at the subdirectory 03_standardization/pw_1/results/standardized/. The relative path from this point to the directory 04_presabs is:
+```bash
+mkdir ../../../../04_presabs
 ```
 
 Combining all standardized results
