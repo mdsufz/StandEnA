@@ -81,9 +81,10 @@ Note that this step can only be done after prokka installation witin the std_enz
 
 Running Prokka for genomes:
 ```bash
-for k in short/*.fa; do prokka $k --outdir prokka_out/"$k".prokka.output --prefix PROKKA_${k##*/} --cpus 4 ; echo $k; done
+for k in short/*.fa; do prokka $k --outdir prokka_out/"$k".prokka.output --prefix PROKKA_${k##*/} --proteins "custom_db.faa" --norrna --notrna --cpus 4 ; echo $k; done
 ```
-Note that depending on your machine resources you can increase the cpu number to be used from --cpus option.
+Note that depending on your machine resources you can increase the cpu number to be used from --cpus option. See [Prokka](https://github.com/tseemann/prokka#readme) help page for detailed information on the flags used in the above code. 
+This step puts all genome annotation files to the location 02_annotation/prokka_out/short.
 
 #### Compiling all results into a single file
 
