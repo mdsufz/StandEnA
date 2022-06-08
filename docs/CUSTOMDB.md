@@ -2,6 +2,11 @@
 This step is necessary to extend the scope of proteins that Prokka has by default. 
 For that, I will prepare a list o synonyms for all enzymes of interest and download them from NCBI.
 
+Make a new directory and switch to this directory:
+```bash
+mkdir 01_customdb
+cd 01_customdb
+```
 
 #### 1) Using KEGG API to retrieve enzyme synonym names
 
