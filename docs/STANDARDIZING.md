@@ -127,6 +127,10 @@ Example:
 
 ![Example image](../img/example_standardization.png)
 
+Note that, depending on the specific protein headers present in the custom database generated in step 1 (link to Preparing an extra database from NCBI step), Prokka annotation step can produce relatively "clean" outputs. This can mean that the first column that you add might contain the same information outputted by Prokka on the second column. An example image is shown below:
+
+![Example image](../img/example_clean_output.png)
+
 
 #### 5) Combining standard names to Prokka results
 
