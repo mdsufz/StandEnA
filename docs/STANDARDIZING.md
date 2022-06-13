@@ -33,7 +33,6 @@ grep -P "\t1\.\d\t" ../../01_customdb/id_synonyms_per_line.tsv | cut -f4,5,6 | c
 
 Creating directory for storing queries:
 ```bash
-mkdir queries
 mkdir pw_1/queries
 ```
 
