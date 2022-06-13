@@ -31,7 +31,7 @@ CP1004	benzene dioxygenase, ferredoxin reductase component
 
 ##### b. Running script to generate matrix
 ```bash
-python3 make_pres_abs.py std_results_all.txt ids_to_names.tsv > presence_absence.csv
+python3 ../../scripts/make_pres_abs.py std_results_all.txt ids_to_names.tsv > presence_absence.csv
 ```
 
 Note: The make_pres_abs.py script is available [here](../scripts/make_pres_abs.py).
