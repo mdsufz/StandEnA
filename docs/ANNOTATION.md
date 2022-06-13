@@ -1,6 +1,6 @@
 ## Annotating genomes using Prokka with a custom database
 In this part, we are going to annotate our genomes using Prokka
-with the additional custom database created in the previous step.
+with the additional custom database to be created from the downloaded prıteins in the [previous step](CUSTOMDB.md).
 
 
 #### Creating a work directory
@@ -18,7 +18,7 @@ cat 01_customdb/edirect_fasta/*.faa 01_customdb/manual_download_fasta/*.faa > 02
 ```
 
 #### Testing custom database
-To make test if the newly created database is flawless, 
+To test if the newly created database is flawless, 
 we can simply run "makeblastdb" on it.
 
 ```
@@ -44,7 +44,7 @@ Therefore, it is necessary to rename the headers of
 the fasta files which will be used as input for annotation.
 
 ```bash
-# Create a directory to store the renamed mags
+# Create a directory to store the renamed genomes
 # Here I call it "short"
 mkdir short
 
@@ -56,7 +56,11 @@ cd /path/to/genomes
 for i in *; do awk '/^>/{print ">contig" ++i; next}{print}' < $i > ../short/"short_"$i; done
 ```
 
-#### Running Prokka on genomes (on EVE cluster)
+#### Running Prokka on genomes
+
+There are 2 alternative methods to run Prokka on genomes depending on your computational resources:
+
+##### Running Prokka on EVE cluster
 
 The following for loop will submit a job on EVE cluster for each genome to be annotated.
 ```bash
@@ -71,13 +75,13 @@ The submission script (which has the commands used) is available [here](../scrip
 
 **Please note that the script contains personal data and paths in the server. That all must be replaced by your own. 
 
-#### Running Prokka on genomes (on local machine)
+##### Runing Prokka on local machine
 
 Changing working directory to the directory containing the shortened genomes (from previous step):
 ```bash
 cd /path/to/short
 ```
-Note that this step can only be done after prokka installation witin the std_enzymes conda environment as described [here](../README.md)). 
+Note that this step can only be done after prokka installation witin the std_enzymes conda environment as described [here](../README.md). 
 
 Running Prokka for genomes:
 ```bash
