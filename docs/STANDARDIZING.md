@@ -50,7 +50,7 @@ for i in queries/*; do sort $i | uniq > queries/tmp; mv queries/tmp $i; done
 #### 3) Collecting extra information from KEGG
 The goal of this step is to generate the file "kegg_info.txt" for the
 given pathway. This file can be used as a reference while manually curating the
-protein names.
+protein names during the presence absence matrix generation in the [last step](PRESABS.md).
 
 
 Gathering unique EC numbers for the pathway:
