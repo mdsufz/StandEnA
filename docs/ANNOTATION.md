@@ -1,4 +1,4 @@
-## Annotating genomes using Prokka with a custom database
+## Generating a custom database and annotating genomes using Prokka with this custom database
 In this part, we are going to annotate our genomes using Prokka
 with the additional custom database to be created from the downloaded prıteins in the [previous step](CUSTOMDB.md).
 
@@ -17,7 +17,7 @@ In the next step we combine the additional [downloaded proteins](CUSTOMDB.md) in
 cat 01_customdb/edirect_fasta/*.faa 01_customdb/manual_download_fasta/*.faa > 02_annotation/custom_db.faa
 ```
 
-#### Testing custom database
+#### Testing the custom database
 To test if the newly created database is flawless, 
 we can simply run "makeblastdb" on it.
 
@@ -56,7 +56,7 @@ cd /path/to/genomes
 for i in *; do awk '/^>/{print ">contig" ++i; next}{print}' < $i > ../short/"short_"$i; done
 ```
 
-#### Running Prokka on genomes
+#### Running Prokka on genomes using the custom database
 
 There are 2 alternative methods to run Prokka on genomes depending on your computational resources:
 
@@ -90,7 +90,7 @@ for k in short/*.fa; do prokka $k --outdir prokka_out/"$k".prokka.output --prefi
 Note that depending on your machine resources you can increase the cpu number to be used from --cpus option. See [Prokka](https://github.com/tseemann/prokka#readme) help page for detailed information on the flags used in the above code. 
 This step puts all genome annotation files to the location 02_annotation/prokka_out/short.
 
-#### Compiling all results into a single file
+#### Compiling all Prokka annotation results into a single file
 
 The most important output for our further analysis is the ".tsv" file 
 (read about Prokka output files [here](https://github.com/tseemann/prokka#output-files)).
