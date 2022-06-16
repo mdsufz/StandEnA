@@ -1,4 +1,4 @@
-## Standardizing protein names from Prokka results
+## Generating the Reference File for enzymes used in the annotation and standardizing protein names in Prokka results
 
 If you have many different pathways, 
 I suggest doing this part for each different pathways.
@@ -13,7 +13,7 @@ mkdir 03_standardization
 cd 03_standardization
 ```
 
-#### 1) Subsetting data to work with a pathway at a time
+#### 1) Subsetting data to work with one pathway at a time
 
 Example. Working with pathway of interest "1".
 
@@ -23,13 +23,16 @@ mkdir pw_1
 cd pw_1
 ```
 
-Saving unique enzyme main names and synonyms for pathway (1.[0-9]):
+Saving unique enzyme main names and synonyms for pathway (in this example it is pathway 1. enzymes [0-9]):
 ```bash
 grep -P "\t1\.\d\t" ../../01_customdb/id_synonyms_per_line.tsv | cut -f4,5,6 | cut -f1,3 | sort | uniq > pw_1/pw_1.txt
 ```
+Note that the enzyme list is derived from the file "id_synonyms_per_line.tsv" that was used to download protein sequences using Edirect API in [step 1](CUSTOMDB.md). Since the OrtSuite-mediated KEGG API download and manual download steps are optional, if these steps are used to retrieve sequences not included within "id_synonyms_per_line.tsv", the above-code should be modified to include these protein names. For an example modification to add OrtSuite-mediated KEGG API downloaded proteins (from EC numbers) there are optional additional codes for the steps below.
 
 
 #### 2) Dividing pathways into separate files for each protein
+
+Each pathway will have a "queries" directory of files containing the enzyme synonyms to be searched for in the Prokka annotation.
 
 Creating directory for storing queries:
 ```bash
@@ -45,9 +48,15 @@ Removing duplicated synonyms:
 ```bash
 for i in queries/*; do sort $i | uniq > queries/tmp; mv queries/tmp $i; done
 ```
+##### Alternative example query file formation for OrtSuite-mediated KEGG API downloaded proteins (from EC numbers)
+To be able to form query files, the EC numbers in ecs.txt must be used to retrieve enzyme names and synonyms. 
 
+From this file, the enzyme synonyms and standard names can be added to files in the queries folder: (There is a problem here in outputing $out!)
+```bash 
+cat ecs.txt | while read line; do out=$(curl -s http://rest.kegg.jp/list/ec:$line); echo $line $out; done > ortsuite_ec_synonyms.txt
+```
 
-#### 3) Collecting extra information from KEGG
+#### 3) Collecting standard database identifiers about the enzyme names used during annotation from KEGG to generate a reference file
 The goal of this step is to generate the file "kegg_info.txt" for the
 given pathway. This file can be used as a reference while manually curating the
 protein names during the presence absence matrix generation in the [last step](PRESABS.md).
@@ -80,11 +89,17 @@ paste ec_name.txt kos_def.txt > pw_1_kegg_info.txt
 
 Cleaning intermediate files (optional):
 ```bash
-rm unique_pw_ec.tsv pw_ec_kos.txt kos_def.txt ec_name.txt
+rm ortpw_ec_kos.txt kos_def.txt ec_name.txt
 ```
+##### Alternative example reference file formation for OrtSuite-mediated KEGG API downloaded proteins (from EC numbers)
 
+Collecting ECs and KOs from KEGG API:
+```bash
+cat ecs.txt | while read l; do curl -s https://rest.kegg.jp/link/ko/ec:$l; done | sort -k1,2 | uniq | grep -v "^$" > ortsuite_ec_kos.txt
+```
+After this step, ortsuite_ec_kos.txt file can be used in place of pw_ec_kos.txt in the above steps to generate the reference file. Note that the ourput and input file names for each of the above steps must be changed to prevent overwriting the reference files generated for id_synonyms_per_line.tsv. The suggested naming convention for these files is: ortsuite_kos_def.txt, ortsuite_ec_name.txt, ortsuite_pw_1_kegg_info.txt.
 
-#### 4) Performing queries and dumping results into files
+#### 4) Performing queries of these and dumping results into files
 
 
 Changing to queries directory:
