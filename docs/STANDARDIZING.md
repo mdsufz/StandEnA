@@ -30,9 +30,9 @@ grep -P "\t1\.\d\t" ../../01_customdb/id_synonyms_per_line.tsv | cut -f4,5,6 | c
 Note that the enzyme list is derived from the file "id_synonyms_per_line.tsv" that was used to download protein sequences using Edirect API in [step 1](CUSTOMDB.md). Since the OrtSuite-mediated KEGG API download and manual download steps are optional, if these steps are used to retrieve sequences not included within "id_synonyms_per_line.tsv", the above-code should be modified to include these protein names. For an example modification to add OrtSuite-mediated KEGG API downloaded proteins (from EC numbers) there are optional additional codes for the steps below.
 
 
-#### 2) Dividing pathways into separate files for each protein
+#### 2) Dividing pathways into separate files for each enzyme/protein and collecting them in the queries directory
 
-Each pathway will have a "queries" directory of files containing the enzyme synonyms to be searched for in the Prokka annotation.
+Each pathway will have a "queries" directory of files containing the enzyme synonyms to be searched for in the Prokka annotation in later steps.
 
 Creating directory for storing queries:
 ```bash
@@ -110,7 +110,7 @@ cat ecs.txt | while read l; do curl -s https://rest.kegg.jp/link/ko/ec:$l; done 
 ```
 After this step, ortsuite_ec_kos.txt file can be used in place of pw_ec_kos.txt in the above steps to generate the reference file. Note that the ourput and input file names for each of the above steps must be changed to prevent overwriting the reference files generated for id_synonyms_per_line.tsv. The suggested naming convention for these files is: ortsuite_kos_def.txt, ortsuite_ec_name.txt, ortsuite_pw_1_kegg_info.txt.
 
-#### 4) Performing queries of these and dumping results into files
+#### 4) Performing queries of the Prokka annotation using files in queries directory and dumping results into files
 
 
 Changing to queries directory:
@@ -156,7 +156,7 @@ Note that, depending on the specific protein headers present in the custom datab
 ![Example image](../img/example_clean_output.png)
 
 
-#### 5) Combining standard names to Prokka results
+#### 5) Combining standard names to Prokka annotation results (standardization of Prokka annotation)
 
 Moving to results directory (going back to 03_standardization/pw_1/results/):
 ```bash
