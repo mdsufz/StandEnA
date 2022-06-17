@@ -108,7 +108,7 @@ Collecting ECs and KOs from KEGG API:
 ```bash
 cat ecs.txt | while read l; do curl -s https://rest.kegg.jp/link/ko/ec:$l; done | sort -k1,2 | uniq | grep -v "^$" > ortsuite_ec_kos.txt
 ```
-After this step, ortsuite_ec_kos.txt file can be used in place of pw_ec_kos.txt in the above steps to generate the reference file. Note that the ourput and input file names for each of the above steps must be changed to prevent overwriting the reference files generated for id_synonyms_per_line.tsv. The suggested naming convention for these files is: ortsuite_kos_def.txt, ortsuite_ec_name.txt, ortsuite_pw_1_kegg_info.txt.
+After this step, ortsuite_ec_kos.txt file can be used in place of pw_ec_kos.txt in the above steps to generate the reference file. Note that the ourput and input file names for each of the above steps must be changed to prevent overwriting the reference files generated for id_synonyms_per_line.tsv. The suggested naming convention for these files is: ortsuite_kos_def.txt, ortsuite_ec_name.txt, [ortsuite_pw_1_kegg_info.txt](../examples/03_standardization/pw_1/ortsuite_pw_1_kegg_info.txt).
 
 #### 4) Performing queries of the Prokka annotation using files in queries directory and dumping results into files
 
