@@ -36,7 +36,7 @@ Install required packages inside the environment
 conda install -c bioconda perl-lwp-simple prokka blast==2.9.0
 ```
 ## Dependencies
-To manual download additional proteins, OrtSuite is required. 
+To manually download additional proteins, OrtSuite is required. 
 Follow the installation steps for OrtSuite [here](https://github.com/mdsufz/OrtSuite/).
 
 ## System requirements
