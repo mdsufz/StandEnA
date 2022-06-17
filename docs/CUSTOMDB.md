@@ -36,7 +36,7 @@ After preparing that file, retrieve the synonyms from KEGG using their API.
 Please note that any typo or extra character in the EC number (e.g. space) may cause the synonyms to not be returned from KEGG API.
 ```bash
 # Retrieve synonyms from KEGG API
-cut -f5 uniq_ec.tsv | while read line; do out=$(curl -s http://rest.kegg.jp/list/ec:$line); echo $line $out; done > ec_synonyms.txt
+cut -f5 uniq_ec.tsv | while read line; do out=$(curl -s https://rest.kegg.jp/list/ec:$line); echo $line $out; done > ec_synonyms.txt
 
 # Combine tables
 paste uniq_ec.tsv <(cut -f3- -d' ' ec_synonyms.txt) > synonyms_table.tsv
