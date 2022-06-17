@@ -1,6 +1,6 @@
 ## Generating a custom database and annotating genomes using Prokka with this custom database
 In this part, we are going to annotate our genomes using Prokka
-with the additional custom database to be created from the downloaded prıteins in the [previous step](CUSTOMDB.md).
+with the additional custom database to be created from the downloaded proteins in the [previous step](CUSTOMDB.md).
 
 
 #### Creating a work directory
@@ -13,12 +13,13 @@ mkdir 02_annotation
 In the next step we combine the additional [downloaded proteins](CUSTOMDB.md) into a custom database.
 
 ```bash
-# Example (make sure to check the extensions of the files so you can use wildcard)
+# Example (make sure to check the extensions of the files so you can use the wildcard)
 cat 01_customdb/edirect_fasta/*.faa 01_customdb/manual_download_fasta/*.faa > 02_annotation/custom_db.faa
 ```
+Note that if some files that have been manually downloaded in the previous step have different file extensions, they would not be added to the custom_db.faa with this code.
 
 #### Testing the custom database
-To test if the newly created database is flawless, 
+To test if the newly created database is "flawless", 
 we can simply run "makeblastdb" on it.
 
 ```
@@ -28,10 +29,8 @@ makeblastdb -dbtype prot -in custom_db.faa -out custom_db
 If you get an error like "BLAST Database creation error", something might be wrong with your database.
 In my case, I identified some problematic lines and manually removed those.
 
-Example on how to identify problematic lines and to fix them:
+Example on how to identify problematic lines and to fix them. Be aware that this may not fix your specific problem:
 ```bash
-## Be aware this may not fix your specific problem
-
 # Looking for "problematic" lines
 sed -e  's/>/\n>/g' custom_db.faa | grep -P "\w>"
 # Fixing those lines
@@ -73,7 +72,7 @@ for i in *.fa; do qsub -N $i $subscript_prokka $workdir/rep_set/short/$i prokka_
 ```
 The submission script (which has the commands used) is available [here](../scripts/prokka_sub_script.sh).
 
-**Please note that the script contains personal data and paths in the server. That all must be replaced by your own. 
+**Please note that the script contains personal data and paths in the server. All of that must be replaced by your own information. 
 
 ##### Runing Prokka on local machine
 
@@ -81,7 +80,7 @@ Changing working directory to the directory containing the shortened genomes (fr
 ```bash
 cd /path/to/short
 ```
-Note that this step can only be done after prokka installation witin the std_enzymes conda environment as described [here](../README.md). 
+Note that this step can only be done after Prokka installation witin the std_enzymes conda environment as described [here](../README.md). std_enzymes conda environment must be activated as stated in the README.md file for this code to work.
 
 Running Prokka for genomes:
 ```bash
