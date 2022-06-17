@@ -1,2 +1,0 @@
-CP1001	2-keto-4-pentenoate hydratase
-CP1002	4-hydroxy-2-oxovalerate aldolase
