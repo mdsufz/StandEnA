@@ -25,7 +25,7 @@ cd pw_1
 
 Saving unique enzyme main names and synonyms for pathway (in this example it is pathway 1. enzymes [0-9]):
 ```bash
-grep -P "\t1\.\d\t" ../../01_customdb/id_synonyms_per_line.tsv | cut -f4,5,6 | cut -f1,3 | sort | uniq > pw_1/pw_1.txt
+grep -P "\t1\.\d\t" ../../01_customdb/id_synonyms_per_line.tsv | cut -f4,5,6 | cut -f1,3 | sort | uniq > pw_1.txt
 ```
 Note that the enzyme list is derived from the file "id_synonyms_per_line.tsv" that was used to download protein sequences using Edirect API in [step 1](CUSTOMDB.md). Since the OrtSuite-mediated KEGG API download and manual download steps are optional, if these steps are used to retrieve sequences not included within "id_synonyms_per_line.tsv", the above-code should be modified to include these protein names. For an example modification to add OrtSuite-mediated KEGG API downloaded proteins (from EC numbers) there are optional additional codes for the steps below.
 
@@ -49,12 +49,23 @@ Removing duplicated synonyms:
 for i in queries/*; do sort $i | uniq > queries/tmp; mv queries/tmp $i; done
 ```
 ##### Alternative example query file formation for OrtSuite-mediated KEGG API downloaded proteins (from EC numbers)
-To be able to form query files, the EC numbers in ecs.txt must be used to retrieve enzyme names and synonyms. 
+To be able to form query files, the EC numbers in ecs.txt must be used to retrieve enzyme names and synonyms. The below code is a variation of the [step 1](CUSTOMDB.md) to demonstrate the customizability of the code depending on specific needs. Please refer back to step 1 for detailed explanations.  
 
-From this file, the enzyme synonyms and standard names can be added to files in the queries folder: (There is a problem here in outputing $out!)
+From this file, the enzyme synonyms and standard names can be added to files in the queries folder:
 ```bash 
-cat ecs.txt | while read line; do out=$(curl -s http://rest.kegg.jp/list/ec:$line); echo $line $out; done > ortsuite_ec_synonyms.txt
+cat path/to/ecs.txt | while read line; do out=$(curl -s https://rest.kegg.jp/list/ec:$line); echo $line $out; done > ortsuite_ec_synonyms.txt
 ```
+After the synonyms and standard names have been collected into ortsuite_ec_synonyms.txt, we advise you to manually create a file similar to [uniq_ec.tsv](../examples/01_customdb/uniq_ec.tsv) containing the unique enzyme ID, pathway, pathway step ID, enzyme name, and EC numbers. Note that the enzyme name is the first name retrieved in ortsuite_ec_synonyms.txt and the fields unique enzyme ID, pathway, pathway step ID are dependent on the uniq_ec.tsv naming convention. The example file can be found here: [ortsuite_uniq_ec.tsv](..)
+
+Then, the steps for the creation of ortsuite_id_synonyms_per_line.tsv are followed from [step 1](CUSTOMDB.md):
+```bash
+paste ortsuite_uniq_ec.tsv <(cut -f3- -d' ' ortsuite_ec_synonyms.txt) > ortsuite_synonyms_table.tsv
+perl -ne 'chomp; @fields=split("\t",$_); @syn=split(";",$fields[4]); unless(scalar(@syn)==0){foreach(@syn){print join("\t",@fields[0..3]),"\t$_\n"}}else{print "$_\t$fields[2]\n"};' <(cut -f1,3- ortsuite_synonyms_table.tsv) | sed -e 's/\t /\t/g' | grep -v "incorrect\|gene name\|misleading" > ortsuite_synonyms_per_line.tsv
+cat ortsuite_synonyms_per_line.tsv | perl -ne '$line=sprintf("%03d",$.); @fields=split("\t",$_); $synid="S$line-$fields[0]-$fields[3]"; if($fields[3] eq "NA"){print "$synid\t",join("\t",@fields[0..3]),"\t$fields[2]\n"}else{print "$synid\t$_"}' > ortsuite_id_synonyms_per_line.tsv
+perl -ne 'chomp; @fields=split("\t",$_); $fields[5] =~ tr/ //d; unless(scalar(split("",$fields[5]))<=5){print "$_\n"};' ortsuite_id_synonyms_per_line.tsv > tmp; mv tmp ortsuite_id_synonyms_per_line.tsv
+```
+From this file, queries can be added to the queries directory following the same steps for the pw_1.txt file above by changing the input to ortsuite_pw_1.txt. Note that the file names for the OrtSuite-mediated KEGG API downloaded proteins are advised to be distinguished from Edirect downloaded proteins in the query file via a naming convention (e.g., queries/ortsuite_$name.txt for the file names to include "ortsuite").
+
 
 #### 3) Collecting standard database identifiers about the enzyme names used during annotation from KEGG to generate a reference file
 The goal of this step is to generate the file "kegg_info.txt" for the
