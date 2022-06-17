@@ -1,6 +1,6 @@
-## Calculating matrix os presence absence
+## Generating matrix of standardized presence absence
 
-#### 1) Combining all standardized prokka results
+#### 1) Combining all standardized Prokka results
 
 Creating directory for this part and changing working directory to this:
 ```bash
@@ -18,7 +18,7 @@ cat ../03_standardization/pw_*/results/standardized/* > std_results_all.txt
 ```
 
 
-#### 2) Preparing files for calculating the matrix
+#### 2) Manually preparing file of protein/enzyme names to be used for generating the matrix
 
 ##### a. Preparing index list of protein name to protein ID
 Prepare a tab separated file (two columns) that contains the protein ID that you give to each of the protein standard names that you want to generate the matrix for. Below is the example file:
