@@ -45,10 +45,10 @@ Disk space can be the most limiting resource for the annotation step as each ann
 
 
 ## Workflow steps
-1. [Preparing additional custom database](docs/CUSTOMDB.md)
-2. [Protein annotation using Prokka](docs/ANNOTATION.md)
-3. [Standardization of protein names](docs/STANDARDIZING.md)
-4. [Calculating matrix of presence absence](docs/PRESABS.md)
+1. [Compiling Protein sequences for the custom database from NCBI, KEGG and other databases](docs/CUSTOMDB.md)
+2. [Generating a custom database and annotating genomes using Prokka with this custom database](docs/ANNOTATION.md)
+3. [Generating the Reference File for enzymes used in the annotation and standardizing protein names in Prokka results](docs/STANDARDIZING.md)
+4. [Generating matrix of standardized presence absence](docs/PRESABS.md)
 
 ## Author of this workflow
 - Felipe Borim Corrêa
