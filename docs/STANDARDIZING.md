@@ -55,7 +55,7 @@ From this file, the enzyme synonyms and standard names can be added to files in 
 ```bash 
 cat path/to/ecs.txt | while read line; do out=$(curl -s https://rest.kegg.jp/list/ec:$line); echo $line $out; done > ortsuite_ec_synonyms.txt
 ```
-After the synonyms and standard names have been collected into ortsuite_ec_synonyms.txt, we advise you to manually create a file similar to [uniq_ec.tsv](../examples/01_customdb/uniq_ec.tsv) containing the unique enzyme ID, pathway, pathway step ID, enzyme name, and EC numbers. Note that the enzyme name is the first name retrieved in ortsuite_ec_synonyms.txt and the fields unique enzyme ID, pathway, pathway step ID are dependent on the uniq_ec.tsv naming convention. The example file can be found here: [ortsuite_uniq_ec.tsv](..)
+After the synonyms and standard names have been collected into ortsuite_ec_synonyms.txt, we advise you to manually create a file similar to [uniq_ec.tsv](../examples/01_customdb/uniq_ec.tsv) containing the unique enzyme ID, pathway, pathway step ID, enzyme name, and EC numbers. Note that the enzyme name is the first name retrieved in ortsuite_ec_synonyms.txt and the fields unique enzyme ID, pathway, pathway step ID are dependent on the uniq_ec.tsv naming convention. The example file can be found here: [ortsuite_uniq_ec.tsv](../examples/03_standardization/ortsuite_uniq_ec.tsv)
 
 Then, the steps for the creation of ortsuite_id_synonyms_per_line.tsv are followed from [step 1](CUSTOMDB.md):
 ```bash
