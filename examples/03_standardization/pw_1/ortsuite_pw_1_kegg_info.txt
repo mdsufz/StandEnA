@@ -1,0 +1,4 @@
+ec:1.13.11.2	catechol 2,3-dioxygenase	ko:K00446	catechol 2,3-dioxygenase [EC:1.13.11.2]
+ec:1.13.11.2	catechol 2,3-dioxygenase	ko:K07104	catechol 2,3-dioxygenase [EC:1.13.11.2]
+ec:1.14.12.10	benzoate 1,2-dioxygenase	ko:K05549	benzoate/toluate 1,2-dioxygenase subunit alpha [EC:1.14.12.10 1.14.12.-]
+ec:1.14.12.10	benzoate 1,2-dioxygenase	ko:K05550	benzoate/toluate 1,2-dioxygenase subunit beta [EC:1.14.12.10 1.14.12.-]
