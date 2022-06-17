@@ -13,8 +13,9 @@ cd 01_customdb
 
 Prepare a tab separated file following the example [uniq_ec.tsv](../examples/01_customdb/uniq_ec.tsv).
 
-Columns in this file should contain: unique enzyme ID, pathway, pathway step ID, enzyme name, and EC number. Later, some of those columns will be used to organize the download output files.
-Note that the unique enzyme ID and pathway ID are provided by the user from previous knowledge of the pathway of interest. In the example file, unique enzyme ID is provided using the convention E01, E02 etc. while the pathway step ID is named according to the pathway number and the step at which the enzyme is working at (e.g., pathway 1 step 1 is 1.1). Any other naming convention can be used in place of this provided that the column order does not change.
+Columns in this file should contain: unique enzyme ID, pathway, pathway step ID, enzyme name, and EC number. Later, some of those columns will be used to organize the download of protein sequence files.
+
+Note that the unique enzyme ID and pathway step ID are provided by the user for their pathway of interest. In the example file, unique enzyme ID is provided using the convention E01, E02 etc. while the pathway step ID is named according to the pathway number and the step at which the enzyme is working at (e.g., pathway 1 step 1 is 1.1). Other naming conventions can be used in place of this provided that the column order does not change. These IDs are for the convenience of the user. 
 
 Please be aware that trailing spaces might exist depending on how you generated the file (e.g. Windows OS). 
 
@@ -23,7 +24,7 @@ To check for trailing spaces do:
 ```bash
 cat -v uniq_ec.tsv
 ```
-If there are any the symbol ^M at the end of the line should appear. To remove this;
+If there are any, the symbol ^M should appear at the end of the line. To remove this:
 
 ```bash
 mv uniq_ec.tsv > temp_file.tsv
@@ -32,8 +33,8 @@ sed -e "s/\r//g" temp_file.tsv > uniq_ec.tsv
 
 Now the file is free of trailing whitespaces.
 
-After preparing that file, retrieve the synonyms from KEGG using their API.
-Please note that any typo or extra character in the EC number (e.g. space) may cause the synonyms to not be returned from KEGG API.
+After preparing this file, retrieve the enzyme/protein synonyms for each name in the uniq_ec.tsv file from KEGG using their API.
+Please note that any typo or extra character in the EC number (e.g. space) may cause no synonyms to be returned from KEGG API.
 ```bash
 # Retrieve synonyms from KEGG API
 cut -f5 uniq_ec.tsv | while read line; do out=$(curl -s https://rest.kegg.jp/list/ec:$line); echo $line $out; done > ec_synonyms.txt
@@ -43,16 +44,16 @@ paste uniq_ec.tsv <(cut -f3- -d' ' ec_synonyms.txt) > synonyms_table.tsv
 ```
 
 #### 2) Preparing the list of synonyms for NCBI Edirect
-Parsing the synonyms to write down one synonym per line
+Parsing the synonyms to write down one synonym per line and removing "gene name", "incorrect" and "misleading" flags retrieved with the synonyms:
 ```bash
-# This bash pipeline also remove "gene name", "incorrect" and "misleading" synonyms
+# Parsing the synonyms and removing output that can't be used 
 
 perl -ne 'chomp; @fields=split("\t",$_); @syn=split(";",$fields[4]); unless(scalar(@syn)==0){foreach(@syn){print join("\t",@fields[0..3]),"\t$_\n"}}else{print "$_\t$fields[2]\n"};' <(cut -f1,3- synonyms_table.tsv) | sed -e 's/\t /\t/g' | grep -v "incorrect\|gene name\|misleading" > synonyms_per_line.tsv
 ```
 
-For some enzymes that did not return synonyms because of any reason, *manually insert the enzyme names that you know in column 5*.
+For some enzymes that did not return synonyms because of any reason, *manually insert the enzyme names that you know in column 5 of synonyms_per_line.tsv*.
 
-Now, the following command will create a new column and add new IDs for synonyms (first column). That will be used to name the fasta files when using Edirect.
+Now, the following command will create a new column and add new IDs for synonyms (first column) that will be used to name the fasta files when using Edirect:
 ```bash
 cat synonyms_per_line.tsv | perl -ne '$line=sprintf("%03d",$.); @fields=split("\t",$_); $synid="S$line-$fields[0]-$fields[3]"; if($fields[3] eq "NA"){print "$synid\t",join("\t",@fields[0..3]),"\t$fields[2]\n"}else{print "$synid\t$_"}' > id_synonyms_per_line.tsv
 ```
@@ -79,15 +80,15 @@ module load foss/2019b Perl/5.30.0
 To run the script: 
 
 ```bash
-# Create a folder to store download fasta files
+# Create a folder to store downloaded fasta files
 mkdir edirect_fasta
 ```
 
 ```bash
-# Running script
+# Running the script
 echo "START: $(date)"; cat id_synonyms_per_line.tsv | while read line; do id=$(echo "$line" | cut -f1); reac=$(echo "$line" | cut -f6 ); perl ../../scripts/bulk_edirect_custom.pl "$reac" protein $id edirect_fasta/ >> log.txt 2>> err.txt; done; echo "  END  : $(date)";
 ```
-Since it can take hours or even days depending on the size of your list, I recommend running that with help of another tool (e.g. "screen").
+Since it can take hours or even days depending on the size of your list, I recommend running this with help of another tool (e.g. "screen").
 
 Do not try to run many instances in parallel. 
 This may cause NCBI to black list your IP in which case the log.txt file from this step may contain "RESULTS: ERROR" output for your queries.
@@ -106,11 +107,11 @@ Create a folder to store manually downloaded fasta files
 mkdir manual_download_fasta/
 ```
 
-1) Downloading proteins using OrtSuite
+##### Downloading proteins using OrtSuite
 
-For this step to be executed OrtSuite must be installed as described [here](https://github.com/mdsufz/OrtSuite).
+For this step to be executed, OrtSuite must be installed as described [here](https://github.com/mdsufz/OrtSuite).
 
-I recommend checking OrtSuite github to learn how to use those commands.
+I recommend checking OrtSuite GitHub to learn how to use those commands.
 Note that you must be at the OrtSuite environment in conda if you followed the conda installation [here](https://github.com/mdsufz/OrtSuite#readme).
 Example files for ecs.txt and kos.txt can be found in [OrtSuite GitHub](https://github.com/mdsufz/OrtSuite/tree/master/examples).
 
@@ -122,12 +123,12 @@ download_kos -o manual_download_fasta/ -e ecs.txt > log_ecs.txt 2> err_ecs.txt
 download_kos -o manual_download_fasta/ -k kos.txt > log_kos.txt 2> err_kos.txt
 ```
 
-2) Manually downloading proteins from other sources
+##### Manually downloading proteins from other sources
 
-Also, I manually downloaded a couple of proteins.
+Also, I manually downloaded a couple of protein sequence files. This step is important when the automated retrieval in the previous steps did not work for some of the desired proteins or there are other databases that you want to use.
 
-Manually search for proteins in various databases (eg.: Uniprot, NCBI and KEGG) and save them into FASTA files.
-This step is important when the automated retrieval in the previous steps did not work for some of the desired proteins.
+Manually search for proteins in various databases (eg.: Uniprot, NCBI and KEGG) and save them into FASTA files. 
+
 
 ```bash
 # Example
@@ -140,3 +141,4 @@ This step is important when the automated retrieval in the previous steps did no
  02_benzoyl-coa+reductase+bami.faa
  04_uniprot-Nitric+oxide+dismutase+(putative).faa
 ```
+Note that you must save these to manual_download_fasta/ directory to be used in later steps.
