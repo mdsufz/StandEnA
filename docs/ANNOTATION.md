@@ -10,7 +10,7 @@ cd ..
 mkdir 02_annotation
 cd 02_annotation
 ```
-Note that this directory should not be within the 01_customdb/ directory but in the examples/ parent directory beside 01_customdb/. The directory organization is exemplified [here](../examples). 
+Note that this directory should not be within the 01_customdb/ directory but in another parent directory beside 01_customdb/. The directory organization is exemplified [here](../examples). 
 
 #### Creating the custom database
 In the next step we combine the additional [downloaded proteins](CUSTOMDB.md) into a custom database.
@@ -55,7 +55,7 @@ cd /path/to/genomes
 
 # This awk command does the trick of renaming the fasta headers
 # awk is taking each fasta as input and outputing to the directory short
-for i in *; do awk '/^>/{print ">contig" ++i; next}{print}' < $i > ../short/"short_"$i; done
+for i in *; do awk '/^>/{print ">contig" ++i; next}{print}' < $i > path/to/02_annotation/short/"short_"$i; done
 ```
 
 #### Running Prokka on genomes using the custom database
