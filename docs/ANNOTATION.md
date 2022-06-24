@@ -8,6 +8,7 @@ Create a directory where Prokka results will be saved to.
 ```bash
 cd ..
 mkdir 02_annotation
+cd 02_annotation
 ```
 Note that this directory should not be within the 01_customdb/ directory but in the examples/ parent directory beside 01_customdb/. The directory organization is exemplified [here](../examples). 
 
