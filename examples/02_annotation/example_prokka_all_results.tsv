@@ -1,0 +1,10 @@
+bin_id	locus_tag	ftype	length_bp	gene	EC_number	COG	product
+BEN01_bacbin.12.fa	IGKNMJJO_00001	CDS	144				hypothetical protein
+BEN01_bacbin.12.fa	IGKNMJJO_00002	CDS	1218				hypothetical protein
+BEN01_bacbin.12.fa	IGKNMJJO_00003	CDS	696				hypothetical protein
+BEN01_bacbin.12.fa	IGKNMJJO_00004	CDS	657				hypothetical protein
+BEN01_bacbin.12.fa	IGKNMJJO_00005	CDS	1344				Nitrogenase (molybdenum-iron)-specific transcriptional regulator NifA [Dissulfuribacter thermophilus]
+BEN01_bacbin.12.fa	IGKNMJJO_00006	CDS	1686	sasA_1	2.7.-.-		Adaptive-response sensory-kinase SasA
+BEN01_bacbin.12.fa	IGKNMJJO_00007	CDS	735	gcvH_1			Glycine cleavage system H protein
+BEN01_bacbin.12.fa	IGKNMJJO_00008	CDS	774	gcvH_2			Glycine cleavage system H protein
+BEN01_bacbin.12.fa	IGKNMJJO_00009	CDS	936				Formate dehydrogenase, nitrate-inducible, iron-sulfur subunit [Ignavibacteria bacterium ADurb.Bin266]
