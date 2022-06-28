@@ -11,14 +11,18 @@ Clone this repository
 ```bash
 git clone https://github.com/mdsufz/std_enzymes
 ```
-Install Miniconda3
+Install Miniconda3 and add channels
 ```bash
 wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh
 bash Miniconda3-latest-Linux-x86_64.sh
+
+conda config --add channels defaults
+conda config --add channels bioconda
+conda config --add channels conda-forge
 ```
 Create and activate conda environment
 ```bash
-conda create -n std_enzymes python=3.6.13
+conda create -n std_enzymes python=3.6.13 perl-lwp-simple perl-lwp-protocol-https prokka blast==2.9.0
 ```
 
 Set Perl 5.22.0 default path for libraries
