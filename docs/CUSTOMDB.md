@@ -66,6 +66,7 @@ The following command removes synonyms with less than 6 characters to avoid ambi
 # This perl code writes the changes in the same file
 perl -ne 'chomp; @fields=split("\t",$_); $fields[5] =~ tr/ //d; unless(scalar(split("",$fields[5]))<=5){print "$_\n"};' id_synonyms_per_line.tsv > tmp; mv tmp id_synonyms_per_line.tsv 
 ```
+Note that KEGG synonyms containing ";" in their names will be separated as different synonyms. The user is advised to check for such instances and manually curate the "id_synonyms_per_line.tsv".
 
 #### 4) Using a custom perl script to download proteins from NCBI Edirect API
 The custom script is based on the following example application: [Sample Applications of the E-utilities - Entrez Programming Utilities Help - NCBI Bookshelf](https://www.ncbi.nlm.nih.gov/books/NBK25498/#chapter3.Application_3_Retrieving_large)
@@ -122,6 +123,7 @@ download_kos -o manual_download_fasta/ -e ecs.txt > log_ecs.txt 2> err_ecs.txt
 # Downloading protein sequences based on a list of KO numbers
 download_kos -o manual_download_fasta/ -k kos.txt > log_kos.txt 2> err_kos.txt
 ```
+Note that if the same list of proteins are using both EC and KO numbers, the files initially downloaded files will be overwritten because the file naming convention for this step uses the KO numbers for both methods. It is suggested to save the files to a new directory (e.g., manual_download_fasta_new/) to avoid this.
 
 ##### Manually downloading proteins from other sources
 
