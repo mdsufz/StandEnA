@@ -172,7 +172,7 @@ mkdir standardized
 Adding standardized results to last column for each enzyme:
 ```bash
 cd complete
-for i in *; do python3 ../../../../scripts/add_standard_names.py "../unique/$i.uniq" "$i" >> ../standardized/results_pw_1.txt; done
+for i in *; do python3 ../../../../../scripts/add_standard_names.py "../unique/$i.uniq" "$i" >> ../standardized/results_pw_1.txt; done
 ```
 
 Note: The add_standard_names.py script is available [here](../scripts/add_standard_names.py).
