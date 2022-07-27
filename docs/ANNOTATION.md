@@ -102,6 +102,7 @@ Concatenate all your ".tsv" outputs together.
 # Concatenate files while printing filenames to first column
 awk '{print FILENAME "\t" $0}' /path/to/prokka_out/*/*.tsv > prokka_all.tsv
 ```
+Note that /path/to/prokka_out/*/*.tsv is 02_annotation/short/prokka_out/*/*.tsv if the code has been run on local machine.
 
 Optional. Formating genome names from results.
 ```bash
