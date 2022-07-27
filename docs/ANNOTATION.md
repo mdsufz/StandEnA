@@ -17,9 +17,9 @@ In the next step we combine the additional [downloaded proteins](CUSTOMDB.md) in
 
 ```bash
 # Example (make sure to check the extensions of the files so you can use the wildcard)
-cat 01_customdb/edirect_fasta/*.faa 01_customdb/manual_download_fasta/*.faa > 02_annotation/custom_db.faa
+cat ../01_customdb/edirect_fasta/*.faa ../01_customdb/manual_download_fasta/*.faa > custom_db.faa
 ```
-Note that if some files that have been manually downloaded in the previous step have different file extensions, they would not be added to the custom_db.faa with this code.
+Note that if some files that have been manually downloaded in the previous step have different file extensions (e.g., download_kos function downloads files with .fa extension), they would not be added to the custom_db.faa with this code.
 
 #### Testing the custom database
 To test if the newly created database is "flawless", 
@@ -83,7 +83,7 @@ Changing working directory to the directory containing the shortened genomes (fr
 ```bash
 cd /path/to/short
 ```
-Note that this step can only be done after Prokka installation witin the std_enzymes conda environment as described [here](../README.md). std_enzymes conda environment must be activated as stated in the README.md file for this code to work.
+Note that this step can only be done after Prokka installation witin the std_enzymes conda environment as described [here](../README.md). std_enzymes conda environment must be activated as stated in the [README.md](../README.md) file for this code to work.
 
 Running Prokka for genomes:
 ```bash
