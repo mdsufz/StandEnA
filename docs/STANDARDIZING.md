@@ -172,7 +172,7 @@ for i in ../complete/*.txt; do cut -f8 $i | sort | uniq > $i.uniq; done; mv ../c
 
 Now, the files for standardization should be ready.
 
-Open each one of the ".uniq" files and include a new first column.
+Open each one of the ".uniq" files and include a new first column. Note that .uniq files should use tab as the delimiter.
 In this column annotate the standard name to the protein name of the second column.
 If the second column cell does not relate to your protein, add "REMOVE" (without brackets).
 
