@@ -55,8 +55,9 @@ mkdir queries
 
 Printing each collection of synonyms to a different file:
 ```bash 
-cat pw_1.txt | while read -r l; do line=$l; col2=$(echo "$l" | cut -f2); name=$(echo "$l" | cut -f1 | tr ' ' '_'); echo $col2 | sed -e 's/(.*//' >> queries/$name.txt ; done
+cat pw_1.txt | while read -r l; do line=$l; col2=$(echo "$l" | cut -f2); name=$(echo "$l" | cut -f1 | tr ' ' '_'); echo $col2 | tr -d '[]()*'| tr '[:upper:]' '[:lower:]' >> queries/$name.txt ; done
 ```
+Note that this step removes all brackets and changes the queries to lowercase letters for uniformity.
 
 Removing duplicated synonyms:
 ```bash
@@ -95,6 +96,12 @@ Gathering unique EC numbers for the pathway:
 grep -P "\t1\.\d\t" ../../01_customdb/id_synonyms_per_line.tsv | cut -f4,5 | sort | uniq > unique_pw_ec.tsv
 ```
 Note that if the 2. pathway is to be retrieved, the above line should be updated to search for "\t2.\d\t".
+
+Note that for some enzyme names in id_synonyms_per_line.tsv there might be no EC identifier. In this case, the user should use the below line to remove any "NA" or "-" identifier:
+```bash
+grep -v ".-" uniq_pw_ec.tsv | grep -v "NA$" > uniq_pw_ec_edited.tsv
+
+```
 
 Collecting ECs and KOs from KEGG API:
 ```bash
