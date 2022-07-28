@@ -141,7 +141,8 @@ Note: manually remove queries with brackets "[]" (if there are any). To test thi
 ```bash
 grep -lFe [ -lFe ] -lFe "(" -lFe ")" *.txt
 ```
-If there are file contents with brackets, the user is advised to use this code to remove the brackets but **keep the original files for later reference**:
+If there are file contents with brackets, the user is advised to use this code to remove the brackets but **keep the original files for later reference**.
+Note that this step can be directly skipped if there are no brackets in the queries.
 ```bash
 #This will put the files in a subdirectory called new and use these files for the rest of the steps
 mkdir new
