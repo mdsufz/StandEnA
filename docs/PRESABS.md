@@ -31,9 +31,14 @@ CP1004	benzene dioxygenase, ferredoxin reductase component
 Note that the protein IDs are dependent on the preference of the user. Here we suggested the usage of an ID convention of CP1001, CP1002 etc. Proteins to be used for the presence absence matrix is dependent on the user input but must match the names used in Prokka annotations. As a guideline, please check the your kegg_info.txt file for Edirect downloaded proteins and [ortsuite_pw_1_kegg_info.txt](../examples/03_standardization/pw_1/ortsuite_pw_1_kegg_info.txt) for proteins downloaded from KEGG using OrtSuite.generated in [step 3](STANDARDIZATION.md). An example file can be found under the name [pw_6_C_kegg_info.txt](../examples/03_standardization/pw_1/pw_6_C_kegg_info.txt). 
 
 ##### b. Running script to generate matrix
+To prevent case-sensitivity as well as bracket differences while comparing the Prokka annotation with the standardized results, the Prokka annotation should be converted to lowercase and the brackets should be removed.
+```bash
+cat ../02_annotation/short/prokka_all.tsv |tr -d '[]()'| tr '[:upper:]' '[:lower:]' > prokka_all_updated.tsv
+```
+
 Using the ids_to_names.tsv file, run the script to generate the presence-absence matrix:
 ```bash
-python3 ../../scripts/make_pres_abs.py std_results_all.txt ids_to_names.tsv > presence_absence.csv
+python3 ../../scripts/make_pres_abs.py std_results_all.txt ids_to_names.tsv prokka_all_updated.tsv > presence_absence.csv
 ```
 
 Note: The make_pres_abs.py script is available [here](../scripts/make_pres_abs.py).
