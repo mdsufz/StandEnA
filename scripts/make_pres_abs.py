@@ -6,7 +6,7 @@ from collections import defaultdict
 ######
 #	
 #	USAGE:
-#	make_pres_abs.py results.txt ids_to_names.txt prokka_all.tsv
+#	make_pres_abs.py results.txt ids_to_names.tsv prokka_all.tsv
 #
 ######
 
