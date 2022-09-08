@@ -6,6 +6,18 @@ from genomes and to build a standardized matrix of presence/absence from the ann
 The outcome of this workflow can be used for many purposes. For example, to infer the genetic potential 
 of a given organism to perform a pathway of interest.
 
+<p align="center">
+<img
+  src="img/Chafra_StandEnA_fig_1_v2.png"
+  alt="Starting with enzyme identifiers for the pathways of interest, StandEnA has four steps"
+  title="Workflow of StandEnA"
+  style="display: inline-block; margin: 0 auto; max-width: 5000px">
+</p>
+
+**Workflow of StandEnA:** Starting with enzyme identifiers for the pathways of interest, StandEnA has four steps: 
+Step 1 compiles enzyme synonyms and identifiers for these pathways from various databases. Step 2 creates a custom database from these enzyme protein sequences and annotates genomes. Step 3.1 creates a reference file with cross-database identifiers for each enzyme synonym used in the annotation and step 3.2 lists all of the enzymes of interest within the annotated genomes. Step 4 generates a standardized presence absence matrix for each enzyme within the desired pathway.
+
+
 ## Installation instructions
 Clone this repository
 ```bash
