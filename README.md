@@ -8,7 +8,7 @@ of a given organism to perform a pathway of interest.
 
 <p align="center">
 <img
-  src="img/Chafra_StandEnA_fig_1_v2.png"
+  src="img/StandEnA_schema.png"
   alt="Starting with enzyme identifiers for the pathways of interest, StandEnA has four steps"
   title="Workflow of StandEnA"
   style="display: inline-block; margin: 0 auto; max-width: 5000px">
@@ -17,6 +17,7 @@ of a given organism to perform a pathway of interest.
 **Workflow of StandEnA:** Starting with enzyme identifiers for the pathways of interest, StandEnA has four steps: 
 Step 1 compiles enzyme synonyms and identifiers for these pathways from various databases. Step 2 creates a custom database from these enzyme protein sequences and annotates genomes. Step 3.1 creates a reference file with cross-database identifiers for each enzyme synonym used in the annotation and step 3.2 lists all of the enzymes of interest within the annotated genomes. Step 4 generates a standardized presence absence matrix for each enzyme within the desired pathway.
 
+Refer to [this figure](img/StandEnA_figure_input_output_files.png) for input and output files used at each step.
 
 ## Installation instructions
 Clone this repository
@@ -57,7 +58,7 @@ Follow the installation steps for OrtSuite [here](https://github.com/mdsufz/OrtS
 
 ## System requirements
 A typical desktop (Linux) computer is capable of performing this workflow.
-Disk space can be the most limiting resource for the annotation step as each annotated genome produces ~2,5G of data. Therefore, it is recommended to have a fair ammount of free space depending on the number of genomes to be annotated.
+Disk space can be the most limiting resource for the annotation step as each annotated genome produces ~2 G of data. Therefore, it is recommended to have a fair ammount of free space depending on the number of genomes to be annotated.
 
 
 ## Workflow steps
