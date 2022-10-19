@@ -578,7 +578,7 @@ Creating directory for this part and changing working directory to this:
 mkdir 04_presabs
 cd 04_presabs
 ```
-Note that for [step 3.2.2](#step-3.2.2-combining-standard-names-to-prokka-annotation-results-(standardization-of-prokka-annotation)) the working directory is at the subdirectory 03_standardization/pw_1/results/standardized/. The relative path from this point to the directory 04_presabs is:
+Note that for [step 3.2.2](#step-3.2.2-combining-standard-names-to-prokka-annotation-results-standardization-of-prokka-annotation) the working directory is at the subdirectory 03_standardization/pw_1/results/standardized/. The relative path from this point to the directory 04_presabs is:
 ```bash
 mkdir ../../../../04_presabs
 ```
@@ -599,7 +599,7 @@ CP1002	benzene dioxygenase, beta subunit
 CP1003	benzene dioxygenase, ferredoxin component
 CP1004	benzene dioxygenase, ferredoxin reductase component
 ```
-Note that the protein IDs are dependent on the preference of the user. Here we suggested the usage of an ID convention of CP1001, CP1002 etc. Proteins to be used for the presence absence matrix is dependent on the user input but must match the names used in Prokka annotations and synonyms search performed using the query files in [step 3.2.1](STANDARDIZING.md). As a guideline, please check the your kegg_info.txt file for Edirect downloaded proteins (example file can be found under the name [pw_6_C_kegg_info.txt](examples/03_standardization/pw_1/pw_6_C_kegg_info.txt)) and [ortsuite_pw_1_kegg_info.txt](examples/03_standardization/pw_1/ortsuite_pw_1_kegg_info.txt) for proteins downloaded from KEGG using OrtSuite.generated in [step 3.1.3](#step-3.1.3-collecting-standard-database-identifiers-about-the-enzyme-names-used-during-annotation-from-KEGG-to-generate-a-reference-file).
+Note that the protein IDs are dependent on the preference of the user. Here we suggested the usage of an ID convention of CP1001, CP1002 etc. Proteins to be used for the presence absence matrix is dependent on the user input but must match the names used in Prokka annotations and synonyms search performed using the query files in [step 3.2.1](#step-3.2.1-performing-queries-of-the-prokka-annotation-using-files-in-queries-directory-and-dumping-results-into-files). As a guideline, please check the your kegg_info.txt file for Edirect downloaded proteins (example file can be found under the name [pw_6_C_kegg_info.txt](examples/03_standardization/pw_1/pw_6_C_kegg_info.txt)) and [ortsuite_pw_1_kegg_info.txt](examples/03_standardization/pw_1/ortsuite_pw_1_kegg_info.txt) for proteins downloaded from KEGG using OrtSuite.generated in [step 3.1.3](#step-3.1.3-collecting-standard-database-identifiers-about-the-enzyme-names-used-during-annotation-from-kegg-to-generate-a-reference-file).
 
 #### Step 4.3 Running script to generate standardized presence - absence matrix
 To prevent case-sensitivity as well as bracket differences while comparing the Prokka annotation with the standardized results, the Prokka annotation is recommended to be converted to lowercase and the brackets should be removed.
@@ -621,7 +621,7 @@ for i in *.uniq; do awk -F'\t' '{print NF}' $i; echo $i; done
 ```
 This code is for the example of checking the number of columns separated by tabs in the .uniq files for pathway 1. To check the rest of the pathway files, change workng directory to 03_standardization/pw_N/. The output of the code will be the name of each file searched and the number of columns found in each line within that file. The output must be **exactly 2** for each line to avoid errors. Look for lines that are less than or more than 2 and go to the specific file name that this occurence was seen to fix the problem. Additionally, the line number within the output will correspond to the line number in the .uniq file (i.e., if the line output is 3 for line number 5 in a certain file, then you can go to the same file name and look at line 5 to see the problem).
 
-Another possible error can be "KeyError" if the ids_to_names.tsv file generated in [step 4.2](#step-4.2-manually-preparing-file-of-protein/enzyme-names-to-be-used-for-generating-the-presence---absence-matrix) does not match the standard names used in the standardization ([step 3.2.1](#step-3.2.1-performing-queries-of-the-prokka-annotation-using-files-in-queries-directory-and-dumping-results-into-files)). In this case, change the names in the ids_to_names.tsv names file to match the standard names in the .uniq files.
+Another possible error can be "KeyError" if the ids_to_names.tsv file generated in [step 4.2](#step-4.2-manually-preparing-file-of-proteinenzyme-names-to-be-used-for-generating-the-presence-absence-matrix) does not match the standard names used in the standardization ([step 3.2.1](#step-3.2.1-performing-queries-of-the-prokka-annotation-using-files-in-queries-directory-and-dumping-results-into-files)). In this case, change the names in the ids_to_names.tsv names file to match the standard names in the .uniq files.
 
 ## Contributions
 Authors of pipeline: Fatma Chafra, Felipe Borim Corrêa,and Ulisses Nunes da Rocha
