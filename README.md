@@ -82,7 +82,7 @@ Disk space can be the most limiting resource for the annotation step as each ann
 ## Workflow steps
 StandEnA is divided into 4 steps:
 
-Step 1 - [Compiling Protein sequences for the custom database from NCBI, KEGG and other databases](###-step-1-compiling-protein-sequences-for-the-custom-database-from-ncbi,-kegg-and-other-databases)
+Step 1 - [Compiling Protein sequences for the custom database from NCBI, KEGG and other databases](#-step-1-compiling-protein-sequences-for-the-custom-database-from-ncbi,-kegg-and-other-databases)
 
 Step 2 - [Generating a custom database and annotating genomes using Prokka with this custom database](###-step-2-generating-a-custom-database-and-annotating-genomes-using-prokka-with-this-custom-database)
 
@@ -90,7 +90,7 @@ Step 3 - [Generating the Reference File for enzymes used in the annotation and s
 
 Step 4 - [Generating matrix of standardized presence absence](###-step-4-generating-matrix-of-standardized-presence-absence)
 
-### Step 1 Compiling Protein sequences for the custom database from NCBI, KEGG and other databases
+# Step 1 Compiling Protein sequences for the custom database from NCBI, KEGG and other databases
 
 This step is necessary to extend the scope of proteins that Prokka uses by default to annotate genomes. 
 For that, prepare a list of synonyms for all enzymes of interest and download them from NCBI.
