@@ -88,7 +88,7 @@ Step 2 - [Generating a custom database and annotating genomes using Prokka with 
 
 Step 3 - [Generating the Reference File for enzymes used in the annotation and standardizing protein names in Prokka results](###-step-3-generating-the-reference-file-for-enzymes-used-in-the-annotation-and-standardizing-protein-names-in-Prokka-results)
 
-Step 4 - [Generating matrix of standardized presence absence](###-step-4-generating-matrix-of-standardized-presence-absence)
+Step 4 - [Generating matrix of standardized presence absence](#-step-4-generating-matrix-of-standardized-presence-absence)
 
 # Step 1 Compiling Protein sequences for the custom database from NCBI, KEGG and other databases
 
@@ -569,7 +569,7 @@ for i in *; do python3 ../../../../../scripts/add_standard_names.py "../unique/$
 Note: The add_standard_names.py script is available [here](scripts/add_standard_names.py).
 
 
-### Step 4 Generating matrix of standardized presence absence
+# Step 4 Generating matrix of standardized presence absence
 
 #### Step 4.1 Combining all standardized Prokka results
 
