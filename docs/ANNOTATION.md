@@ -97,7 +97,7 @@ The submission script (which has the commands used) is available [here](../scrip
 **Please note that this submission script contains path/to/ fillers in place of personal data and paths in the server. All of that must be replaced by your own information before running the script. 
 
 
-#### Compiling all Prokka annotation results into a single file
+#### Step 2.6 - Compiling all Prokka annotation results into a single file
 
 The most important output for our further analysis is the ".tsv" file 
 (read about Prokka output files [here](https://github.com/tseemann/prokka#output-files)). A tab-separated values file is a text format similar to comma-separated values files where, instead of a comma, a tab character is used to separate different fields. Please find more information on this file structure [here](https://en.wikipedia.org/wiki/Tab-separated_values).
