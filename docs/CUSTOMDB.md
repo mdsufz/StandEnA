@@ -5,7 +5,7 @@ This database will be called custom database (custom_db.faa) in later steps.
 
 #### Step 1.1 - Using KEGG API to retrieve enzyme synonym names
 
-Make a new directory and switch to this directory:
+Make the new working directory and switch to this directory:
 ```bash
 mkdir 01_customdb
 cd 01_customdb
