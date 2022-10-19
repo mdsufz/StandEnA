@@ -37,6 +37,14 @@ In **step 3.1**, the files from step 1 ([01_customdb/id_synonyms_per_line.tsv](e
 
 In **step 4**, [03_standardization/standardized/results_pw_N.txt](examples/03_standardization/pw_1/results/standardized/) is used to generate a standardized presence - absence matrix for all inputted genomes for pathway N. Alternatively, annotated enzymes from multiple pathways can be used to generate a single standardized presence - absence matrix. For this purpose, the [03_standardization/standardized/](examples/03_standardization/pw_1/results/standardized/) results are merged into *04_presabs/std_results_all.txt*. [02_annotation/prokka_all.tsv](examples/02_annotation/example_prokka_all_results.tsv) is processed to remove any problematic punctuation such as brackets and parentheses. This processed output file, *04_presabs/prokka_all_updated.tsv*, is used along with a user inputted file, (*04_presabs/ids_to_names.tsv*)[examples/04_presabs/ids_to_names.tsv], containing user-defined unique protein ID for each enzyme and corresponding standard protein names to be used in the standardized presence - absence matrix generation. The standardized presence - absence matrix output is generated in the file [04_presabs/presence_absence.csv](examples/04_presabs/example_presence_absence.csv).
 
+## GitHub Contents
+- [Introduction](#introduction)
+- [Installation instructions](#installation-instructions)
+- [Dependencies](#dependencies]
+- [System requirements and usage](#system-requirements-and-usage)
+- [Workflow steps](#workflow-steps)
+- [Contributions](#contributions)
+
 ## Installation instructions
 Clone this repository
 ```bash
@@ -82,11 +90,11 @@ Disk space can be the most limiting resource for the annotation step as each ann
 ## Workflow steps
 StandEnA is divided into 4 steps:
 
-Step 1 - [Compiling Protein sequences for the custom database from NCBI, KEGG and other databases](#step-1-compiling-protein-sequences-for-the-custom-database-from-ncbi,-kegg-and-other-databases)
+Step 1 - [Compiling Protein sequences for the custom database from NCBI, KEGG and other databases](#step-1-compiling-protein-sequences-for-the-custom-database-from-ncbi-kegg-and-other-databases)
 
 Step 2 - [Generating a custom database and annotating genomes using Prokka with this custom database](#step-2-generating-a-custom-database-and-annotating-genomes-using-prokka-with-this-custom-database)
 
-Step 3 - [Generating the Reference File for enzymes used in the annotation and standardizing protein names in Prokka results](#step-3-generating-the-reference-file-for-enzymes-used-in-the-annotation-and-standardizing-protein-names-in-Prokka-results)
+Step 3 - [Generating the Reference File for enzymes used in the annotation and standardizing protein names in Prokka results](#step-3-generating-the-reference-file-for-enzymes-used-in-the-annotation-and-standardizing-protein-names-in-prokka-results)
 
 Step 4 - [Generating matrix of standardized presence absence](#step-4-generating-matrix-of-standardized-presence-absence)
 
@@ -238,7 +246,7 @@ Note that these sequences must be saved these to the manual_download_fasta/ dire
 ### Step 2 Generating a custom database and annotating genomes using Prokka with this custom database
 
 In this part, we are going to annotate our genomes using Prokka
-with the additional custom database to be created from the downloaded proteins in [step 1](CUSTOMDB.md).
+with the additional custom database to be created from the downloaded proteins in [step 1](#step-1-compiling-protein-sequences-for-the-custom-database-from-ncbi-kegg-and-other-databases).
 
 
 #### Step 2.1 Creating the work directory
@@ -251,13 +259,13 @@ cd 02_annotation
 Note that this directory should not be within the 01_customdb/ directory but in another parent directory beside 01_customdb/. The directory organization is exemplified [here](examples). The same directory organization must be followed throughout the pipeline.
 
 #### Step 2.2 Creating the custom database
-In the next step, we combine the additional [downloaded proteins](CUSTOMDB.md) into a custom database.
+In the next step, we combine the additional [downloaded proteins](#step-15-adding-missing-proteins-to-custom-database-through-ortsuitemediated-searching-in-kegg-or-manual-downloading-from-other-databases) into a custom database.
 
 ```bash
 # Example (make sure to check the extensions of the files so you can use the wildcard)
 cat ../01_customdb/edirect_fasta/*.faa ../01_customdb/manual_download_fasta/*.faa > custom_db.faa
 ```
-Note that if some files that have been manually downloaded in the previous step have different file extensions (e.g., download_kos function downloads files with .fa extension), they would not be added to the custom_db.faa with this code. Change the above code like this if there are files with .fa extensions. For more information on different permitted file extensions, refer to [step 1.5](CUSTOMDB.md).
+Note that if some files that have been manually downloaded in the previous step have different file extensions (e.g., download_kos function downloads files with .fa extension), they would not be added to the custom_db.faa with this code. Change the above code like this if there are files with .fa extensions. For more information on different permitted file extensions, refer to [step 1.5](#step-15-adding-missing-proteins-to-custom-database-through-ortsuitemediated-searching-in-kegg-or-manual-downloading-from-other-databases).
 
 ```bash
 # Example if there are .faa and .fa files in the manual_download_fasta/ directory
@@ -310,7 +318,7 @@ Changing working directory to the directory containing the shortened genomes (fr
 ```bash
 cd /path/to/short
 ```
-Note that this step can only be done after Prokka installation witin the std_enzymes conda environment as described [here](../README.md). std_enzymes conda environment must be activated as stated in the [README.md](../README.md) file for this code to work.
+Note that this step can only be done after Prokka installation witin the std_enzymes conda environment as described [here](../README.md). std_enzymes conda environment must be activated as stated under the [Installation instructions](#installation-instructions) heading for this code to work.
 
 Running Prokka for genomes:
 ```bash
@@ -370,7 +378,7 @@ Creating directory for this part:
 mkdir ../../03_standardization
 cd ../../03_standardization
 ```
-Note that the working directory from the [step 2](ANNOTATION.md) is 02_annotation/short/.
+Note that the working directory in [step 2.6](#step-26-compiling-all-prokka-annotation-results-into-a-single-file) is 02_annotation/short/.
 
 For example, when working with pathway of interest "1", create a working directory and other files following the naming convention "pw_1". 
 
@@ -380,11 +388,11 @@ mkdir pw_1
 cd pw_1
 ```
 
-Saving unique enzyme standard names and their synonyms for this pathway which were compiled into the [01_customdb/id_synonyms_per_line.tsv](examples/01_customdb/id_synonyms_per_line.tsv) in [step 1.2](CUSTOMDB.md): 
+Saving unique enzyme standard names and their synonyms for this pathway which were compiled into the [01_customdb/id_synonyms_per_line.tsv](examples/01_customdb/id_synonyms_per_line.tsv) in [step 1.2](#step-12-preparing-the-list-of-synonyms-for-ncbi-edirect): 
 ```bash
 grep -P "\t1\.\d\t" ../../01_customdb/id_synonyms_per_line.tsv | cut -f4,5,6 | cut -f1,3 | sort | uniq > pw_1.txt
 ```
-For this example, enzymes within pathway 1 have an enzyme ID starting with "1.". Hence, to retrieve these, the id_synonyms_per_line.tsv file is searched for the text "\t1\.\d\t" by this code. Note that the enzyme list for reference file and query file formation is derived from the file "id_synonyms_per_line.tsv" that was used to download protein sequences using Edirect API in [step 1.4](CUSTOMDB.md). For example, if pathway 2 is to be retrieved, the above line should be updated to search for "\t2\.\d\t" (i.e., instead of "\t1\.\d\t" enter "\t2\.\d\t") and the output file should be named accordingly (pw_2.txt).  
+For this example, enzymes within pathway 1 have an enzyme ID starting with "1.". Hence, to retrieve these, the id_synonyms_per_line.tsv file is searched for the text "\t1\.\d\t" by this code. Note that the enzyme list for reference file and query file formation is derived from the file "id_synonyms_per_line.tsv" that was used to download protein sequences using Edirect API in [step 1.4](#step-14-using-a-custom-perl-script-to-download-proteins-from-ncbi-edirect-api). For example, if pathway 2 is to be retrieved, the above line should be updated to search for "\t2\.\d\t" (i.e., instead of "\t1\.\d\t" enter "\t2\.\d\t") and the output file should be named accordingly (pw_2.txt).  
 
 Note that query formation in later steps from pw_1.txt will give an error if the file contains names with "/". These must be replaced by another character (e.g., in place of "/" put "_").
 
@@ -397,7 +405,7 @@ sed -r "s/[/]+/_/g" temp_file.txt > pw_1.txt
 rm temp_file.txt
 ```
 
-Since the OrtSuite-mediated KEGG API download and manual download steps are performed after Edirect download and are optional, if manual download steps are used to retrieve sequences that are not included within "id_synonyms_per_line.tsv", additional steps should be performed to account for these protein names. In the steps below, there are additional codes to be executed to add OrtSuite-mediated KEGG API downloaded proteins (from EC numbers) to the required files and directories. These steps can be modified by the user if there are other download methods used (e.g., OrtSuite-mediated KEGG API downloaded proteins from KO identifiers). These steps can be skipped altogether if there are no OrtSuite-mediated KEGG API downloaded proteins (from EC numbers) or manually proteins downloaded from different databases or if all enzyme information was inputted to the pipeline via the initial "uniq_ec.tsv" file in [step 1.1](CUSTOMDB.md) which is used to generate the "id_synonyms_per_line.tsv" file in [step 1.2](CUSTOMDB.md). 
+Since the OrtSuite-mediated KEGG API download and manual download steps are performed after Edirect download and are optional, if manual download steps are used to retrieve sequences that are not included within "id_synonyms_per_line.tsv", additional steps should be performed to account for these protein names. In the steps below, there are additional codes to be executed to add OrtSuite-mediated KEGG API downloaded proteins (from EC numbers) to the required files and directories. These steps can be modified by the user if there are other download methods used (e.g., OrtSuite-mediated KEGG API downloaded proteins from KO identifiers). These steps can be skipped altogether if there are no OrtSuite-mediated KEGG API downloaded proteins (from EC numbers) or manually proteins downloaded from different databases or if all enzyme information was inputted to the pipeline via the initial "uniq_ec.tsv" file in [step 1.1](#step-11-using-kegg-api-to-retrieve-enzyme-synonym-names) which is used to generate the "id_synonyms_per_line.tsv" file in [step 1.2](#step-12-preparing-the-list-of-synonyms-for-ncbi-edirect). 
 
 
 #### Step 3.1.2 Dividing pathways into separate files for each enzyme/protein and collecting them in the queries directory
@@ -420,7 +428,7 @@ Removing duplicated synonyms:
 for i in queries/*; do sort $i | uniq > queries/tmp; mv queries/tmp $i; done
 ```
 ##### Example query file formation for OrtSuite-mediated KEGG API downloaded proteins (from EC numbers)
-To be able to form query files, the EC numbers in ecs.txt must be used to retrieve enzyme names and synonyms. The below code is a variation of the [step 1.1](CUSTOMDB.md) to demonstrate the customizability and flexibility of the code depending on specific needs. Please refer back to step 1 for detailed explanations.  
+To be able to form query files, the EC numbers in ecs.txt must be used to retrieve enzyme names and synonyms. The below code is a variation of the [step 1.1](#step-11-using-kegg-api-to-retrieve-enzyme-synonym-names) to demonstrate the customizability and flexibility of the code depending on specific needs. Please refer back to step 1 for detailed explanations.  
 
 From this file, the enzyme synonyms and standard names can be added to files in the queries folder:
 ```bash 
@@ -430,7 +438,7 @@ After the synonyms and standard names have been collected into ortsuite_ec_synon
 
 For the later steps to be executed smoothly, the file must be generated using the EC number order in ortsuite_ec_synonyms.txt. The user should manually curate ortsuite_ec_synonyms.txt file first to remove any irrelevant EC numbers or synonyms in ortsuite_ec_synonyms.txt that might have been retrieved from KEGG to proceed with the information that you used to construct ortsuite_uniq_ec.tsv.
 
-Then, the steps for the creation of ortsuite_id_synonyms_per_line.tsv are followed from [step 1](CUSTOMDB.md):
+Then, the steps for the creation of ortsuite_id_synonyms_per_line.tsv are followed from [step 1](#step-1-compiling-protein-sequences-for-the-custom-database-from-ncbi-kegg-and-other-databases):
 
 ```bash
 paste ortsuite_uniq_ec.tsv <(cut -f3- -d' ' ortsuite_ec_synonyms.txt) > ortsuite_synonyms_table.tsv
@@ -444,7 +452,7 @@ From this file, queries can be added to the queries directory following the same
 #### Step 3.1.3 Collecting standard database identifiers about the enzyme names used during annotation from KEGG to generate a reference file
 The goal of this step is to generate the file "kegg_info.txt" for the
 given pathway. This file can be used as a reference while manually curating the
-protein names during the presence absence matrix generation in [step 4.2](PRESABS.md).
+protein names during the presence absence matrix generation in [step 4.2](#step-42-manually-preparing-file-of-proteinenzyme-names-to-be-used-for-generating-the-presence-absence-matrix).
 
 
 Gathering unique EC numbers for the pathway:
@@ -513,7 +521,7 @@ for i in *.txt; do cat $i | tr -d '[]()' > new/$i; done
 cd new/
 ```
 
-For each query file, query for terms in the complete results. This step connects the standard names generated from previous steps with the protein annotation files generated by Prokka in [step 2](ANNOTATION.md).
+For each query file, query for terms in the complete results. This step connects the standard names generated from previous steps with the protein annotation files generated by Prokka in [step 2](#step-2-generating-a-custom-database-and-annotating-genomes-using-prokka-with-this-custom-database).
 ```bash
 for i in *.txt; do grep -i -f $i path/to/02_annotation/short/prokka_all.tsv > path/to/results/result_$i; done
 ```
@@ -543,7 +551,7 @@ Example .uniq file:
 
 ![Example image](img/example_standardization.png)
 
-Note that, depending on the specific protein headers present in the custom database generated in [step 2](ANNOTATION.md), Prokka annotation step can produce relatively "clean" outputs. This can mean that the first column that you add might contain the same information outputted by Prokka on the second column. An example "clean" .uniq file image is shown below:
+Note that, depending on the specific protein headers present in the custom database generated in [step 2](#step-2-generating-a-custom-database-and-annotating-genomes-using-prokka-with-this-custom-database), Prokka annotation step can produce relatively "clean" outputs. This can mean that the first column that you add might contain the same information outputted by Prokka on the second column. An example "clean" .uniq file image is shown below:
 
 ![Example image](img/example_clean_output.png)
 
