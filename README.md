@@ -259,7 +259,7 @@ cd 02_annotation
 Note that this directory should not be within the 01_customdb/ directory but in another parent directory beside 01_customdb/. The directory organization is exemplified [here](examples). The same directory organization must be followed throughout the pipeline.
 
 #### Step 2.2 Creating the custom database
-In the next step, we combine the additional [downloaded proteins](#step-15-adding-missing-proteins-to-custom-database-through-ortsuitemediated-searching-in-kegg-or-manual-downloading-from-other-databases) into a custom database.
+In the next step, we combine the additional [downloaded proteins](#step-15-adding-missing-proteins-to-custom-database-through-ortsuite-mediated-searching-in-kegg-or-manual-downloading-from-other-databases) into a custom database.
 
 ```bash
 # Example (make sure to check the extensions of the files so you can use the wildcard)
