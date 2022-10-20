@@ -95,6 +95,8 @@ Step 1 - [Compiling Protein sequences for the custom database from NCBI, KEGG an
 Step 2 - [Generating a custom database and annotating genomes using Prokka with this custom database](#step-2-generating-a-custom-database-and-annotating-genomes-using-prokka-with-this-custom-database)
 
 Step 3 - [Generating the Reference File for enzymes used in the annotation and standardizing protein names in Prokka results](#step-3-generating-the-reference-file-for-enzymes-used-in-the-annotation-and-standardizing-protein-names-in-prokka-results)
+  Step 3.1 - [Generating reference files and query files for each enzyme standard name](#step-31-generating-reference-files-and-query-files-for-each-enzyme-standard-name)
+  Step 3.2 - [Performing queries and standardizing annotation results](#step-32-performing-queries-and-standardizing-annotation-results)
 
 Step 4 - [Generating matrix of standardized presence absence](#step-4-generating-matrix-of-standardized-presence-absence)
 
@@ -408,7 +410,7 @@ rm temp_file.txt
 Since the OrtSuite-mediated KEGG API download and manual download steps are performed after Edirect download and are optional, if manual download steps are used to retrieve sequences that are not included within [id_synonyms_per_line.tsv](examples/01_customdb/id_synonyms_per_line.tsv), additional steps should be performed to account for these protein names. In the steps below, there are additional codes to be executed to add OrtSuite-mediated KEGG API downloaded proteins (from EC numbers) to the required files and directories. These steps can be modified by the user if there are other download methods used (e.g., OrtSuite-mediated KEGG API downloaded proteins from KO identifiers). These steps can be skipped altogether if there are no OrtSuite-mediated KEGG API downloaded proteins (from EC numbers) or manually proteins downloaded from different databases or if all enzyme information was inputted to the pipeline via the initial "uniq_ec.tsv" file in [step 1.1](#step-11-using-kegg-api-to-retrieve-enzyme-synonym-names) which is used to generate the [id_synonyms_per_line.tsv](examples/01_customdb/id_synonyms_per_line.tsv) file in [step 1.2](#step-12-preparing-the-list-of-synonyms-for-ncbi-edirect). 
 
 
-#### Step 3.1.2 Dividing pathways into separate files for each enzyme/protein and collecting them in the queries directory
+##### Step 3.1.2 Dividing pathways into separate files for each enzyme/protein and collecting them in the queries directory
 
 Each pathway will have a "queries" directory of files containing the enzyme synonyms to be searched for in the Prokka annotation in later steps.
 
@@ -427,7 +429,7 @@ Removing duplicated synonyms:
 ```bash
 for i in queries/*; do sort $i | uniq > queries/tmp; mv queries/tmp $i; done
 ```
-##### Example query file formation for OrtSuite-mediated KEGG API downloaded proteins (from EC numbers)
+###### Example query file formation for OrtSuite-mediated KEGG API downloaded proteins (from EC numbers)
 To be able to form query files, the EC numbers in ecs.txt must be used to retrieve enzyme names and synonyms. The below code is a variation of the [step 1.1](#step-11-using-kegg-api-to-retrieve-enzyme-synonym-names) to demonstrate the customizability and flexibility of the code depending on specific needs. Please refer back to step 1 for detailed explanations.  
 
 From this file, the enzyme synonyms and standard names can be added to files in the queries folder:
@@ -449,7 +451,7 @@ perl -ne 'chomp; @fields=split("\t",$_); $fields[5] =~ tr/ //d; unless(scalar(sp
 From this file, queries can be added to the queries directory following the same steps for the id_synonyms_per_line.tsv file above (starting from [step 3.1.1](#step-311-subsetting-data-to-work-with-one-pathway-at-a-time)) by changing the input to ortsuite_id_synonyms_per_line.tsv. Note that the file names for the OrtSuite-mediated KEGG API downloaded proteins are advised to be distinguished from Edirect downloaded proteins in the query file via a naming convention (e.g., queries/ortsuite_$name.txt for the file names to include "ortsuite"). The same naming convention is advised to be used for the intermediate files (e.g., ortsuite_pw_1.txt) to prevent overwriting the files created for Edirect downloaded proteins.
 
 
-#### Step 3.1.3 Collecting standard database identifiers about the enzyme names used during annotation from KEGG to generate a reference file
+##### Step 3.1.3 Collecting standard database identifiers about the enzyme names used during annotation from KEGG to generate a reference file
 The goal of this step is to generate the file "kegg_info.txt" for the
 given pathway. This file can be used as a reference while manually curating the
 protein names during the presence absence matrix generation in [step 4.2](#step-42-manually-preparing-file-of-proteinenzyme-names-to-be-used-for-generating-the-presence-absence-matrix).
@@ -491,7 +493,7 @@ Cleaning intermediate files (optional):
 ```bash
 rm pw_ec_kos.txt kos_def.txt ec_name.txt
 ```
-##### Example reference file formation for OrtSuite-mediated KEGG API downloaded proteins (from EC numbers)
+###### Example reference file formation for OrtSuite-mediated KEGG API downloaded proteins (from EC numbers)
 
 Collecting ECs and KOs from KEGG API:
 ```bash
@@ -499,7 +501,9 @@ cat ecs.txt | while read l; do curl -s https://rest.kegg.jp/link/ko/ec:$l; done 
 ```
 After this step, ortsuite_ec_kos.txt file can be used in place of pw_ec_kos.txt in the above steps (3) Collecting standard database identifiers about the enzyme names used during annotation from KEGG to generate a reference file) to generate the reference file. Note that the output and input file names for each of the above steps must be changed to prevent overwriting the reference files generated for Edirect downloaded proteins listed in id_synonyms_per_line.tsv. The suggested naming convention for these files is: ortsuite_kos_def.txt, ortsuite_ec_name.txt, [ortsuite_pw_1_kegg_info.txt](examples/03_standardization/pw_1/ortsuite_pw_1_kegg_info.txt).
 
-#### Step 3.2.1 Performing queries of the Prokka annotation using files in queries directory and dumping results into files
+#### Step 3.2 Performing queries and standardizing annotation results
+
+##### Step 3.2.1 Performing queries of the Prokka annotation using files in queries directory and dumping results into files
 
 Changing to queries directory:
 ```bash
@@ -556,7 +560,7 @@ Note that, depending on the specific protein headers present in the custom datab
 ![Example image](img/example_clean_output.png)
 
 
-#### Step 3.2.2 Combining standard names to Prokka annotation results (standardization of Prokka annotation)
+##### Step 3.2.2 Combining standard names to Prokka annotation results (standardization of Prokka annotation)
 
 Moving to results directory (going back to 03_standardization/pw_1/results/):
 ```bash
