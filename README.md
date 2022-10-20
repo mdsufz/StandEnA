@@ -211,7 +211,7 @@ Create a folder to store manually downloaded fasta files
 mkdir manual_download_fasta/
 ```
 
-##### Downloading proteins using OrtSuite
+##### Step 1.5.1 Downloading proteins using OrtSuite
 
 For this step to be executed, OrtSuite must be installed as described [here](https://github.com/mdsufz/OrtSuite). For further information, we recommend checking the OrtSuite GitHub to learn how to use the download_kos command that is used in this step.
 
@@ -227,7 +227,7 @@ download_kos -o manual_download_fasta/ -k kos.txt > log_kos.txt 2> err_kos.txt
 ```
 Note that if the same list of proteins are using both EC and KO numbers, the files initially downloaded files will be overwritten because the file naming convention for this step uses the KO numbers for both methods. It is suggested to save the files to a new directory (e.g., manual_download_fasta_new/) to avoid this.
 
-##### Manually downloading proteins from other sources
+##### Step 1.5.2 Manually downloading proteins from other sources
 
 Also, we demonstrate the user-customizability and flexibility of the custom database creation of StandEnA by manually downloading a couple of protein sequence files from various different databases. This step is important when the automated retrieval in the previous steps do not work for some of the desired proteins or there are other specific databases that you want to use to retrieve protein sequences.
 
@@ -246,7 +246,9 @@ Manually search for proteins in various databases (eg.: Uniprot, NCBI and KEGG) 
 ```
 Note that these sequences must be saved these to the manual_download_fasta/ directory to be used in later steps.
 
+
 **Output files generated in step 1:** [01_customdb/id_synonyms_per_line.tsv](examples/01_customdb/id_synonyms_per_line.tsv), [01_custombd/edirect_fasta/ directory](examples/01_customdb/edirect_fasta/) files, *01_customdb/manual_download_fasta/* directory files 
+
 
 
 ### Step 2 Generating a custom database and annotating genomes using Prokka with this custom database
@@ -366,7 +368,9 @@ Optional but recommended step: Formating genome names from results.
 sed -ri -e 's/^out_short_//' -e 's/\/PROKKA_[0-9]+\.tsv//' prokka_all.tsv
 sed -ri '1 s/\S+/bin_id/' prokka_all.tsv
 ```
+
 **Output files generated in step 2:** *02_annotation/customdb.faa* custom protein database and [02_annotation/example_prokka_all_results.tsv](examples/02_annotation/example_prokka_all_results.tsv) annotated output file  
+
 
 ### Step 3 Generating the Reference File for enzymes used in the annotation and standardizing protein names in Prokka results
 
@@ -506,7 +510,9 @@ cat ecs.txt | while read l; do curl -s https://rest.kegg.jp/link/ko/ec:$l; done 
 ```
 After this step, ortsuite_ec_kos.txt file can be used in place of pw_ec_kos.txt in the above steps (3) Collecting standard database identifiers about the enzyme names used during annotation from KEGG to generate a reference file) to generate the reference file. Note that the output and input file names for each of the above steps must be changed to prevent overwriting the reference files generated for Edirect downloaded proteins listed in id_synonyms_per_line.tsv. The suggested naming convention for these files is: ortsuite_kos_def.txt, ortsuite_ec_name.txt, [ortsuite_pw_1_kegg_info.txt](examples/03_standardization/pw_1/ortsuite_pw_1_kegg_info.txt).
 
+
 **Output files generated in step 3.1:** Reference files with standard database identifiers [03_standardization/ortsuite_pw_N_kegg_info.txt](examples/03_standardization/pw_1/ortsuite_pw_1_kegg_info.txt) and [03_standardization/pw_N_kegg_info.txt](examples/03_standardization/pw_1/pw_6_C_kegg_info.txt) along with [03_standardization/pw_N/queries/](examples/03_standardization/pw_1/queries/) directory files
+
 
 #### Step 3.2 Performing queries and standardizing annotation results
 
@@ -587,7 +593,9 @@ for i in *; do python3 ../../../../../scripts/add_standard_names.py "../unique/$
 
 Note: The add_standard_names.py script is available [here](scripts/add_standard_names.py).
 
+
 **Output files generated in step 3.2:** [03_standardization/pw_N/results/standardized/results_pw_N.txt](examples/03_standardization/pw_1/results/standardized/results_pw1.txt) file which is the standardized version of the Prokka annotation file from [step 2.6](#step-26-compiling-all-prokka-annotation-results-into-a-single-file)
+
 
 ### Step 4 Generating matrix of standardized presence absence
 
@@ -643,7 +651,9 @@ This code is for the example of checking the number of columns separated by tabs
 
 Another possible error can be "KeyError" if the ids_to_names.tsv file generated in [step 4.2](#step-42-manually-preparing-file-of-protein-enzyme-names-to-be-used-for-generating-the-presence-absence-matrix) does not match the standard names used in the standardization ([step 3.2.1](#step-321-performing-queries-of-the-prokka-annotation-using-files-in-queries-directory-and-dumping-results-into-files)). In this case, change the names in the ids_to_names.tsv names file to match the standard names in the .uniq files.
 
+
 **Output files generated in step 4:** [04_presabs/presence_absence.csv](examples/04_presabs/example_presence_absence.csv) file which is the standardized presence absence matrix file
+
 
 ## Contributions
 Authors of pipeline: Fatma Chafra, Felipe Borim Corrêa,and Ulisses Nunes da Rocha
