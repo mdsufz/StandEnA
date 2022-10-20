@@ -96,9 +96,9 @@ StandEnA is divided into 4 steps:
 
 **Step 3** - [Generating the Reference File for enzymes used in the annotation and standardizing protein names in Prokka results](#step-3-generating-the-reference-file-for-enzymes-used-in-the-annotation-and-standardizing-protein-names-in-prokka-results)
   
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**Step 3.1** - [Generating reference files and query files for each enzyme standard name](#step-31-generating-reference-files-and-query-files-for-each-enzyme-standard-name)
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**Step 3.1** - [Generating reference files and query files for each enzyme standard name](#step-31-generating-reference-files-and-query-files-for-each-enzyme-standard-name)
   
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**Step 3.2** - [Performing queries and standardizing annotation results](#step-32-performing-queries-and-standardizing-annotation-results)
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**Step 3.2** - [Performing queries and standardizing annotation results](#step-32-performing-queries-and-standardizing-annotation-results)
 
 **Step 4** - [Generating matrix of standardized presence absence](#step-4-generating-matrix-of-standardized-presence-absence)
 
