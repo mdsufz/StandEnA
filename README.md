@@ -265,7 +265,7 @@ In the next step, we combine the additional [downloaded proteins](#step-15-addin
 # Example (make sure to check the extensions of the files so you can use the wildcard)
 cat ../01_customdb/edirect_fasta/*.faa ../01_customdb/manual_download_fasta/*.faa > custom_db.faa
 ```
-Note that if some files that have been manually downloaded in the previous step have different file extensions (e.g., download_kos function downloads files with .fa extension), they would not be added to the custom_db.faa with this code. Change the above code like this if there are files with .fa extensions. For more information on different permitted file extensions, refer to [step 1.5](#step-15-adding-missing-proteins-to-custom-database-through-ortsuitemediated-searching-in-kegg-or-manual-downloading-from-other-databases).
+Note that if some files that have been manually downloaded in the previous step have different file extensions (e.g., download_kos function downloads files with .fa extension), they would not be added to the custom_db.faa with this code. Change the above code like this if there are files with .fa extensions. For more information on different permitted file extensions, refer to [step 1.5](#step-15-adding-missing-proteins-to-custom-database-through-ortsuite-mediated-searching-in-kegg-or-manual-downloading-from-other-databases).
 
 ```bash
 # Example if there are .faa and .fa files in the manual_download_fasta/ directory
