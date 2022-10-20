@@ -40,7 +40,7 @@ In **step 4**, [03_standardization/standardized/results_pw_N.txt](examples/03_st
 ## GitHub Contents
 - [Introduction](#introduction)
 - [Installation instructions](#installation-instructions)
-- [Dependencies](#dependencies]
+- [Dependencies](#dependencies)
 - [System requirements and usage](#system-requirements-and-usage)
 - [Workflow steps](#workflow-steps)
 - [Contributions](#contributions)
