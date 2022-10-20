@@ -318,7 +318,7 @@ Changing working directory to the directory containing the shortened genomes (fr
 ```bash
 cd /path/to/short
 ```
-Note that this step can only be done after Prokka installation witin the std_enzymes conda environment as described [here](../README.md). std_enzymes conda environment must be activated as stated under the [Installation instructions](#installation-instructions) heading for this code to work.
+Note that this step can only be done after Prokka installation witin the std_enzymes conda environment as described under the [Installation instructions](#installation-instructions) heading. Please make sure that the std_enzymes conda environment is activated as stated in the instructions to proceed with this step.
 
 Running Prokka for genomes:
 ```bash
