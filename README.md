@@ -1,4 +1,4 @@
-# StandEnA: A customizable workflow to create a standardized presence/absence matrix of annotated proteins
+# StandEnA: A customizable workflow to create a standardized presence - absence matrix of annotated proteins
 
 ## Introduction
 This workflow was created to predict and annotate proteins 
