@@ -16,13 +16,13 @@ module load Anaconda3
 #$ -l scratch=10G
  
 # output files
-#$ -o /gpfs1/data/msb/felipe/benzene/metagenomes/prokka_annotation/logs/$JOB_NAME-$JOB_ID.out
-#$ -e /gpfs1/data/msb/felipe/benzene/metagenomes/prokka_annotation/logs/$JOB_NAME-$JOB_ID.err
+#$ -o path/to/prokka_annotation/logs/$JOB_NAME-$JOB_ID.out
+#$ -e path/to/prokka_annotation/logs/$JOB_NAME-$JOB_ID.err
 
-conda activate /home/borimcor/.conda/envs/prokka
+conda activate path/to/.conda/envs/prokka
 
-cp -r "/gpfs0/home/borimcor/.conda/envs/prokka/db" "$TMPDIR1/."
-cp -r "/gpfs1/data/msb/felipe/benzene/metagenomes/prokka_annotation/custom_database/new_custom_db.faa" "$TMPDIR1/."
+cp -r "path/to/.conda/envs/prokka/db" "$TMPDIR1/."
+cp -r "path/to/prokka_annotation/custom_database/new_custom_db.faa" "$TMPDIR1/."
 
 
 
