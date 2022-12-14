@@ -49,7 +49,7 @@ In [step 4](#step-4-generating-matrix-of-standardized-presence-absence), [03_sta
 ## Installation instructions
 Clone this repository
 ```bash
-git clone https://github.com/mdsufz/std_enzymes
+git clone https://github.com/mdsufz/StandEnA.git
 ```
 Install Miniconda3 and add channels
 ```bash
