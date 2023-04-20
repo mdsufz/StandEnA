@@ -38,11 +38,22 @@ In [step 3.2](#step-32-performing-queries-and-standardizing-annotation-results),
 
 In [step 4](#step-4-generating-matrix-of-standardized-presence-absence), [03_standardization/standardized/results_pw_N.txt](examples/03_standardization/pw_1/results/standardized/) is used to generate a standardized presence - absence matrix for all inputted genomes for pathway N. Alternatively, annotated enzymes from multiple pathways can be used to generate a single standardized presence - absence matrix. For this purpose, the [03_standardization/pw_N/standardized/](examples/03_standardization/pw_1/results/standardized/) results for all pathways are merged into *04_presabs/std_results_all.txt*. [02_annotation/prokka_all.tsv](examples/02_annotation/example_prokka_all_results.tsv) is processed to remove any problematic punctuation such as brackets and parentheses. This processed output file, *04_presabs/prokka_all_updated.tsv*, is used along with a user inputted file, [04_presabs/ids_to_names.tsv](examples/04_presabs/ids_to_names.tsv), containing user-defined unique protein IDs for each enzyme and corresponding standard protein names to be used in the standardized presence - absence matrix generation. The standardized presence - absence matrix output, [04_presabs/presence_absence.csv](examples/04_presabs/example_presence_absence.csv), is generated.
 
+**Summary of different databases incorporated into StandEnA workflow:** On the left side, the databases accessed by [step 1](#step-1-compiling-protein-sequences-for-the-custom-database-from-ncbi-kegg-and-other-databases) and [step 2](#step-2-generating-a-custom-database-and-annotating-genomes-using-prokka-with-this-custom-database) of the automated StandEnA pipeline is shown. The custom database is produced by automated custom search using the user-supplied enzyme information while the Prokka default database is used to encompass a general representative set of sequences. A manual custom search is added to expand the custom database by compiling specified sequences from other databases such as [UniProt](https://www.uniprot.org/). Finally, the expanded custom database and Prokka default database is used to annotate the genomes producing a presence-absence matrix in [step 4](#step-4-generating-matrix-of-standardized-presence-absence). 
+
+<p align="center">
+<img
+  src="img/StandEnA_databases_scheme.jpg"
+  alt="Starting with enzyme identifiers for the pathways of interest, StandEnA has four steps"
+  title="Summary of the databases used in the annotation of 6 MAGs by StandEnA using the example semi-automated approach"
+  style="display: inline-block; margin: 0 auto; max-width: 5000px">
+</p>
+
 ## GitHub Contents
 - [Introduction](#introduction)
 - [Installation instructions](#installation-instructions)
 - [Dependencies](#dependencies)
 - [System requirements and usage](#system-requirements-and-usage)
+- [Reference genomes analyzed using this pipeline](#reference-genomes-analyzed-using-this-pipeline)
 - [Workflow steps](#workflow-steps)
 - [Contributions](#contributions)
 
@@ -87,6 +98,15 @@ Follow the installation steps for OrtSuite [here](https://github.com/mdsufz/OrtS
 A typical desktop (Linux) computer is capable of performing this workflow.
 Disk space can be the most limiting resource for the annotation step as each annotated genome produces ~2 G of data. Therefore, it is recommended to have a fair amount of free space depending on the number of genomes to be annotated.
 
+## Reference genomes analyzed using this pipeline
+Please find the links of the referenced genomes analyzed using StandEnA:
+
+- [Escherichia coli str. K-12 substr. MG1655](https://www.ncbi.nlm.nih.gov/nuccore/556503834) - NCBI Reference Sequence: NC_000913.3
+- [Azoarcus sp. DN11 chromosome](https://www.ncbi.nlm.nih.gov/nuccore/CP021731.1) - GenBank: CP021731.1
+- [Malikia spinosa strain AB6](https://www.ncbi.nlm.nih.gov/nuccore/1801491030) - NCBI Reference Sequence: NZ_VYSB01000001.1
+- [Pseudomonas veronii 1YdBTEX2](https://www.ncbi.nlm.nih.gov/data-hub/genome/GCA_900092355.1/) - Submitted GenBank sequence: GCA_900092355.1
+
+Output annotation files for these genomes will be available shortly.
 
 ## Workflow steps
 StandEnA is divided into 4 steps:
@@ -106,7 +126,7 @@ StandEnA is divided into 4 steps:
 ### Step 1 Compiling Protein sequences for the custom database from NCBI, KEGG and other databases
 
 This step is necessary to extend the scope of proteins that Prokka uses by default to annotate genomes. 
-For that, prepare a list of synonyms for all enzymes of interest to be downloaded from NCBI.
+For that, below steps will be used to prepare a list of synonyms for all enzymes of interest to be downloaded from NCBI.
 This database will be called custom database (custom_db.faa) in later steps.
 
 #### Step 1.1 Using KEGG API to retrieve enzyme synonym names
@@ -116,9 +136,24 @@ Make the new working directory and switch to this directory:
 mkdir 01_customdb
 cd 01_customdb
 ```
-Prepare a tab separated values file following the example file: [uniq_ec.tsv](examples/01_customdb/uniq_ec.tsv). A tab-separated values file is a text format similar to comma-separated values file where, instead of a comma, a tab character is used to separate different fields. Please find more information on this file structure [here](https://en.wikipedia.org/wiki/Tab-separated_values). 
+Note that the directory structure in StandEnA is very important for the execution of later steps. As indicated in the [examples](examples) directory, each directory should be created within the parent StandEnA directory. For flawless execution of next steps, users should not create these directories elsewhere or in another daughter directory within StandEnA.
 
-Columns in this file should contain in order (i.e., from left to right): unique enzyme ID, pathway, pathway step ID, enzyme name, and EC number. This column arrangement is extremely important because some of those columns will be used to organize the download of protein sequence files in [step 1.2](#step-12-preparing-the-list-of-synonyms-forncbi-edirect).
+##### Step 1.1.1 Preparing a tab separated values file following the example file
+
+-----
+
+###### Compiling information from literature and KEGG database for the pathways/enzymes of interest to be used in uniq_ec.tsv file
+
+Users are suggested to identify their pathways of interest from literature and to use the KEGG database to obtain information about its component enzymes. 
+For example, the example pathway used in this GitHub is regarding benzene/toluene degradation (KEGG Module number [M00547](https://www.genome.jp/kegg-bin/show_module?M00547+R03543)). This module page was used to compile the enzyme EC numbers through clicking on each KO number (K identifier number) defined under the "Definition" such as [K03268](https://www.genome.jp/entry/K03268) and obtaining the EC numbers of the enzyme orthologs from the KO number webpage. For more information about EC numbers and KO identifiers, please refer to [this page](https://www.genome.jp/kegg/annotation/enzyme.html). The EC numbers are listed under the "Name" section of each KO number page. To check the exact identity of each EC number, refer to their separate KEGG information pages (accessed through clicking on the corresponding EC number on the KO number page) such as the page for [1.14.12.3](https://www.genome.jp/entry/1.14.12.3). Depending on the aim of your analysis, you can choose to include all or a particular subset of the EC numbers listed on a single KO number page in the [uniq_ec.tsv](examples/01_customdb/uniq_ec.tsv) file. In this case, depending on your starting compound, a different EC number should be used (for benzene [1.14.12.3](https://www.genome.jp/entry/1.14.12.3), for toluene [1.14.12.11](https://www.genome.jp/entry/1.14.12.11), for chlorobenzene [1.14.12.26](https://www.genome.jp/entry/1.14.12.26)). If all three starting compounds are to be analyzed, then all three of these EC numbers should be included in the [uniq_ec.tsv](examples/01_customdb/uniq_ec.tsv) file. Please note that each row of the [uniq_ec.tsv](examples/01_customdb/uniq_ec.tsv) file should include only one EC number, meaning there can be multiple rows for the same enzyme standard name but with different EC numbers.
+
+In cases where a KEGG module is not found for your desired pathway, then the KEGG database can be used to compile each step of the reaction from separate enzyme information pages given that the names of these enzymes are known.
+
+----
+
+[uniq_ec.tsv](examples/01_customdb/uniq_ec.tsv) is the example file. A tab-separated values file is a text format similar to comma-separated values file where, instead of a comma, a tab character is used to separate different fields. Please find more information on this file structure [here](https://en.wikipedia.org/wiki/Tab-separated_values).
+
+Columns in the [uniq_ec.tsv](examples/01_customdb/uniq_ec.tsv) file should contain in order (i.e., from left to right): unique enzyme ID, pathway, pathway step ID, enzyme name, and EC number. This column arrangement is extremely important because some of those columns will be used to organize the download of protein sequence files in [step 1.2](#step-12-preparing-the-list-of-synonyms-for-ncbi-edirect). Although a single enzyme might be given multiple EC numbers by databases, each row of [uniq_ec.tsv](examples/01_customdb/uniq_ec.tsv) must contain only 1 EC number. Therefore, users should enter each EC number as a separate row with the corresponding unique enzyme ID, pathway, pathway step ID, enzyme name column information. Please read the above heading about compiling information to be used in [uniq_ec.tsv](examples/01_customdb/uniq_ec.tsv) file carefully before proceeding with the next steps.
 
 Note that the unique enzyme ID and pathway step ID are provided by the user for their pathway of interest. In the example file, unique enzyme ID is named using the convention E01, E02 etc. while the pathway step ID is named according to the pathway number and the step at which the enzyme is working at (e.g., pathway 1 step 1 is 1.1). Depending on the users' preferences, other naming conventions can be used in place of this provided that the column order does not change. However, each ID needs to be unique and must be named using a consistent alphanumeric naming convention with no whitespace characters within the names.
 
@@ -132,12 +167,14 @@ cat -v uniq_ec.tsv
 If there are any, the symbol ^M should appear at the end of the lines. To remove the trailing spaces:
 
 ```bash
-mv uniq_ec.tsv > temp_file.tsv
+mv uniq_ec.tsv temp_file.tsv
 sed -e "s/\r//g" temp_file.tsv > uniq_ec.tsv
 ```
 
 Now, the file is free of trailing whitespaces.
 
+
+##### Step 1.1.2 Retrieving the synonyms for each enzyme from KEGG API
 After preparing this file, retrieve the enzyme/protein synonyms for each name in the [uniq_ec.tsv](examples/01_customdb/uniq_ec.tsv) file from KEGG using their API using this code:
 
 ```bash
@@ -158,7 +195,7 @@ Parsing the enzyme synonyms to write down one synonym per line and removing "gen
 perl -ne 'chomp; @fields=split("\t",$_); @syn=split(";",$fields[4]); unless(scalar(@syn)==0){foreach(@syn){print join("\t",@fields[0..3]),"\t$_\n"}}else{print "$_\t$fields[2]\n"};' <(cut -f1,3- synonyms_table.tsv) | sed -e 's/\t /\t/g' | grep -v "incorrect\|gene name\|misleading" > synonyms_per_line.tsv
 ```
 
-For some enzymes that did not return synonyms because of any reason, *manually insert the enzyme names that you know in column 5 of synonyms_per_line.tsv*.
+For some enzymes that did not return synonyms because of any reason, *manually insert the enzyme names that you know in column 5 of synonyms_per_line.tsv*. It is expected that the enzymes with ambiguous EC numbers will not return any synonyms (e.g., E-phenylitaconyl-CoA hydratase with EC number 4.2.1.- where hyphen indicates the absence of a single EC number). Users should manually insert the known enzyme names in this case.
 
 Now, the following command will create a new column and add new IDs for synonyms, which will become the first column, that will be used to name the fasta files when using Edirect:
 ```bash
@@ -192,7 +229,7 @@ To run the script on your *high-performance computer cluster or local computer*,
 mkdir edirect_fasta
 
 # Running the script
-echo "START: $(date)"; cat id_synonyms_per_line.tsv | while read line; do id=$(echo "$line" | cut -f1); reac=$(echo "$line" | cut -f6 ); perl ../../scripts/bulk_edirect_custom.pl "$reac" protein $id edirect_fasta/ >> log.txt 2>> err.txt; done; echo "  END  : $(date)";
+echo "START: $(date)"; cat id_synonyms_per_line.tsv | while read line; do id=$(echo "$line" | cut -f1); reac=$(echo "$line" | cut -f6 ); perl ../scripts/bulk_edirect_custom.pl "$reac" protein $id edirect_fasta/ >> log.txt 2>> err.txt; done; echo "  END  : $(date)";
 ```
 Since it can take hours or even days depending on the size of your list, we recommend running this with the help of another tool (e.g. "screen"). To get more information on the screen tool, visit [this website](https://www.gnu.org/software/screen/).
 
@@ -201,6 +238,7 @@ This code outputs the protein sequence files (compiled within [01_customdb/edire
 Do not try to run many instances in parallel (e.g., multiple [id_synonyms_per_line.tsv](examples/01_customdb/id_synonyms_per_line.tsv) files used to access the Edirect API at the same time). 
 This may cause NCBI to black list your IP in which case the [log.txt](examples/01_customdb/log.txt) file from this step may contain "RESULTS: ERROR" output for your queries. If this is the case, stop the execution and retry at a later time. If the error persists, you may need to contact NCBI Edirect services.  
 
+Note that in each .faa in the edirect_fasta/ directory, sequences are separated by a new line with no character (empty new line) as seen [here](examples/01_customdb/edirect_fasta/S001-E01-1.14.12.3.faa). Although this is not the usual fasta format, remaining code works with or without these spaces. Therefore, during manual_download_fasta/ formation the same convention of separating sequences with a new line (empty) may or may not be used depending on the preference of the user.
 
 #### Step 1.5 Adding missing proteins to custom database through OrtSuite-mediated searching in KEGG or manual downloading from other databases 
 
@@ -285,7 +323,20 @@ cat ../01_customdb/edirect_fasta/*.faa ../01_customdb/manual_download_fasta/*.fa
 For more information on different permitted file extensions, refer to [step 1.5](#step-15-adding-missing-proteins-to-custom-database-through-ortsuite-mediated-searching-in-kegg-or-manual-downloading-from-other-databases).
 
 #### Step 2.3 Testing the custom database
-To test if the newly created database is "flawless", simply run "makeblastdb" on it.
+Please make sure that the std_enzymes conda environment is setup and activated before running this step. The std_enzymes conda environment must be activated during all steps of this workflow (i.e., Step 1 through Step 4).
+
+Run this command to check your conda environments:
+```
+conda env list
+```
+std_enzymes must be listed in the output. If not, please refer back to the [Installation Instructions](#installation-instructions) steps.
+
+Run this code to activate the environment:
+```
+conda activate std_enzymes
+```
+
+Then, to test if the newly created database is "flawless", simply run "makeblastdb" on it.
 
 ```
 makeblastdb -dbtype prot -in custom_db.faa -out custom_db
@@ -394,7 +445,9 @@ Creating directory for this part:
 mkdir ../../03_standardization
 cd ../../03_standardization
 ```
-Note that the working directory in [step 2.6](#step-26-compiling-all-prokka-annotation-results-into-a-single-file) is 02_annotation/short/.
+Note that the working directory in [step 2.6](#step-26-compiling-all-prokka-annotation-results-into-a-single-file) is 02_annotation/short/. 
+
+03_standardization/ directory should not be within the 02_annotation/ directory but in another parent directory beside 01_customdb/ and 02_annotation/. The directory organization is exemplified [here](examples). The same directory organization must be followed throughout the pipeline.
 
 When working with pathway of interest "1", start the names of the working directory and other files with "pw_1" as the naming convention. 
 
@@ -403,12 +456,13 @@ Creating directory for pathway 1:
 mkdir pw_1
 cd pw_1
 ```
+Note that for each pathway, a new directory should be created within 03_standardization/ to get a file structure of: 03_standardization/pw_N. Hence, steps after this point should be executed within the corresponding pw_N directory.
 
 Saving unique enzyme standard names and their synonyms for this pathway (which were already compiled into the [01_customdb/id_synonyms_per_line.tsv](examples/01_customdb/id_synonyms_per_line.tsv) in [step 1.2](#step-12-preparing-the-list-of-synonyms-for-ncbi-edirect)): 
 ```bash
-grep -P "\t1\.\d\t" ../../01_customdb/id_synonyms_per_line.tsv | cut -f4,5,6 | cut -f1,3 | sort | uniq > pw_1.txt
+grep -P "\t1\.\d+\t" ../../01_customdb/id_synonyms_per_line.tsv | cut -f4,5,6 | cut -f1,3 | sort | uniq > pw_1.txt
 ```
-For this example, enzymes within pathway 1 have an enzyme ID starting with "1.". Hence, to retrieve these, the [01_customdb/id_synonyms_per_line.tsv](examples/01_customdb/id_synonyms_per_line.tsv) file is searched for the text "\t1\.\d\t" by this code. For example, if pathway 2 is to be retrieved, the above line should be updated to search for "\t2\.\d\t" (i.e., instead of "\t1\.\d\t" enter "\t2\.\d\t") and the output file should be named accordingly (pw_2.txt). 
+For this example, enzymes within pathway 1 have an enzyme ID starting with "1.". Hence, to retrieve these, the [01_customdb/id_synonyms_per_line.tsv](examples/01_customdb/id_synonyms_per_line.tsv) file is searched for the text "\t1\.\d+\t" by this code. For example, if pathway 2 is to be retrieved, the above line should be updated to search for "\t2\.\d+\t" (i.e., instead of "\t1\.\d+\t" enter "\t2\.\d+\t") and the output file should be named accordingly (pw_2.txt). 
 
 Note that the enzyme list for reference file and query file formation is derived from the [01_customdb/id_synonyms_per_line.tsv](examples/01_customdb/id_synonyms_per_line.tsv) file that was used to download protein sequences using Edirect API in [step 1.4](#step-14-using-a-custom-perl-script-to-download-proteins-from-ncbi-edirect-api). 
 
@@ -422,8 +476,17 @@ sed -r "s/[/]+/_/g" temp_file.txt > pw_1.txt
 #Remove intermediate files
 rm temp_file.txt
 ```
+**IMPORTANT NOTE**
 
-Since the OrtSuite-mediated KEGG API download and manual download steps are performed after Edirect download and are optional, if manual download steps are used to retrieve sequences that are not included within [id_synonyms_per_line.tsv](examples/01_customdb/id_synonyms_per_line.tsv), additional steps should be performed to account for these protein names. In the steps below, there are additional codes to be executed to add OrtSuite-mediated KEGG API downloaded proteins (from EC numbers) to the required files and directories. These steps can be modified by the user if there are other download methods used (e.g., OrtSuite-mediated KEGG API downloaded proteins from KO identifiers). These steps can be skipped altogether if there are no OrtSuite-mediated KEGG API downloaded proteins (from EC numbers) or manually proteins downloaded from different databases or if all enzyme information (including the later manually downloaded ones) was inputted to the pipeline via the initial [uniq_ec.tsv](examples/01_customdb/uniq_ec.tsv) file in [step 1.1](#step-11-using-kegg-api-to-retrieve-enzyme-synonym-names) which is used to generate the [id_synonyms_per_line.tsv](examples/01_customdb/id_synonyms_per_line.tsv) file in [step 1.2](#step-12-preparing-the-list-of-synonyms-for-ncbi-edirect). 
+Since the OrtSuite-mediated KEGG API download and manual download steps are performed after Edirect download and are optional, if manual download steps are used to retrieve sequences that are not included within [id_synonyms_per_line.tsv](examples/01_customdb/id_synonyms_per_line.tsv), additional steps should be performed to account for these protein names. In the steps below, there are additional codes to be executed to add OrtSuite-mediated KEGG API downloaded proteins (from EC numbers) to the required files and directories. These steps can be modified by the user if there are other download methods used (e.g., OrtSuite-mediated KEGG API downloaded proteins from KO identifiers). 
+
+These steps (lines/sections involving OrtSuite-retrieved files between steps [3.1.2](#step-312-dividing-pathways-into-separate-files-for-each-enzymeprotein-and-collecting-them-in-the-queries-directory) - [3.1.3](#step-313-collecting-standard-database-identifiers-about-the-enzyme-names-used-during-annotation-from-KEGG-to-generate-a-reference-file)) indicated can be skipped altogether if: 
+
+a) there are no OrtSuite-mediated KEGG API downloaded proteins (from EC numbers) or manually proteins downloaded from different databases 
+
+*OR*
+
+b) all enzyme information (including the later manually downloaded ones) was inputted to the pipeline via the initial [uniq_ec.tsv](examples/01_customdb/uniq_ec.tsv) file in [step 1.1](#step-11-using-kegg-api-to-retrieve-enzyme-synonym-names) which is used to generate the [id_synonyms_per_line.tsv](examples/01_customdb/id_synonyms_per_line.tsv) file in [step 1.2](#step-12-preparing-the-list-of-synonyms-for-ncbi-edirect)
 
 
 ##### Step 3.1.2 Dividing pathways into separate files for each enzyme/protein and collecting them in the queries directory
@@ -474,13 +537,14 @@ protein names during the presence - absence matrix generation in [step 4.2](#ste
 
 Gathering unique EC numbers for the pathway:
 ```bash 
-grep -P "\t1\.\d\t" ../../01_customdb/id_synonyms_per_line.tsv | cut -f4,5 | sort | uniq > unique_pw_ec.tsv
+grep -P "\t1\.\d+\t" ../../01_customdb/id_synonyms_per_line.tsv | cut -f4,5 | sort | uniq > unique_pw_ec.tsv
 ```
-Note that if pathway 2 is to be retrieved, the above line should be updated to search for "\t2.\d\t".
+Note that if pathway 2 is to be retrieved, the above line should be updated to search for "\t2.\d+\t".
 
 Note that for some enzyme names in [id_synonyms_per_line.tsv](examples/01_customdb/id_synonyms_per_line.tsv) there might be no EC number. In this case, the user should use the below line to remove any "NA" or "-" identifier:
 ```bash
-grep -v ".-" uniq_pw_ec.tsv | grep -v "NA$" > uniq_pw_ec_edited.tsv
+grep -v "\.-" unique_pw_ec.tsv | grep -v "NA$" > temp.tsv
+cat temp.tsv > unique_pw_ec.tsv
 
 ```
 
@@ -578,6 +642,38 @@ Note that, depending on the specific protein headers present in the custom datab
 
 ![Example image](img/example_clean_output.png)
 
+----------
+
+**Grouped Presence-Absence Matrix Option:**
+If the intention is to produce a final presence-absence matrix that groups all subunits/components of the same enzyme together (as opposed to displaying them as separate entities), then the grouped standard name can be used instead of the standard name provided in KEGG. In this case, [step 3.2.1](#step-321-performing-queries-of-the-prokka-annotation-using-files-in-queries-directory-and-dumping-results-into-files) can be repeated partly by copying the initial unique files into a grouped_unique directory (within the 03_standardization/pw_N/results/ directory) and manually changing the standard name column as desired.
+```bash
+# Make and change to results directory
+cd ..
+mkdir grouped_unique
+# Copy all files in ../unique directory into this new directory
+cp unique/*.uniq grouped_unique
+```
+According to your preference, group the enzymes in grouped_unique by adding the same standard name for their first column as indicated above. For example, if there are multiple files formed for different nitrate reductase subunits and you want to group them (nitrate reductase alpha subunit, nitrate reductase beta subunit, nitrate reductase gamma subunit, nitrate reductase ambiguous) under the standard name "nitrate reductase":
+
+![Example grouped unique 1](img/example_grouped_unique_1.png)
+
+![Example grouped unique 2](img/example_grouped_unique_2.png)
+
+![Example grouped unique 3](img/example_grouped_unique_3.png)
+
+![Example grouped unique 4](img/example_grouped_unique_4.png)
+
+Note that these enzymes are listed with their proposed synonyms in **different .uniq files initially** and that this **grouping decision is made by the user** by inserting the same standard group name in the first column of these files.
+
+--------
+Regardless of the user's choice in forming a grouped or individual presence-absence matrix, for the flawless execution of later steps, all .uniq files should have 2 columns separated by a tab character. Since the above steps are manual, users should check the column number in their files. Below is an example line that can be used for this purpose.
+```bash
+#Changing to the unique directory
+cd unique
+# This line should give 2 as output, if there numbers different from 2 there is a problem
+for i in *.uniq; do awk -F"\t" "{print NF}" $i; done > ../columns.txt
+```
+If the above code outputs numbers different from 2, then the .uniq files should be checked again to make sure that there are 2 columns which are tab separated.
 
 ##### Step 3.2.2 Combining standard names to Prokka annotation results (standardization of Prokka annotation)
 
@@ -612,6 +708,8 @@ Creating directory for this part and changing working directory to this:
 mkdir 04_presabs
 cd 04_presabs
 ```
+04_presabs/ directory should not be within the 03_standardization/ directory but in another parent directory beside 01_customdb/, 02_annotation/, and 03_standardization/. The directory organization is exemplified [here](examples). The same directory organization must be followed throughout the pipeline.
+
 Note that for [step 3.2.2](#step-322-combining-standard-names-to-prokka-annotation-results-standardization-of-prokka-annotation) the working directory is at the subdirectory 03_standardization/pw_1/results/standardized/. The relative path from this point to the directory 04_presabs is:
 ```bash
 mkdir ../../../../04_presabs
@@ -634,7 +732,25 @@ CP1002	benzene dioxygenase, beta subunit
 CP1003	benzene dioxygenase, ferredoxin component
 CP1004	benzene dioxygenase, ferredoxin reductase component
 ```
-Note that the protein IDs are dependent on the preference of the user. Here we suggested the usage of an ID convention of CP1001, CP1002 etc. Protein names to be used for the presence absence matrix must match the names used in the standardization of Prokka annotations in [step 3.2.1](#step-321-performing-queries-of-the-prokka-annotation-using-files-in-queries-directory-and-dumping-results-into-files). As a guideline, please check the your kegg_info.txt file for Edirect downloaded proteins (example file can be found under the name [pw_6_C_kegg_info.txt](examples/03_standardization/pw_1/pw_6_C_kegg_info.txt)) and [ortsuite_pw_1_kegg_info.txt](examples/03_standardization/pw_1/ortsuite_pw_1_kegg_info.txt) for proteins downloaded from KEGG using OrtSuite.generated in [step 3.1.3](#step-313-collecting-standard-database-identifiers-about-the-enzyme-names-used-during-annotation-from-kegg-to-generate-a-reference-file).
+Note that the protein IDs are dependent on the preference of the user. Here we suggested the usage of an ID convention of CP1001, CP1002 etc. Protein names to be used for the presence absence matrix must match the names used in the standardization of Prokka annotations in [step 3.2.1](#step-321-performing-queries-of-the-prokka-annotation-using-files-in-queries-directory-and-dumping-results-into-files). As a guideline, the first column containing enzyme standard names of the results/unique/ directory files from [step 3.2.1](#step-321-performing-queries-of-the-prokka-annotation-using-files-in-queries-directory-and-dumping-results-into-files) can be copied to this file. For additional information, please check the your kegg_info.txt file for Edirect downloaded proteins (example file can be found under the name [pw_6_C_kegg_info.txt](examples/03_standardization/pw_1/pw_6_C_kegg_info.txt)) and [ortsuite_pw_1_kegg_info.txt](examples/03_standardization/pw_1/ortsuite_pw_1_kegg_info.txt) for proteins downloaded from KEGG using OrtSuite.generated in [step 3.1.3](#step-313-collecting-standard-database-identifiers-about-the-enzyme-names-used-during-annotation-from-kegg-to-generate-a-reference-file).
+
+Please note that the **standard names listed in the [ids_to_names.tsv](examples/04_presabs/ids_to_names.tsv) file** should not use parentheses characters ( "(", ")", "[", "]") and contain lowercase characters only.
+
+----
+
+**Grouped Presence-Absence Matrix Option:**
+If the intention is to produce a final presence-absence matrix that groups all subunits/components of the same enzyme together (as opposed to displaying them as separate entities as seen in the example ([ids_to_names.tsv](examples/04_presabs/ids_to_names.tsv))), then the grouped standard name can be used instead of the standard name provided in KEGG during the standardization step of this pipeline. In this case, [step 3.2.1](#step-321-performing-queries-of-the-prokka-annotation-using-files-in-queries-directory-and-dumping-results-into-files) can be repeated partly by copying the initial unique files into a grouped_unique directory and manually changing the standard name column as desired. For the example ([ids_to_names.tsv](examples/04_presabs/ids_to_names.tsv)), CP1001 to CP1004 can be standardized as "benzene dioxygenase" so these will be grouped together in the final output.
+
+If not done so already, please repeat all the steps starting from the manual curation of .uniq files in [step 3.2.1](#step-321-performing-queries-of-the-prokka-annotation-using-files-in-queries-directory-and-dumping-results-into-files) up until this step to produce the grouped presence-absence matrix. For this case grouped_ids_to_names.tsv file might contain:
+```
+CP1001	benzene dioxygenase
+CP1002	cis-1,2-dihydrobenzene-1,2-diol dehydrogenase
+CP1003  Phenol 2-monooxygenase
+CP1004  2-hydroxymuconic semialdehyde hydrolase
+```
+Note that grouped_ids_to_names.tsv file must **exactly match** with the grouped standard names used in [step 3.2.1](#step-321-performing-queries-of-the-prokka-annotation-using-files-in-queries-directory-and-dumping-results-into-files) while forming the grouped_unique files.
+
+-------
 
 #### Step 4.3 Running script to generate standardized presence - absence matrix
 To prevent case-sensitivity as well as bracket differences in protein names while comparing the Prokka annotation with the standardized results, the Prokka annotation is recommended to be converted to lowercase and the brackets should be removed.
