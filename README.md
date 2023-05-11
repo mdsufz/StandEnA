@@ -760,8 +760,9 @@ cat ../02_annotation/short/prokka_all.tsv |tr -d '[]()'| tr '[:upper:]' '[:lower
 
 Using the [ids_to_names.tsv](examples/04_presabs/ids_to_names.tsv) file, run the script to generate the presence - absence matrix:
 ```bash
-python3 ../../scripts/make_pres_abs.py std_results_all.txt ids_to_names.tsv prokka_all_updated.tsv > presence_absence.csv
+python3 ../../scripts/make_pres_abs.py std_results_all.txt ids_to_names.tsv > presence_absence.csv
 ```
+Please note that, if there are bins/genomes/MAGs with no annotation for any of the standardized enzymes on the ids_to_names.tsv list, the presence-absence matrix will not show this as a column. Hence, if a bin/genome/MAG does not appear in the presence-absence matrix output, that name can be added as a row with zeros (as values).
 
 Note: The make_pres_abs.py script is available [here](scripts/make_pres_abs.py). 
 
@@ -780,6 +781,7 @@ Then, re-do [step 4.1](#step-41-combining-all-standardized-prokka-results) and [
 
 Then, re-do [step 4.1](#step-41-combining-all-standardized-prokka-results) and [step 4.3](#step-43-running-script-to-generate-standardized-presence---absence-matrix) (except for the directory creation step as the 04_presabs/ is already created).
 
+3- Please note that this pipeline is intended to be run on the same list of enzymes/protein names during the standardization and presence-absence matrix generation steps. If a subset of the list of standard enzyme names are inputted as the ids_to_names.tsv file, there may be problems (specifically KeyError) in this script. Hence, it is advised to use the same set of enzymes/protein names throughout the workflow.
 
 **Output files generated in step 4:** [04_presabs/presence_absence.csv](examples/04_presabs/example_presence_absence.csv) file which is the standardized presence absence matrix file
 
